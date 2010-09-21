@@ -1,0 +1,197 @@
+/************************************************
+FILE:		  	layout.css
+DESCRIPTION:  	Defines layout - Dimensions, display, floats, position, background, borders etc
+
+	1. = PAGE LAYOUT TYPOGRAPHY 	(ALL PAGES: header footer etc)
+	2. = MUTLIPAGE TYPOGRAPHY		(SOME PAGES: based on wrapper - '#wrapper p')
+	3. = SINGLE PAGE TYPOGRAPHY		(ONE PAGE: based on page wrapper - .pageName .class)			
+
+
+	1. = PAGE LAYOUTS
+************************************************/
+
+/* BASICS */
+	html				{height:100%;}
+	body 				{min-height:100%; background: #f9fafb url(../img/bg/bgPage1.png) 0 0 repeat-x;}
+	
+	header,
+	footer,
+	nav,
+	article				{display:block;}
+
+				
+	/* Quickfix Classes */
+		.clearB			{clear: both;}
+		.clearL			{clear: left;}
+		.clearR			{clear: right;}
+		.floatL			{float: left;}
+		.floatR			{float: right;}
+		.clear			{clear: both; font-size:1px; height:1px; line-height:1px; margin:0px; padding:0px; width:100%;}
+		.clearfix:after	{content: "."; display: block; height: 0; clear: both; visibility: hidden;}	
+		.container		{max-width:986px; margin:0 auto;}
+
+
+
+
+
+/* SPRITES */
+
+	/* 1. Interface - 8 Bit */
+		#mainBar,
+		#nMain strong,
+		#frmSearch input,
+		#frmSearch button	{background: url(../img/sprites/01spr_interface_8bit.png);}
+	
+	
+	/* 2. Icons - 8 Bit */
+		#nQuickLinks li		{background: url(../img/sprites/02spr_icons_8bit.png); background-repeat:no-repeat;}
+
+
+
+/* HEADER (positioned at bottom) */
+	header		{width:960px; margin:0 auto; }
+	
+	/* Skip Links */
+		#nSkip			{position:absolute; left:50%; top:5px; margin-left:-460px;}
+		#nSkip li		{float:left; padding:0 8px 0 0;}
+		#nSkip a		{position:absolute; top:-100px; left:0;}
+		#nSkip a:focus	{top:0;}	
+	
+	/* Logo */
+		#logo			{float:left; position:relative; left:8px; top:32px;}
+		#logo:focus		{outline:1px dashed #192a35;}
+		#logo img		{display:block;}
+		
+	/* Contact Details */
+		#contactInfo	{float:right; padding:28px 10px 0 0;}
+		
+		
+
+/* MAIN NAV */
+	#mainBar	{width:960px; height:39px; margin:22px auto 0; clear:both; position:relative; background-position:0 0;}
+	
+	/* Main Nav */
+		#nMain				{float:left; padding:4px 4px 4px 10px;}
+		#nMain li			{float:left; border-left:1px solid #1b2828; border-right:1px solid #293840;}
+		#nMain :first-child	{border-left:none;}
+		#nMain :last-child	{border-right:none;}
+		#nMain a			{float:left; padding:0 19px 0 19px; letter-spacing:-0.050em; text-shadow: 1px 1px 1px #161f26;}
+		
+		/* Active */
+			#nMain strong	{float:left; background-position:0 -39px;}
+		
+	/* Search Form */
+		#frmSearch				{padding:9px 23px; float:right; position:absolute; top:0; right:0;}
+		#frmSearch legend,
+		#frmSearch label		{display:none;}
+		#frmSearch input		{float:left; width:159px; height:20px; padding:2px 0 0 6px; border:none; background-position:-320px -39px;}
+		#frmSearch button		{float:left; width:22px; height:20px; text-indent:-999px; overflow:hidden; border:none; background-position:-481px -39px;}
+		#frmSearch button:hover	{cursor:pointer; background-position:-505px -39px;}
+	
+	
+		
+			
+		
+/* FOOTER  */
+	#pageFooter				{width:100%; height:289px; position:absolute; left:0; bottom:0; background: #172732 url(../img/footer/bg.png) repeat-x;}
+	
+	/* Quick Links (Blatently NOT S-E0O) */
+		#nQuickLinks		{width:870px; padding:0 45px 28px; margin:0 auto;}
+		#nQuickLinks dl		{width:154px; margin:95px 80px 0 0; float:left;}
+		#nQuickLinks dl:last-child	{margin-right:0;}
+		#nQuickLinks dt		{width:154px; overflow:hidden; margin:0 0 14px 0; padding:0 0 5px 2px; border-bottom:2px solid #23323d;}
+		#nQuickLinks li		{margin:0 0 14px 0; padding:0 0 0 12px; background-position:0 2px;}
+		
+	/* Legal Nav */
+		#nLegal 				{width:846px; margin:3px auto 0;}
+		#nLegal > span,
+		#nLegal > a				{float:right; padding:0 10px; border-right:1px solid #8b9399; border-left:1px solid #515d65;}
+		#nLegal :first-child	{border-right:none;}
+		#nLegal :last-child		{border-left:none;}
+
+
+
+
+
+
+/************************************************
+	2. = MULTI PAGE LAYOUT	(SOME Pages)
+************************************************/
+
+/* COLUMN SYSTEMS */
+	#template		{padding:82px 0 110px; position:relative; right:-1px;}
+
+	/* Three Columns */
+
+	/* 3 | 1 Columns */
+
+
+
+
+
+/* ARTICLES */
+	/* Headings */
+		article h1			{margin:0 0 5px;}
+		article h2			{margin:-10px 0 2px 0;}
+
+	/* Copy */
+		article p			{padding:0 0 20px 0; text-align:justify;}
+		article ul			{margin:0; padding:2px 0 18px 21px;}
+		article li			{margin:0 0 12px 0; padding:0 0 0 21px; background-position:0 1px;}
+	
+	/* Footer */
+		article footer		{display:block; width:100%; margin:0; clear:both;}
+		
+	/* Specific Types */
+		
+		/* Article 1  */
+	
+
+
+
+		
+		
+		
+		
+/* BOXES */
+	.box,
+	.box img			{display:block; position:relative;}
+		
+	/* Box 1 - */
+
+
+
+
+
+
+
+
+
+/* LISTS */
+
+	/* 1. */
+
+		
+
+	
+	
+
+/* Icon Links */
+	/* Red Arrow, right side */
+		.icon1		{display:block; height:19px; padding:0 23px 0 0; background-position:right -120px;}
+	/* Red Arrow, left side */
+		.icon2		{display:block; height:19px; padding:0 0 0 23px; background-position:-22px -120px;}
+	/* Dark Red Arrow, right side */
+		.icon3		{display:block; height:19px; padding:0 23px 0 0; background-position:right -360px;}
+	/* Large Red Arrow, right side */
+		.icon4		{display:block; height:22px; padding:0 26px 0 0; background-position:right -420px;}
+		
+		
+
+/************************************************
+	3. = SINGLE PAGE CONTENT LAYOUT	 (ONE Page)
+************************************************/	
+
+
+		
+	

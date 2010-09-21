@@ -1,0 +1,138 @@
+/************************************************
+FILE:		  	typography.css
+DESCRIPTION:  	Defines typography - line-height, text-align, font-size, color, font-weight etc
+
+	1. = PAGE LAYOUT TYPOGRAPHY 	(ALL PAGES: header footer etc)
+	2. = MUTLIPAGE TYPOGRAPHY		(SOME PAGES: based on wrapper - '#wrapper p')
+	3. = SINGLE PAGE TYPOGRAPHY		(ONE PAGE: based on page wrapper - .pageName .class)
+			
+************************************************/
+
+
+/************************************************
+	1. = PAGE LAYOUT TYPOGRAPHY		
+************************************************/
+body		{font: 12px 'Helvetica Neue', Helvetica, sans-serif; text-align:center; color: #354754; line-height:1;}
+
+
+
+/* HEADER */
+	header a:link,
+	header a:visited		{color:#fff; text-decoration:none;}
+	header a:hover,
+	header a:focus,
+	header a:active			{text-decoration:underline;}
+	
+	/* Skip Links */
+		#nSkip a		{white-space:nowrap;}
+
+	/* Contact Details */
+		#contactInfo			{font-style:normal; text-align:right;}
+		#contactInfo .phoneUs	{color:#484f13; font-size:14px; font-weight:bold;}
+		#contactInfo .phone		{font: bold 26px Tahoma, Helvetica, sans-serif; color:#fff;  text-shadow: 0 0 7px #a0ae3b;}
+		#contactInfo .emailUs	{color:#474e13;}
+		#contactInfo .emailUs,
+		#contactInfo .email		{font: 12px Tahoma, Helvetica, sans-serif;}
+		
+
+/* MAIN NAV */
+	#mainBar	{width:960px; height:39px; margin:22px auto 0; clear:both; background-position:0 0;}
+
+
+	/* Main Nav */
+		#nMain a			{color:#fff; font-size:14px; line-height:32px; text-decoration:none; text-transform:uppercase; text-shadow: 1px 1px 1px #162127;}
+		#nMain a:hover		{color:#a8b4ba;}
+		#nMain a:focus		{color:#a8b4ba;}
+		#nMain strong a		{color:#a8b4ba; cursor:default;}
+
+		
+	/* Search Form */
+		#frmSearch input		{color:#9fabb3; font: 11px 'Helvetica', sans-serif;}
+		#frmSearch input:hover,
+		#frmSearch input:focus	{color:#0f181f;}
+		#frmSearch button		{float:left; width:22px; height:20px; text-indent:-999px; overflow:hidden; border:none; background-position:-481px -39px;}
+		#frmSearch button:hover	{cursor:pointer; background-position:-505px -39px;}
+
+		
+	
+			
+
+
+/* FOOTER  */
+	#pageFooter			{text-align:left;}
+	#pageFooter a,
+	#pageFooter a:link,
+	#pageFooter a:visited		{color:#707f8c; text-decoration:none; white-space:nowrap; font-size:11px;}
+	#pageFooter a:hover,
+	#pageFooter a:focus,
+	#pageFooter a:active		{text-decoration:underline;}
+
+	/* Quick Links (Blatently NOT S E O) */
+		#nQuickLinks dt			{color:#99a6b2; font-size:18px; text-transform:uppercase; white-space:nowrap;}
+		#nQuickLinks li			{margin:0 0 14px 0;}
+		#nQuickLinks a			{font-size:11px;}
+
+
+	/* Legal Nav */
+		#nLegal 			{text-align:right; color:#7d8e9c; font-size:10px;}
+
+	
+	
+	
+/************************************************
+	2. = MUTLIPAGE TYPOGRAPHY		(SOME PAGES)
+************************************************/
+
+
+/* ARTICLES */
+
+	/* Headings */
+		article h1			{font-size:28px; font-weight:bold; line-height:28px; color:#2a2e33;}
+		article .intro		{color:#949ca0; font-size:13px; line-height:13px;}
+		article h2			{color:#33383c; font-size:12px;}
+		article h3,
+		article h4			{color:#33383c;}
+		
+
+	/* Copy */
+		article p			{color:#636363; font-size:12px; line-height:21px;}
+		article .openingShort	{color:#2a2e33;}
+		article a:link,
+		article a:visited 	{color: #ed1847; text-decoration:none;}
+		article a:hover,
+		article a:focus,
+		article a:active 	{text-decoration:underline;}
+		article li			{color:#33383c; font-size:12px;}
+		
+		/* Specific Types */
+		
+			/* Article 1  */
+	
+	
+	
+
+
+/* BOXES */
+
+	/* Box 1 -  */
+
+		
+
+		
+
+	
+/* ICONS */	
+	/* Red Arrow, right side */
+		.icon1		{line-height:18px;}
+	/* Red Arrow, left side */
+		.icon2		{line-height:18px;}	
+	/* Dark Red Arrow, right side */
+		.icon3		{color:#fff; font-size:10px; line-height:18px; font-weight:bold; text-transform:uppercase;}	
+	/* Large Red Arrow, right side */
+		.icon4		{line-height:20px; text-transform:uppercase; font-size:13px; font-weight:bold;}
+	
+	
+/************************************************
+	3. = SINGLE PAGE TYPOGRAPHY		(ONE Page)
+************************************************/
+
