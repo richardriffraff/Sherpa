@@ -59,13 +59,13 @@ body		{font: 12px 'Helvetica Neue', Helvetica, sans-serif; text-align:center; co
 
 
 /* FOOTER  */
-	#pageFooter			{text-align:left;}
-	#pageFooter a,
-	#pageFooter a:link,
-	#pageFooter a:visited		{color:#707f8c; text-decoration:none; white-space:nowrap; font-size:11px;}
-	#pageFooter a:hover,
-	#pageFooter a:focus,
-	#pageFooter a:active		{text-decoration:underline;}
+	#fPage				{text-align:left;}
+	#fPage a,
+	#fPage a:link,
+	#fPage a:visited	{color:#707f8c; text-decoration:none; white-space:nowrap; font-size:11px;}
+	#fPage a:hover,
+	#fPage a:focus,
+	#fPage a:active		{text-decoration:underline;}
 
 	/* Quick Links (Blatently NOT S E O) */
 		#nQuickLinks dt			{color:#99a6b2; font-size:18px; text-transform:uppercase; white-space:nowrap;}
@@ -78,6 +78,12 @@ body		{font: 12px 'Helvetica Neue', Helvetica, sans-serif; text-align:center; co
 
 	
 	
+/* TEMPLATE */
+	#template				{text-align:left;}
+	
+	
+	
+	
 	
 /************************************************
 	2. = MUTLIPAGE TYPOGRAPHY		(SOME PAGES)
@@ -87,22 +93,21 @@ body		{font: 12px 'Helvetica Neue', Helvetica, sans-serif; text-align:center; co
 /* ARTICLES */
 
 	/* Headings */
-		article h1			{font-size:28px; font-weight:bold; line-height:28px; color:#2a2e33;}
-		article .intro		{color:#949ca0; font-size:13px; line-height:13px;}
-		article h2			{color:#33383c; font-size:12px;}
+		article h1			{font-size:24px; color:#192a36; font-weight:bold; line-height:24px;}
+		article h2			{font-size:20px; color:#192a36; font-weight:bold; line-height:20px;}
 		article h3,
 		article h4			{color:#33383c;}
 		
 
 	/* Copy */
-		article p			{color:#636363; font-size:12px; line-height:21px;}
+		article p				{color:#636363; font-size:12px; line-height:22px; color:#354754;}
 		article .openingShort	{color:#2a2e33;}
 		article a:link,
-		article a:visited 	{color: #ed1847; text-decoration:none;}
+		article a:visited 	{color: #f06c21; text-decoration:none;}
 		article a:hover,
 		article a:focus,
 		article a:active 	{text-decoration:underline;}
-		article li			{color:#33383c; font-size:12px;}
+		article li			{color:#0e171e; font-size:12px;}
 		
 		/* Specific Types */
 		

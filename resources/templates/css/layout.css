@@ -44,7 +44,8 @@ DESCRIPTION:  	Defines layout - Dimensions, display, floats, position, backgroun
 	
 	
 	/* 2. Icons - 8 Bit */
-		#nQuickLinks li		{background: url(../img/sprites/02spr_icons_8bit.png); background-repeat:no-repeat;}
+		#nQuickLinks li,
+		article li			{background: url(../img/sprites/02spr_icons_8bit.png); background-repeat:no-repeat;}
 
 
 
@@ -93,7 +94,7 @@ DESCRIPTION:  	Defines layout - Dimensions, display, floats, position, backgroun
 			
 		
 /* FOOTER  */
-	#pageFooter				{width:100%; height:289px; position:absolute; left:0; bottom:0; background: #172732 url(../img/footer/bg.png) repeat-x;}
+	#fPage					{width:100%; height:289px; position:static; left:0; bottom:0; background: #172732 url(../img/footer/bg.png) repeat-x;}
 	
 	/* Quick Links (Blatently NOT S-E0O) */
 		#nQuickLinks		{width:870px; padding:0 0 28px; margin:0 auto;}
@@ -108,6 +109,8 @@ DESCRIPTION:  	Defines layout - Dimensions, display, floats, position, backgroun
 		#nLegal > a				{float:right; padding:0 10px; border-right:1px solid #8b9399; border-left:1px solid #515d65;}
 		#nLegal :first-child	{border-right:none;}
 		#nLegal .last			{border-left:none;}
+		
+
 
 
 
@@ -119,11 +122,15 @@ DESCRIPTION:  	Defines layout - Dimensions, display, floats, position, backgroun
 ************************************************/
 
 /* COLUMN SYSTEMS */
-	#template		{padding:82px 0 110px; position:relative; right:-1px;}
+	#template				{width:954px; margin:0 auto;}
+	#template #clm1			{float:left;}
+	#template #clm2			{float:right;}
 
 	/* Three Columns */
 
 	/* 3 | 1 Columns */
+		.three1 #clm1		{width:640px; margin:112px 0 0 0;}
+		.three1 #clm2		{width:228px; margin:38px 0 0 0;}
 
 
 
@@ -131,13 +138,13 @@ DESCRIPTION:  	Defines layout - Dimensions, display, floats, position, backgroun
 
 /* ARTICLES */
 	/* Headings */
-		article h1			{margin:0 0 5px;}
-		article h2			{margin:-10px 0 2px 0;}
+		article h1			{margin:0 0 11px; padding:0 0 8px 0; background: url(../img/bg/bgHeading1.png) 0 bottom no-repeat;}
+		article h2			{margin:0 0 8px 0;}
 
 	/* Copy */
-		article p			{padding:0 0 20px 0; text-align:justify;}
-		article ul			{margin:0; padding:2px 0 18px 21px;}
-		article li			{margin:0 0 12px 0; padding:0 0 0 21px; background-position:0 1px;}
+		article p			{padding:0 0 22px 0;}
+		article ul			{margin:0; padding:12px 0 22px 52px;}
+		article li			{padding:0 0 16px 14px; background-position:0 -196px;}
 	
 	/* Footer */
 		article footer		{display:block; width:100%; margin:0; clear:both;}
@@ -148,6 +155,16 @@ DESCRIPTION:  	Defines layout - Dimensions, display, floats, position, backgroun
 	
 
 
+
+
+
+/* Block Quotes */
+	.blockQuote			{width:640px; margin:10px 0 0 0; overflow:hidden;}
+	.blockQuote p,
+	.blockQuote cite	{display:block; width:1px; height:1px; text-indent:-999px; overflow:hidden;}
+	
+	/* Specific Quotes */
+		.bQuote1		{height:117px; background: url(../img/content/blockQuote/bQuote1.png);}
 
 		
 		
