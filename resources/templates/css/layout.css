@@ -96,18 +96,18 @@ DESCRIPTION:  	Defines layout - Dimensions, display, floats, position, backgroun
 	#pageFooter				{width:100%; height:289px; position:absolute; left:0; bottom:0; background: #172732 url(../img/footer/bg.png) repeat-x;}
 	
 	/* Quick Links (Blatently NOT S-E0O) */
-		#nQuickLinks		{width:870px; padding:0 45px 28px; margin:0 auto;}
-		#nQuickLinks dl		{width:154px; margin:95px 80px 0 0; float:left;}
-		#nQuickLinks dl:last-child	{margin-right:0;}
-		#nQuickLinks dt		{width:154px; overflow:hidden; margin:0 0 14px 0; padding:0 0 5px 2px; border-bottom:2px solid #23323d;}
+		#nQuickLinks		{width:870px; padding:0 0 28px; margin:0 auto;}
+		#nQuickLinks dl		{width:154px; margin:95px 84px 0 0; float:left;}
+		#nQuickLinks .last	{margin-right:0;}
+		#nQuickLinks dt		{width:152px; overflow:hidden; margin:0 0 14px 0; padding:0 0 5px 2px; border-bottom:2px solid #23323d;}
 		#nQuickLinks li		{margin:0 0 14px 0; padding:0 0 0 12px; background-position:0 2px;}
 		
 	/* Legal Nav */
-		#nLegal 				{width:846px; margin:3px auto 0;}
+		#nLegal 				{width:860px; margin:3px auto 0;}
 		#nLegal > span,
 		#nLegal > a				{float:right; padding:0 10px; border-right:1px solid #8b9399; border-left:1px solid #515d65;}
 		#nLegal :first-child	{border-right:none;}
-		#nLegal :last-child		{border-left:none;}
+		#nLegal .last			{border-left:none;}
 
 
 

@@ -12,15 +12,15 @@ DESCRIPTION:  	File Fixes IE7 Bugs
 	dl		{float:left !important;}
 	dt 		{float:left !important; clear:left !important;}				
 	dd		{float:none !important;}
-	
-	ol		{padding-left:0;}
-	ol ol	{padding-left:0;}	
+
 
 	/* @group end */
 /* @group end */
 
 
-/* @group 2. Navigation */	
-
+/* MAIN NAV */
 	
-/* @end */
+	/* Main Nav */		
+	/* Search Form */
+		#frmSearch input		{padding:4px 0 0 6px;}
+		#pageFooter ul			{zoom:1;}
