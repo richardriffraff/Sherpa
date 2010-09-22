@@ -65,7 +65,7 @@ body		{font: 12px 'Helvetica Neue', Helvetica, sans-serif; text-align:center; co
 	#fPage a:visited	{color:#707f8c; text-decoration:none; white-space:nowrap; font-size:11px;}
 	#fPage a:hover,
 	#fPage a:focus,
-	#fPage a:active		{text-decoration:underline;}
+	#fPage a:active		{text-decoration:underline; color:#ccc;}
 
 	/* Quick Links (Blatently NOT S E O) */
 		#nQuickLinks dt			{color:#99a6b2; font-size:18px; text-transform:uppercase; white-space:nowrap;}
@@ -99,6 +99,8 @@ body		{font: 12px 'Helvetica Neue', Helvetica, sans-serif; text-align:center; co
 		article h4			{color:#33383c;}
 		
 
+		
+
 	/* Copy */
 		article p				{color:#636363; font-size:12px; line-height:22px; color:#354754;}
 		article .openingShort	{color:#2a2e33;}
@@ -122,16 +124,22 @@ body		{font: 12px 'Helvetica Neue', Helvetica, sans-serif; text-align:center; co
 	/* 1. Share options */	
 
 		.fShare dt	{font:12px Helvetica; color:#99a6b2; line-height:22px;}
+		
 	
 	
+/* ASIDES */
+
+	/* Specific Types */
+		
+		/* Aside 1 */	
+			.aside1 .title				 {font-size:24px;} 
 	
 
 
 /* BOXES */
 
 	/* Box 1 -  */
-
-		
+		.b1 .title					{font-size:20px;}
 
 		
 

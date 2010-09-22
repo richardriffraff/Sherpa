@@ -168,10 +168,10 @@ DESCRIPTION:  	Defines layout - Dimensions, display, floats, position, backgroun
 	/* 1. Share options */	
 		.footerShare		{position:relative; height:38px; margin:10px 0 48px 0; background-position:0 -72px;}
 		.footerShare dl		{position:absolute; right:10px; top:8px;}
-		.footerShare dt		{float:left; margin:0 10px 0 0; width:auto;}
+		.footerShare dt		{float:left; margin:0 10px 0 0; width:auto; line-height:22px;}
 		.footerShare dd,
 		.footerShare ul		{float:left; margin:0; padding:0;}
-		.footerShare li		{float:left; margin:0 10px 0 0; padding:0; background:none;}
+		.footerShare li		{float:left; margin:0 7px 0 0; padding:0; background:none;}
 		.footerShare a		{float:left; width:20px; height:20px; overflow:hidden; text-indent:-9999px;}
 	
 		/* Icons */	
@@ -190,7 +190,7 @@ DESCRIPTION:  	Defines layout - Dimensions, display, floats, position, backgroun
 	/* Specific Types */
 		
 		/* Aside 1 */			
-			.aside1		{}
+			.aside1 .title		{margin:0 0 11px; padding:0 0 8px 0; background: url(../img/bg/bgHeading1.png) 0 bottom no-repeat;}
 	
 
 
@@ -212,7 +212,7 @@ DESCRIPTION:  	Defines layout - Dimensions, display, floats, position, backgroun
 	/* Specific Quotes */
 		.bQuote1		{height:117px; background: url(../img/content/blockQuote/bQuote1.png);}
 
-		
+
 		
 		
 		
@@ -221,11 +221,21 @@ DESCRIPTION:  	Defines layout - Dimensions, display, floats, position, backgroun
 	.box img			{display:block; position:relative;}
 		
 	/* Box 1 - */
+		.b1			 {padding:0 20px; width:284px; background:#f00; float:left; margin-bottom:16px;} 
+		.b1Center	 {margin-right:none;} 
+		.b1 .title	 {background:none;}
 
 
+/* BUTTONS */
 
-
-
+	.btn				{display:block; position: relative; padding:0; margin: 0; background:none; border:none; outline: none; overflow: hidden; font-weight:600 !important; color:#fff; white-space: nowrap; line-height: 9px !important;}	
+		.btn span			{float:left; width:auto; height:15px; padding:7px 0 0 10px; line-height: 9px !important; font-size:9px !important; text-transform:uppercase; font-family:"Helvetica Neue", Helvetica, Arial;}
+		.btn i				{float:left; width:9px; height:22px;}
+		a.btn, 
+		a.btn:link, 
+		a.btn:visited, 
+		a.btn:hover, 
+		a.btn:active		{color: #fff; cursor:pointer;}
 
 
 
