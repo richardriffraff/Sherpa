@@ -22,6 +22,7 @@ DESCRIPTION:  	Defines layout - Dimensions, display, floats, position, backgroun
 
 				
 	/* Quickfix Classes */
+		.hide			{display:none;}
 		.clearB			{clear: both;}
 		.clearL			{clear: left;}
 		.clearR			{clear: right;}
