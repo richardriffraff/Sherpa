@@ -115,6 +115,16 @@ body		{font: 12px 'Helvetica Neue', Helvetica, sans-serif; text-align:center; co
 	
 	
 	
+	
+
+/* ARTICLE FOOTERS */
+
+	/* 1. Share options */	
+
+		.fShare dt	{font:12px Helvetica; color:#99a6b2; line-height:22px;}
+	
+	
+	
 
 
 /* BOXES */

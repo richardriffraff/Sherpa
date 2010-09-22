@@ -17,7 +17,8 @@ DESCRIPTION:  	Defines layout - Dimensions, display, floats, position, backgroun
 	header,
 	footer,
 	nav,
-	article				{display:block;}
+	article,
+	aside				{display:block;}
 
 				
 	/* Quickfix Classes */
@@ -40,12 +41,15 @@ DESCRIPTION:  	Defines layout - Dimensions, display, floats, position, backgroun
 		#mainBar,
 		#nMain strong,
 		#frmSearch input,
-		#frmSearch button	{background: url(../img/sprites/01spr_interface_8bit.png);}
+		#frmSearch button,
+		.footerShare			{background: url(../img/sprites/01spr_interface_8bit.png);}
 	
 	
 	/* 2. Icons - 8 Bit */
 		#nQuickLinks li,
-		article li			{background: url(../img/sprites/02spr_icons_8bit.png); background-repeat:no-repeat;}
+		article li,
+		.footerShare .fb,
+		.footerShare .tw		{background: url(../img/sprites/02spr_icons_8bit.png); background-repeat:no-repeat;}
 
 
 
@@ -152,16 +156,58 @@ DESCRIPTION:  	Defines layout - Dimensions, display, floats, position, backgroun
 	/* Specific Types */
 		
 		/* Article 1  */
+		
+		
+		
+		
+		
+	
+	
+/* ARTICLE FOOTERS */
+	
+	/* 1. Share options */	
+		.footerShare		{position:relative; height:38px; margin:10px 0 48px 0; background-position:0 -72px;}
+		.footerShare dl		{position:absolute; right:10px; top:8px;}
+		.footerShare dt		{float:left; margin:0 10px 0 0; width:auto;}
+		.footerShare dd,
+		.footerShare ul		{float:left; margin:0; padding:0;}
+		.footerShare li		{float:left; margin:0 10px 0 0; padding:0; background:none;}
+		.footerShare a		{float:left; width:20px; height:20px; overflow:hidden; text-indent:-9999px;}
+	
+		/* Icons */	
+			.footerShare .fb		{background-position:0 -399px;}
+			.footerShare .tw		{width:34px; height:20px; background-position:0 -419px;}
+			
+			/* Hover */
+				.footerShare .fb:hover		{background-position:-24px -399px;}
+				.footerShare .tw:hover		{background-position:-34px -419px;}
+				
+				
+				
+				
+/* ASIDES */
+	
+	/* Specific Types */
+		
+		/* Aside 1 */			
+			.aside1		{}
 	
 
 
 
 
 
-/* Block Quotes */
-	.blockQuote			{width:640px; margin:10px 0 0 0; overflow:hidden;}
+
+
+
+/* BLOCK QUOTES */
+	.blockQuote			{margin:10px 0 22px 0; overflow:hidden;}
 	.blockQuote p,
 	.blockQuote cite	{display:block; width:1px; height:1px; text-indent:-999px; overflow:hidden;}
+	
+	/* Column Containers */
+		#clm1 .blockQuote	{width:640px;}	
+	
 	
 	/* Specific Quotes */
 		.bQuote1		{height:117px; background: url(../img/content/blockQuote/bQuote1.png);}
