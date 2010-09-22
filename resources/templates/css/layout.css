@@ -135,8 +135,11 @@ DESCRIPTION:  	Defines layout - Dimensions, display, floats, position, backgroun
 	#template #clm1			{float:left;}
 	#template #clm2			{float:right; position:relative;}
 	
-	#template #clm2			{background: url(../img/bg/bgClm2.png) no-repeat 0 top; min-height:560px; width:314px; margin-right:-13px;} 
-	#template .clm2Bottom	{background: url(../img/bg/bgClm2.png) no-repeat 0 bottom; width:314px; height:15px; position:absolute; bottom:-15px; left:0;} 
+	#template #clm2				{background: url(../img/bg/bgClm2.png) no-repeat 0 top; min-height:560px; width:314px; margin-right:-13px;} 
+	#template .clm2Bottom		{background: url(../img/bg/bgClm2.png) no-repeat 0 bottom; width:314px; height:15px; position:absolute; bottom:-15px; left:0;}
+	#template #clm2	.content	{padding:27px 33px;} 
+	
+	#clm2 hr					{background: url(../img/bg/bgClm2HR.png) repeat-x 0 0; height:3px; margin-bottom:10px;}
 	/* Three Columns */
 
 	/* 3 | 1 Columns */
@@ -236,13 +239,13 @@ DESCRIPTION:  	Defines layout - Dimensions, display, floats, position, backgroun
 		
 	
 	/* Box 2 - Sherpa Clinic (Blue) */
-		.b2			 		{background: url(../img/bg/bgB2.png) no-repeat 0 0; height:145px; padding:20px 29px 0 29px; width:208px; text-decoration:none;}
+		.b2			 		{background: url(../img/bg/bgB2.png) no-repeat 0 0; height:145px; margin-left:-9px; padding:20px 29px 0 29px; width:208px; text-decoration:none;}
 		.b2:hover	 		{text-decoration:none;}
 		.b2 .title			{padding:0; margin-bottom:3px;}
 			
 	
 	/* Box 3 - Sherpa Catalyst (Blue) */
-		.b3			 		{background: url(../img/bg/bgB3.png) no-repeat 0 0; height:145px; padding:20px 29px 0; width:208px; text-decoration:none;}
+		.b3			 		{background: url(../img/bg/bgB3.png) no-repeat 0 0; height:145px; margin-left:-9px; padding:20px 29px 0; width:208px; text-decoration:none;}
 		.b3:hover	 		{text-decoration:none;}
 		.b3 .title			{padding:0; margin-bottom:3px;}
 
