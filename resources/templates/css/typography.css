@@ -140,6 +140,7 @@ body		{font: 12px 'Helvetica Neue', Helvetica, sans-serif; text-align:center; co
 
 	/* Box 1 -  */
 		.b1 .title					{font-size:20px;}
+		.b1 p						{color:#464a29; line-height:16px;}
 
 		
 

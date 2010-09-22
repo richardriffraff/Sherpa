@@ -222,9 +222,11 @@ DESCRIPTION:  	Defines layout - Dimensions, display, floats, position, backgroun
 	.box img			{display:block; position:relative;}
 		
 	/* Box 1 - */
-		.b1			 {padding:0 20px; width:284px; background:#f00; float:left; margin-bottom:16px;} 
-		.b1Center	 {margin-right:none;} 
-		.b1 .title	 {background:none;}
+		.b1			 {background: url(../img/bg/bgB1.png) no-repeat 0 top; float:left; margin-left:-5px; padding:20px 25px 0; position:relative; width:274px;}
+		.b1:hover	 {text-decoration:none;}  
+		.b1Bottom	 {background: url(../img/bg/bgB1.png) no-repeat 0 bottom; height:12px; width:324px; position:absolute; bottom:-20xp; left:0;} 
+		.b1 .title	 {background:none; padding:0; margin-bottom:7px;}
+		.b1 p		 {margin-bottom:10px;}
 
 
 /* BUTTONS */
