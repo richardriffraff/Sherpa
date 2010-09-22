@@ -132,30 +132,41 @@ body		{font: 12px 'Helvetica Neue', Helvetica, sans-serif; text-align:center; co
 	/* Specific Types */
 		
 		/* Aside 1 */	
-			.aside1 .title				 {font-size:24px;} 
+			.aside1 .title				 {font-size:24px;}
+			.aside2 .title				 {font-size:24px;} 
+			.aside2 .title span			 {color:#99a6b2; font-size:16px;} 
 	
 
 
 /* BOXES */
 
-	/* Box 1 -  */
+	/* Box 1 - Case Studies (Green) */
 		.b1 .title					{font-size:20px;}
 		.b1 p						{color:#464a29; line-height:16px;}
-
-		
-
+		.b1:hover p 				{color:#292C2F;}		
+	
+	/* Box 2 - Sherpa Clinic (Blue) */
+		.b2 .title					{color:#fff; font-size:20px;}
+		.b2 p		 				{color:#bfd5e2; line-height:18px;} 
+		.b2 p:hover	 				{color:#d9ebf7;} 
+	
+	/* Box 3 - Sherpa Catalyst (Blue) */
+		.b3 .title					{color:#fff; font-size:20px;}
+		.b3 p						{color:#bfd5e2; line-height:18px;} 	
+		.b3 p:hover	 				{color:#d9ebf7;} 
 
 
 
 /* BUTTONS */
 	.btn			{color:#fff; white-space: nowrap; }	
-	.btn span		{line-height: 100%; font-size:10px !important; text-transform:uppercase; font-family: Verdana; font-weight: bold; }
+	.btn span		{line-height: 30px; font-size:11px !important; text-transform:uppercase; font-family: "Helvetica"; font-weight: bold; color:#eee;}
+	.btn span:hover	{color:#fff;} 
 	a.btn, 
 	a.btn:link, 
 	a.btn:visited, 
 	a.btn:hover, 
 	a.btn:active,
-	a.btn span			{color: #fff; }
+	a.btn span			{color: #fff;}
 
 
 

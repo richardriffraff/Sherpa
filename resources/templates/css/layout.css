@@ -51,6 +51,10 @@ DESCRIPTION:  	Defines layout - Dimensions, display, floats, position, backgroun
 		article li,
 		.footerShare .fb,
 		.footerShare .tw		{background: url(../img/sprites/02spr_icons_8bit.png); background-repeat:no-repeat;}
+		
+	/* 3. Buttons - 24 Bit */
+		.btn span,
+		.btn i					{background: url(../img/sprites/03spr_buttons_24bit.png); background-repeat:no-repeat;} 
 
 
 
@@ -129,8 +133,10 @@ DESCRIPTION:  	Defines layout - Dimensions, display, floats, position, backgroun
 /* COLUMN SYSTEMS */
 	#template				{width:954px; margin:0 auto;}
 	#template #clm1			{float:left;}
-	#template #clm2			{float:right;}
-
+	#template #clm2			{float:right; position:relative;}
+	
+	#template #clm2			{background: url(../img/bg/bgClm2.png) no-repeat 0 top; min-height:560px; width:314px; margin-right:-13px;} 
+	#template .clm2Bottom	{background: url(../img/bg/bgClm2.png) no-repeat 0 bottom; width:314px; height:15px; position:absolute; bottom:-15px; left:0;} 
 	/* Three Columns */
 
 	/* 3 | 1 Columns */
@@ -221,25 +227,24 @@ DESCRIPTION:  	Defines layout - Dimensions, display, floats, position, backgroun
 	.box,
 	.box img			{display:block; position:relative;}
 		
-	/* Box 1 - */
-		.b1			 {background: url(../img/bg/bgB1.png) no-repeat 0 top; float:left; margin-left:-5px; padding:20px 25px 0; position:relative; width:274px;}
-		.b1:hover	 {text-decoration:none;}  
-		.b1Bottom	 {background: url(../img/bg/bgB1.png) no-repeat 0 bottom; height:12px; width:324px; position:absolute; bottom:-20xp; left:0;} 
-		.b1 .title	 {background:none; padding:0; margin-bottom:7px;}
-		.b1 p		 {margin-bottom:10px;}
-
-
-/* BUTTONS */
-
-	.btn				{display:block; position: relative; padding:0; margin: 0; background:none; border:none; outline: none; overflow: hidden; font-weight:600 !important; color:#fff; white-space: nowrap; line-height: 9px !important;}	
-		.btn span			{float:left; width:auto; height:15px; padding:7px 0 0 10px; line-height: 9px !important; font-size:9px !important; text-transform:uppercase; font-family:"Helvetica Neue", Helvetica, Arial;}
-		.btn i				{float:left; width:9px; height:22px;}
-		a.btn, 
-		a.btn:link, 
-		a.btn:visited, 
-		a.btn:hover, 
-		a.btn:active		{color: #fff; cursor:pointer;}
-
+	/* Box 1 - Case Studies (Green) */
+		.b1			 		 {background: url(../img/bg/bgB1.png) no-repeat 0 top; float:left; margin-left:-5px; padding:20px 25px 0; position:relative; width:274px; text-decoration:none;}
+		.b1:hover	 		 {text-decoration:none;}
+		.b1Bottom			 {background: url(../img/bg/bgB1.png) no-repeat 0 bottom; height:12px; width:324px; position:absolute; bottom:-10px; left:0;} 
+		.b1 .title			 {background:none; padding:0; margin-bottom:7px;}
+		.b1 p				 {margin-bottom:10px;}
+		
+	
+	/* Box 2 - Sherpa Clinic (Blue) */
+		.b2			 		{background: url(../img/bg/bgB2.png) no-repeat 0 0; height:145px; padding:20px 29px 0 29px; width:208px; text-decoration:none;}
+		.b2:hover	 		{text-decoration:none;}
+		.b2 .title			{padding:0; margin-bottom:3px;}
+			
+	
+	/* Box 3 - Sherpa Catalyst (Blue) */
+		.b3			 		{background: url(../img/bg/bgB3.png) no-repeat 0 0; height:145px; padding:20px 29px 0; width:208px; text-decoration:none;}
+		.b3:hover	 		{text-decoration:none;}
+		.b3 .title			{padding:0; margin-bottom:3px;}
 
 
 
@@ -247,29 +252,33 @@ DESCRIPTION:  	Defines layout - Dimensions, display, floats, position, backgroun
 
 	/* 1. */
 
-		
 
-	
-	
-	
-	
 
 /* BUTTONS */
 	.btn,
-	button.btn 					{display: block;position: relative;padding: 0;margin: 0;height: 21px;background: none;border: none;outline: none;overflow: hidden;cursor: pointer;}
-	.btn span 					{float: left;width: auto;height: 15px;padding: 6px 0 0 9px;}
-	.btn i 						{float: left;width: 12px;height: 21px;}
+	button.btn 					{display: block;position: relative;padding: 0;margin: 0;height: 30px;background: none;border: none;outline: none;overflow: hidden;cursor: pointer;}
+	.btn span 					{float:left; width:auto; height:30px; padding:0 0 0 33px;}
+	.btn i 						{float:left; width:18px; height:30px;}
 
 	button.btn,
 	.btn,
 	button::-moz-focus-inner 	{padding: 0;border: none;margin: 0;padding: 0;outline: none;border: none;}
 	button.btn 					{display: block;position: relative;outline: none;border: none;padding: 0;background: none;}
 
-	/* Specific Styles (Default)*/
-		.btn1 span 			{background-position: left -28px;}
-		.btn1 i 			{background-position: right -28px;}
-		.btn1:hover span 	{background-position: left -156px;}
-		.btn1:hover i 		{background-position: right -156px;}
+	/* Specific Styles (Default - Orange)*/
+		.btn1 span 			{background-position: left 0;}
+		.btn1 i 			{background-position: right 0;}
+		.btn1:hover span 	{background-position: left -31px;}
+		.btn1:hover i 		{background-position: right -31px;}
+
+		.b1 .btn1			{float:right; margin:-15px 25px 0 0;} 
+		
+	/* Specific Styles (Promo - Green)*/
+		.btn2 span 			{background-position: left -62px;}
+		.btn2 i 			{background-position: right -62px;}
+		.btn2:hover span 	{background-position: left -93px;}
+		.btn2:hover i 		{background-position: right -93px;}
+		.btn2				{position:absolute; bottom:18px; right:29px;} 			
 
 	
 	
