@@ -144,6 +144,22 @@ body		{font: 12px 'Helvetica Neue', Helvetica, sans-serif; text-align:center; co
 
 		
 
+
+
+
+/* BUTTONS */
+	.btn			{color:#fff; white-space: nowrap; }	
+	.btn span		{line-height: 100%; font-size:10px !important; text-transform:uppercase; font-family: Verdana; font-weight: bold; }
+	a.btn, 
+	a.btn:link, 
+	a.btn:visited, 
+	a.btn:hover, 
+	a.btn:active,
+	a.btn span			{color: #fff; }
+
+
+
+
 	
 /* ICONS */	
 	/* Red Arrow, right side */
