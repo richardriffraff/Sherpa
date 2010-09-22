@@ -108,7 +108,7 @@ body		{font: 12px 'Helvetica Neue', Helvetica, sans-serif; text-align:center; co
 		article a:visited 	{color: #f06c21; text-decoration:none;}
 		article a:hover,
 		article a:focus,
-		article a:active 	{text-decoration:underline;}
+		article a:active 	{color:#f38c51; text-decoration:underline;}
 		article li			{color:#0e171e; font-size:12px;}
 		
 		/* Specific Types */
@@ -130,12 +130,54 @@ body		{font: 12px 'Helvetica Neue', Helvetica, sans-serif; text-align:center; co
 /* ASIDES */
 
 	/* Specific Types */
+	
 		
 		/* Aside 1 */	
 			.aside1 .title				 {font-size:24px;}
 			.aside2 .title				 {font-size:24px;} 
 			.aside2 .title span			 {color:#99a6b2; font-size:16px;} 
 	
+
+
+
+/* SECTIONS (An excerpt of a document with a heading + links to it) */
+
+	/* Specific Types */
+
+		/* Section 1 */
+			.section1 .title	{font-size:32px; color:#192a36; line-height:32px;}
+			.section1 p 		{font-size:14px; color:#536321; line-height:18px;}			
+
+		/* Section 2 */
+			.section2			{float:left; width:191px; margin:0 0 20px 0; padding:0 0 0 22px; }
+			.section2 .title	{font-size:22px; line-height:24px; color:#192a36;}
+
+
+
+/* LISTS */
+
+	/* 1. */
+
+
+	/* 2. A List of Blog Posts with dates */
+		.nav2 .title	{font-size:24px; line-height:24px; color:#192a36;}
+		.nav2 li		{font-size:12px; line-height:14px;}
+		.nav2 li a,
+		.nav2 li a:link,
+		.nav2 li a:visited	{color:#354754; text-decoration:none;}
+		.nav2 li a:hover,
+		.nav2 li a:focus,
+		.nav2 li a:active	{color:#192a36;}
+		
+		.nav2 li a small,
+		.nav2 li a:link small,
+		.nav2 li a:visited small	{color:#f06c21; font-size:11px;}
+		.nav2 li a:hover small,
+		.nav2 li a:focus  small,
+		.nav2 li a:active small		{color:#f38c51;}
+		
+
+
 
 
 /* BOXES */
@@ -157,9 +199,12 @@ body		{font: 12px 'Helvetica Neue', Helvetica, sans-serif; text-align:center; co
 
 
 
+
+
+
 /* BUTTONS */
-	.btn			{color:#fff; white-space: nowrap; }	
-	.btn span		{line-height: 30px; font-size:11px !important; text-transform:uppercase; font-family: "Helvetica"; font-weight: bold; color:#eee;}
+	.btn			{color:#fff; white-space: nowrap;  text-decoration:none !important;}	
+	.btn span		{line-height: 28px; font-size:bold 11px Helvetica !important; color:#eee; text-shadow:1px 1px 1px #b0531f; }
 	.btn span:hover	{color:#fff;} 
 	a.btn, 
 	a.btn:link, 
@@ -167,6 +212,14 @@ body		{font: 12px 'Helvetica Neue', Helvetica, sans-serif; text-align:center; co
 	a.btn:hover, 
 	a.btn:active,
 	a.btn span			{color: #fff;}
+	
+	/* Specific Styles (Default - Orange)*/
+		
+	/* Specific Styles (Promo - Green)*/
+		.btn2 span 			{text-shadow:1px 1px 1px #9eac3f;}
+
+	/* Specific Styles (Promo - Green)*/
+		.btn3 span 			{font-size:15px !important; line-height:33px;}
 
 
 
