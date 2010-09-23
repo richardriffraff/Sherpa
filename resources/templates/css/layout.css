@@ -116,7 +116,7 @@ DESCRIPTION:  	Defines layout - Dimensions, display, floats, position, backgroun
 		#frmSearch				{padding:9px 23px; float:right; position:absolute; top:0; right:0;}
 		#frmSearch legend,
 		#frmSearch label		{display:none;}
-		#frmSearch input		{float:left; width:159px; height:20px; padding:2px 0 0 6px; border:none; background-position:-320px -39px;}
+		#frmSearch input		{float:left; width:159px; height:19px; padding:2px 0 0 6px; border:none; background-position:-320px -39px;}
 		#frmSearch button		{float:left; width:22px; height:20px; text-indent:-999px; overflow:hidden; border:none; background-position:-481px -39px;}
 		#frmSearch button:hover	{cursor:pointer; background-position:-505px -39px;}
 	

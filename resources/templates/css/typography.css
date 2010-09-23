@@ -47,7 +47,7 @@ body		{font: 12px 'Helvetica Neue', Helvetica, sans-serif; text-align:center; co
 
 		
 	/* Search Form */
-		#frmSearch input		{color:#9fabb3; font: 11px 'Helvetica', sans-serif; line-height:20px;}
+		#frmSearch input		{color:#9fabb3; font: 11px 'Helvetica', sans-serif; line-height:17px !important;}
 		#frmSearch input:hover,
 		#frmSearch input:focus	{color:#0f181f;}
 		#frmSearch button		{float:left; width:22px; height:20px; text-indent:-999px; overflow:hidden; border:none; background-position:-481px -39px;}
