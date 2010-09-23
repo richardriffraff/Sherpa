@@ -329,6 +329,8 @@ DESCRIPTION:  	Defines layout - Dimensions, display, floats, position, backgroun
 		.aOffset2		{margin-left:-5px !important; float:left;} /* Green Case Study box (left) */	
 		.aOffset3		{margin-right:-5px !important; float:right;} /* Green Case Study box (right) */
 		
+		.bOffset1		{margin-top:-3px !important; margin-left:-9px !important;}
+		
 
 
 	/* 1. */
