@@ -53,7 +53,9 @@ DESCRIPTION:  	Defines layout - Dimensions, display, floats, position, backgroun
 		article li,
 		.footerShare .fb,
 		.footerShare .tw,
-		.section2 li			{background: url(../img/sprites/02spr_icons_8bit.png); background-repeat:no-repeat;}
+		.section2 li,
+		.nav2 .rss,
+		.nav2 .tw			{background: url(../img/sprites/02spr_icons_8bit.png); background-repeat:no-repeat;}
 		
 	/* 3. Buttons - 24 Bit */
 		.btn span,
@@ -298,11 +300,22 @@ DESCRIPTION:  	Defines layout - Dimensions, display, floats, position, backgroun
 	/* 2. A List of Blog Posts with dates */
 		.nav2 			{margin:0 0 20px 0; position:relative;}
 		.nav2 .title	{margin:0 0 12px 0;}
-		.nav2 li		{margin:0 0 20px 0;}
+		.nav2 li		{margin:0 0 15px 0;}
 		.nav2 small		{display:block;}
 		.nav2 .btn		{float:right;}
-		.nav2 .rss		{position:absolute; top:0; right:0;}
-		.nav2 .tw		{position:absolute; top:0; right:0;}
+		
+		/* The icons */
+			.nav2 .rss,
+			.nav2 .tw		{position:absolute; top:0; right:-5px; text-indent:-9999px; overflow:hidden;}
+			
+			.nav2 .rss		{width:25px; height:25px; background-position:0 -438px;}
+			.nav2 .tw		{width:40px; height:25px; background-position:0 -463px;}
+			
+			/* Hover + Focus */
+				.nav2 .rss:hover,
+				.nav2 .rss:focus		{background-position:-25px -438px;}
+				.nav2 .tw:hover,
+				.nav2 .tw:focus			{background-position:-40px -463px;}
 	
 
 
