@@ -208,6 +208,25 @@ body		{font: 12px 'Helvetica Neue', Helvetica, sans-serif; text-align:center; co
 		.nav4 a:hover,
 		.nav4 a:focus,
 		.nav4 a:active				{color:#192a36;}
+		
+	/* 3. Blog - RIGHT COLUMN */
+		.nav5 .title			{font-size:24px; line-height:24px; color:#192a36;}
+		.nav5 .title span		{color:#99a6b2; font-size:16px;} 
+		.nav5 li				{font-size:12px; line-height:14px;}
+		.nav5 li a,
+		.nav5 li a:link,
+		.nav5 li a:visited		{color:#f06c21; text-decoration:none;}
+		.nav5 li a:hover,
+		.nav5 li a:focus,
+		.nav5 li a:active		{color:#f38c51;}
+		
+		
+		.nav5 li a small,
+		.nav5 li a:link small,
+		.nav5 li a:visited small	{color:#f06c21; font-size:11px;}
+		.nav5 li a:hover small,
+		.nav5 li a:focus  small,
+		.nav5 li a:active small		{color:#f38c51;}
 
 
 
