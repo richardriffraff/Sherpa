@@ -33,3 +33,9 @@ DESCRIPTION:  	File Fixes IE6 Bugs
 		
 /* MAIN NAV */
 	#frmSearch	{width:200px;}
+	
+	
+	
+/* Double Margin Bug */
+
+.nav4 li {margin:0 0 16px 10px;}
