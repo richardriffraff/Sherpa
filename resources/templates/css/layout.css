@@ -224,8 +224,8 @@ DESCRIPTION:  	Defines layout - Dimensions, display, floats, position, backgroun
 	/* Specific Types */
 	
 		/* Section 1 */
-			.section1			{min-height:250px; padding:0 0 22px 20px;}
-			.section1 .s1Img	{float:right; position:relative; top:-16px;}
+			.section1			{height:250px; padding:0 0 22px 20px; position:relative;}
+			.section1 .s1Img	{position:absolute; right:0; top:-12px;}
 			.section1 .title	{width:420px; margin:7px 0 5px 0;}	
 			.section1 p 		{width:380px; padding:0 0 22px 0;}	
 			
