@@ -126,7 +126,7 @@ body		{font: 12px 'Helvetica Neue', Helvetica, sans-serif; text-align:center; co
 	/* 1. Share options */	
 
 		.fShare dt	{font:12px Helvetica; color:#99a6b2; line-height:22px;}
-		
+		.footerShare dt		{line-height:22px;}
 	
 	
 /* ASIDES */
@@ -305,9 +305,11 @@ body		{font: 12px 'Helvetica Neue', Helvetica, sans-serif; text-align:center; co
 		.frmComment legend	{font-size:18px; color:#192a36;}
 		.frmComment dt		{color:#7b858f; font-weight:bold;}
 		
-		.frmComment input		{color:#9fabb3; font: 11px 'Helvetica', sans-serif;}
+		.frmComment input				{color:#9fabb3; font: 11px 'Helvetica', sans-serif;}
 		.frmComment input:hover,
-		.frmComment input:focus	{color:#0f181f;}
-		
+		.frmComment input:focus			{color:#0f181f;}
+		.frmComment .textarea			{color:#9fabb3; font: 11px 'Helvetica', sans-serif;}
+		.frmComment .textarea:hover,
+		.frmComment .textarea:focus		{color:#0f181f;}
 		
 

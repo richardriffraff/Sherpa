@@ -211,7 +211,7 @@ DESCRIPTION:  	Defines layout - Dimensions, display, floats, position, backgroun
 
 		.footerShare		{position:relative; height:37px; margin:15px 0 30px 0; background-position:0 -72px;}
 		.footerShare dl		{position:absolute; right:10px; top:8px;}
-		.footerShare dt		{float:left; margin:0 10px 0 0; width:auto; line-height:24px;}
+		.footerShare dt		{float:left; margin:0 10px 0 0; width:auto;}
 		.footerShare dd,
 		.footerShare ul		{float:left; margin:0; padding:0;}
 		.footerShare li		{float:left; margin:1px 7px 0 0; padding:0; background:none;}
@@ -483,9 +483,9 @@ DESCRIPTION:  	Defines layout - Dimensions, display, floats, position, backgroun
 ************************************************/	
 	
 	/* Blog Index page */
-		.item				{clear:both; margin-bottom:50px;}
-		.item:hover			{}
-		.item p				{clear:both; padding-bottom:0}
+		.item				{clear:left; margin-bottom:55px;}
+		.item:hover			{text-decoration:none; border:none;}
+		.item p				{padding-bottom:0}
 		.meta				{float:right; margin:10px 5px 0 0; padding:0;}
 		.meta small			{color:#9eabb6;}
 		.meta li			{background: url(../img/bg/bgDividerBlog.png) no-repeat 0 0; float:left; padding:2px 0 2px 12px;}
@@ -501,12 +501,12 @@ DESCRIPTION:  	Defines layout - Dimensions, display, floats, position, backgroun
 		#comments cite a	{margin-bottom:3px; display:block;}
 		
 		.frmComment legend				{margin:0 0 11px; padding:0 0 8px 0; background: url(../img/bg/bgHeading1.png) 0 bottom no-repeat; width:100%;}
-		.frmComment dl					{margin:15px 0 0 28px; line-height:22px;}
+		.frmComment dl					{margin:0 0 0 28px; line-height:22px; padding-top:30px;}
 		.frmComment dt					{float:left; width:80px;}
 		.frmComment dd					{margin-bottom:14px; vertical-align:top; }
 		.frmComment .textfield			{background-position: 0 -109px; border:none; height:20px; padding:2px 0 0 7px ;width:343px;}
 		.frmComment .textfield:focus	{background-position: -350px -109px;}
-		.frmComment .textarea			{background-position: 0 -131px; border:none; height:72px; margin:0; padding:0 0 0 7px; width:343px;}
+		.frmComment .textarea			{background-position: 0 -131px; border:none; height:66px; margin:0; padding:6px 0 0 7px; width:343px;}
 		.frmComment .textarea:focus		{background-position: -350px -131px;}
 		
 		.frmComment .btn1				{float:right; margin-right:177px;}
