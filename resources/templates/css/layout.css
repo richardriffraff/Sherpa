@@ -163,6 +163,7 @@ DESCRIPTION:  	Defines layout - Dimensions, display, floats, position, backgroun
 	#template .clm2Bottom		{background: url(../img/bg/bgClm2.png) no-repeat 0 bottom; width:314px; z-index:-1; height:15px; position:absolute; bottom:-15px; left:0;}
 	
 	#clm2 .hr					{background: url(../img/bg/bgClm2HR.png) repeat-x 0 0; height:3px; width:100%; padding:0 16px; margin:0 0 10px -16px;}
+		#clm2 .blog .hr			{margin-bottom:20px;}
 	#clm2 hr					{display:none;}
 	
 	/* Three Columns */
@@ -183,10 +184,10 @@ DESCRIPTION:  	Defines layout - Dimensions, display, floats, position, backgroun
 /* ARTICLES */
 	/* Headings */
 		article h1				{margin:0 0 11px; padding:0 0 8px 0; background: url(../img/bg/bgHeading1.png) 0 bottom no-repeat; float:left; width:100%;}
-			article h1 .date		{clear:both;margin:3px 5px 0 0; float:right;}
+			article h1 .date		{clear:both;margin:4px 5px 0 0; float:right;}
 		.article h2					{margin:0 0 8px 0;}
 		.article2 h2				{margin:0 0 11px; padding:0 0 8px 0; background: url(../img/bg/bgHeading1.png) 0 bottom no-repeat;  width:100%; float:left;}
-			.article2 h2 .date		{ margin:3px 5px 0 0; float:right;}
+			.article2 h2 .date		{ margin:2px 5px 0 0; float:right;}
 	/* Copy */
 		article p			{padding:0 0 22px 0;}
 		article ul			{margin:0; padding:12px 0 22px 52px;}
@@ -390,7 +391,7 @@ DESCRIPTION:  	Defines layout - Dimensions, display, floats, position, backgroun
 		.nav4 li		{float:left; margin:0 0 16px 20px; padding-left:15px; width:285px; background: url(../img/sprites/02spr_icons_8bit.png) no-repeat 0 -798px;}
 
 	/*  5. Links to pages - RIGHT COLUMN */
-		.nav5 			{margin:0 0 20px 0; position:relative;}
+		.nav5 			{margin:0 0 10px 0; position:relative;}
 		.nav5 .title	{margin:0 0 12px 0;}
 		.nav5 li		{background-position:0 -798px; margin:0 0 12px 5px; padding-left:13px;}
 		.nav5 small		{display:block;}
@@ -503,13 +504,13 @@ DESCRIPTION:  	Defines layout - Dimensions, display, floats, position, backgroun
 		.frmComment legend				{margin:0 0 11px; padding:0 0 8px 0; background: url(../img/bg/bgHeading1.png) 0 bottom no-repeat; width:100%;}
 		.frmComment dl					{margin:0 0 0 28px; line-height:22px; padding-top:30px;}
 		.frmComment dt					{float:left; width:80px;}
-		.frmComment dd					{margin-bottom:14px; vertical-align:top; }
-		.frmComment .textfield			{background-position: 0 -109px; border:none; height:20px; padding:2px 0 0 7px ;width:343px;}
+		.frmComment dd					{margin:0 0 14px 0; padding:0; }
+		.frmComment .textfield			{background-position: 0 -109px; border:none; height:18px; padding:4px 0 1px 7px ;width:343px; margin:0; line-height: 22px;}
 		.frmComment .textfield:focus	{background-position: -350px -109px;}
-		.frmComment .textarea			{background-position: 0 -131px; border:none; height:66px; margin:0; padding:6px 0 0 7px; width:343px;}
-		.frmComment .textarea:focus		{background-position: -350px -131px;}
+		.frmComment .textarea			{background-position: 0 -132px; border:none; height:66px; margin:0; padding:6px 0 0 7px; width:343px;}
+		.frmComment .textarea:focus		{background-position: -350px -132px;}
 		
-		.frmComment .btn1				{float:right; margin-right:177px;}
+		.frmComment .btn1				{float:right; margin-right:180px;}
 		
 
 
