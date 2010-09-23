@@ -273,14 +273,14 @@ DESCRIPTION:  	Defines layout - Dimensions, display, floats, position, backgroun
 		.b2			 	{background: url(../img/bg/bgB2.png) no-repeat 0 0; height:145px; margin-left:-9px; padding:20px 29px 0 29px; width:208px; text-decoration:none;}
 		.b2:hover	 	{text-decoration:none;}
 		.b2 .title		{padding:0; margin-bottom:3px;}
-		.b2 .btn2		{position:absolute; bottom:18px; right:29px;} 
+		.b2 .btn2		{position:absolute; bottom:18px; right:25px;} 
 			
 	
 	/* Box 3 - Sherpa Catalyst (Blue) */
 		.b3			 	{background: url(../img/bg/bgB3.png) no-repeat 0 0; height:145px; margin-left:-9px; padding:20px 29px 0; width:208px; text-decoration:none;}
 		.b3:hover	 	{text-decoration:none;}
 		.b3 .title		{padding:0; margin-bottom:3px;}
-
+		.b3 .btn2		{position:absolute; bottom:18px; right:25px;} 
 
 
 /* LISTS */
@@ -308,7 +308,7 @@ DESCRIPTION:  	Defines layout - Dimensions, display, floats, position, backgroun
 	/* 3. A List of services (Links to other pages) */
 		.nav3 			{margin:0 0 20px 0; position:relative;}
 		.nav3 .title	{margin:0 0 12px 0;}
-		.nav3 li		{background: url(../img/sprites/02spr_icons_8bit.png) no-repeat 0 3px; margin:0 0 20px 5px; padding-left:13px;}
+		.nav3 li		{background: url(../img/sprites/02spr_icons_8bit.png) no-repeat 0 -798px; margin:0 0 20px 5px; padding-left:13px;}
 		.nav3 small		{display:block;}
 		.nav3 .btn		{float:right;}
 		.nav3 .rss		{position:absolute; top:0; right:0;}
@@ -336,15 +336,27 @@ DESCRIPTION:  	Defines layout - Dimensions, display, floats, position, backgroun
 		.btn1:hover i,
 		.btn1:focus i 		{background-position: right -31px;}
 		
+		/* .b1 Hover - Applies hover style to button when box is active */
+			.b1:hover .btn1 span,
+			.b1:focus .btn1 span 	{background-position: left -31px;}
+			.b1:hover .btn1 i,
+			.b1:focus .btn1 i 		{background-position: right -31px;}
+		
 	/* Specific Styles (Promo - Green)*/
 		.btn2 span 			{background-position: left -62px;}
 		.btn2 i 			{background-position: right -62px;}
 		.btn2:hover span,
 		.btn2:focus span  	{background-position: left -93px;}
 		.btn2:hover i,
-		.btn2:focus i 		{background-position: right -93px;}		
+		.btn2:focus i 		{background-position: right -93px;}	
+		
+		/* .b2 Hover - Applies hover style to button when box is active */
+			.b2:hover .btn1 span,
+			.b2:focus .btn1 span 	{background-position: left -93px;}
+			.b2:hover .btn1 i,
+			.b2:focus .btn1 i 		{background-position: right -93px;}	
 
-	/* Specific Styles (Promo - Green)*/
+	/* Specific Styles (Promo - Orange Large)*/
 		.btn3				{height:33px;}
 		.btn3 span 			{height:33px; background-position: left -124px;}
 		.btn3 i 			{height:33px; background-position: right -124px;}
