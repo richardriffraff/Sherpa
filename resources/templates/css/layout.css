@@ -189,7 +189,7 @@ DESCRIPTION:  	Defines layout - Dimensions, display, floats, position, backgroun
 /* ARTICLE FOOTERS */
 	
 	/* 1. Share options */	
-		.footerShare		{position:relative; height:38px; margin:10px 0 48px 0; background-position:0 -72px;}
+		.footerShare		{position:relative; height:38px; margin:15px 0 30px 0; background-position:0 -72px;}
 		.footerShare dl		{position:absolute; right:10px; top:8px;}
 		.footerShare dt		{float:left; margin:0 10px 0 0; width:auto; line-height:22px;}
 		.footerShare dd,
@@ -411,9 +411,22 @@ DESCRIPTION:  	Defines layout - Dimensions, display, floats, position, backgroun
 ************************************************/
 
 	/* Blog Post page */
-		#post			{}
-		#comments		{clear:both; margin-top:30px;}
-		#comments h2	{margin:0 0 11px; padding:0 0 8px 0; background: url(../img/bg/bgHeading1.png) 0 bottom no-repeat;}
+		
+		#comments			{clear:both; margin-top:40px;}
+		#comments h2		{margin:0 0 11px; padding:0 0 8px 0; background: url(../img/bg/bgHeading1.png) 0 bottom no-repeat;}
+		#comments ol,
+		#comments ol li		{margin:0; padding:0; list-style:none; background:none;}
+		#comments ol		{margin-top:25px;}
+		#comments cite a	{margin-bottom:3px; display:block;}
+		
+		.frmComment legend	{margin:0 0 11px; padding:0 0 8px 0; background: url(../img/bg/bgHeading1.png) 0 bottom no-repeat; width:100%;}
+		.frmComment dl		{margin:15px 0 0 30px; line-height:22px;}
+		.frmComment dt		{float:left; width:80px;}
+		.frmComment dd		{vertical-align:center; margin-bottom:14px;}
+		.frmComment .textfield	{border:1px solid #c7d5dc; height:19px; padding-left:6px; padding-top: 2px; width:344px;}
+		.frmComment .textfield:focus	{border:1px solid #7b858f;}
+		
+		
 
 
 		
