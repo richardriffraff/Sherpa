@@ -64,6 +64,10 @@ DESCRIPTION:  	Defines layout - Dimensions, display, floats, position, backgroun
 
 
 
+
+
+
+
 /* HEADER (positioned at bottom) */
 	header		{width:960px; margin:0 auto; }
 	
@@ -82,6 +86,11 @@ DESCRIPTION:  	Defines layout - Dimensions, display, floats, position, backgroun
 		#contactInfo	{float:right; padding:28px 10px 0 0;}
 		
 		
+
+
+
+
+
 
 /* MAIN NAV */
 	#mainBar	{width:960px; height:39px; margin:22px auto 0; clear:both; position:relative; background-position:0 0;}
@@ -162,6 +171,8 @@ DESCRIPTION:  	Defines layout - Dimensions, display, floats, position, backgroun
 
 
 
+
+
 /* ARTICLES */
 	/* Headings */
 		article h1			{margin:0 0 11px; padding:0 0 8px 0; background: url(../img/bg/bgHeading1.png) 0 bottom no-repeat;}
@@ -205,6 +216,9 @@ DESCRIPTION:  	Defines layout - Dimensions, display, floats, position, backgroun
 				.footerShare .fb:hover		{background-position:-24px -399px;}
 				.footerShare .tw:hover		{background-position:-34px -419px;}
 				
+
+
+
 				
 				
 				
@@ -225,9 +239,9 @@ DESCRIPTION:  	Defines layout - Dimensions, display, floats, position, backgroun
 
 	/* Specific Types */
 	
-		/* Section 1 */
+		/* Section 1 (Homepage)*/
 			.section1			{height:250px; padding:0 0 22px 20px; position:relative;}
-			.section1 .s1Img	{position:absolute; right:0; top:-12px;}
+			.section1 .s1Img	{position:absolute; right:0; top:-16px;}
 			.section1 .title	{width:420px; margin:7px 0 5px 0;}	
 			.section1 p 		{width:380px; padding:0 0 22px 0;}	
 			
@@ -237,7 +251,9 @@ DESCRIPTION:  	Defines layout - Dimensions, display, floats, position, backgroun
 			.section2 ul		{margin:0 0 7px 0;}
 			.section2 li		{padding:0 0 0 23px; margin:0 0 12px 0; background-position:0 -598px;}
 			.section2 .btn		{float:right; position:relative; right:12px;}
-				
+			
+
+
 
 
 
@@ -249,12 +265,20 @@ DESCRIPTION:  	Defines layout - Dimensions, display, floats, position, backgroun
 	.blockQuote p,
 	.blockQuote cite	{display:block; width:1px; height:1px; text-indent:-999px; overflow:hidden;}
 	
-	/* Column Containers */
-		#clm1 .blockQuote	{width:640px;}	
+	/* Offsets */
+
 	
+	
+	/* Column Containers */
+		#clm1 .blockQuote	{width:640px;}
+		#clm2 .blockQuote	{margin:20px 0 14px 0; width:254px;}			
 	
 	/* Specific Quotes */
 		.bQuote1		{height:117px; background: url(../img/content/blockQuote/bQuote1.png);}
+		.bQuote2		{height:165px; background: url(../img/content/blockQuote/bQuote2.png);}
+
+
+
 
 
 		
@@ -287,16 +311,26 @@ DESCRIPTION:  	Defines layout - Dimensions, display, floats, position, backgroun
 		.b3 .btn2		{position:absolute; bottom:0px; right:25px;} 
 
 
+
+
+
+
+
+
+
+
 /* LISTS */
 
 	/* Offsets */
 		.nOffset1		{margin-top:-5px !important;}
 		.nOffset2		{top:8px !important; margin-bottom:0 !important;}
 		.nOffset2 .btn	{position:relative; bottom:-14px;}
+		.nOffset3		{position:relative; top:-22px;} /* Used on .nav4 in left column */
 		
 		.aOffset1		{margin-left:-9px !important;} /* Blue clm2 promos */
 		.aOffset2		{margin-left:-5px !important; float:left;} /* Green Case Study box (left) */	
 		.aOffset3		{margin-right:-5px !important; float:right;} /* Green Case Study box (right) */
+		
 
 
 	/* 1. */
@@ -325,7 +359,7 @@ DESCRIPTION:  	Defines layout - Dimensions, display, floats, position, backgroun
 
 
 		
-	/* 3. A List of services (Links to other pages) */
+	/* 3. Links to pages - RIGHT COLUMN */
 		.nav3 			{margin:0 0 5px 0; position:relative;}
 		.nav3 .title	{margin:0 0 12px 0;}
 		.nav3 li		{background-position:0 -798px; margin:0 0 20px 5px; padding-left:13px;}
@@ -333,7 +367,18 @@ DESCRIPTION:  	Defines layout - Dimensions, display, floats, position, backgroun
 		.nav3 .btn		{float:right;}
 		.nav3 .rss		{position:absolute; top:0; right:0;}
 		.nav3 .tw		{position:absolute; top:0; right:0;}
-	
+		
+		
+		
+	/*  4. Links to pages - LEFT COLUMN */
+		.nav4 			{margin:0 0 5px 0; position:relative;}
+		.nav4 .title	{margin:0 0 22px; padding:0 0 8px 8px; background:url("../img/bg/bgHeading1.png") no-repeat scroll 0 bottom transparent;}
+		.nav4 li		{float:left; margin:0 0 16px 20px; padding-left:15px; width:285px; background: url(../img/sprites/02spr_icons_8bit.png) no-repeat 0 -798px;}
+
+
+
+
+
 
 
 
@@ -393,16 +438,11 @@ DESCRIPTION:  	Defines layout - Dimensions, display, floats, position, backgroun
 	
 	
 	
+	
+	
+	
 
 /* Icon Links */
-	/* Red Arrow, right side */
-		.icon1		{display:block; height:19px; padding:0 23px 0 0; background-position:right -120px;}
-	/* Red Arrow, left side */
-		.icon2		{display:block; height:19px; padding:0 0 0 23px; background-position:-22px -120px;}
-	/* Dark Red Arrow, right side */
-		.icon3		{display:block; height:19px; padding:0 23px 0 0; background-position:right -360px;}
-	/* Large Red Arrow, right side */
-		.icon4		{display:block; height:22px; padding:0 26px 0 0; background-position:right -420px;}
 		
 		
 

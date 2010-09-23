@@ -177,7 +177,7 @@ body		{font: 12px 'Helvetica Neue', Helvetica, sans-serif; text-align:center; co
 		.nav2 li a:focus  small,
 		.nav2 li a:active small		{color:#f38c51;}
 		
-	/* 3. A List of services (Links to other pages) */
+	/* 3. Links to pages - RIGHT COLUMN */
 		.nav3 .title			{font-size:24px; line-height:24px; color:#192a36;}
 		.nav3 .title span		{color:#99a6b2; font-size:16px;} 
 		.nav3 li				{font-size:12px; line-height:14px;}
@@ -196,6 +196,18 @@ body		{font: 12px 'Helvetica Neue', Helvetica, sans-serif; text-align:center; co
 		.nav3 li a:active small		{color:#f38c51;}
 		
 
+	/* 3. Links to pages - LEFT COLUMN */
+		.nav4 .title				{font-size:24px; line-height:24px; color:#192a36;}
+		.nav4 .subTitle				{font-weight:bold; font-size:14px; color:#f06c21; line-height:16px;}
+		.nav4 a:hover .subTitle,
+		.nav4 a:focus .subTitle,
+		.nav4 a:active .subTitle	{color:#f38c51; text-decoration:underline;}		
+		.nav4 a,
+		.nav4 a:link,
+		.nav4 a:visited				{color:#354754; text-decoration:none; font-size:12px; line-height:14px;}
+		.nav4 a:hover,
+		.nav4 a:focus,
+		.nav4 a:active				{color:#192a36;}
 
 
 
