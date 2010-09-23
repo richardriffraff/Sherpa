@@ -45,8 +45,11 @@ DESCRIPTION:  	Defines layout - Dimensions, display, floats, position, backgroun
 		#nMain strong,
 		#frmSearch input,
 		#frmSearch button,
-		.footerShare			{background: url(../img/sprites/01spr_interface_8bit.png);}
-	
+		.footerShare,
+		.frmComment .textfield,
+		.frmComment .textfield:focus,
+		.frmComment .textarea,
+		.frmComment .textarea:focus		{background: url(../img/sprites/01spr_interface_8bit.png);}
 	
 	/* 2. Icons - 8 Bit */
 		#nQuickLinks li,
@@ -55,7 +58,12 @@ DESCRIPTION:  	Defines layout - Dimensions, display, floats, position, backgroun
 		.footerShare .tw,
 		.section2 li,
 		.nav2 .rss,
-		.nav2 .tw			{background: url(../img/sprites/02spr_icons_8bit.png); background-repeat:no-repeat;}
+		.nav2 .tw,
+		.nav2 .tw,
+		.nav3 li,
+		.nav5 li,
+		.nav5 .rss				{background: url(../img/sprites/02spr_icons_8bit.png); background-repeat:no-repeat;}
+
 		
 	/* 3. Buttons - 24 Bit */
 		.btn span,
@@ -198,7 +206,8 @@ DESCRIPTION:  	Defines layout - Dimensions, display, floats, position, backgroun
 /* ARTICLE FOOTERS */
 	
 	/* 1. Share options */	
-		.footerShare		{position:relative; height:38px; margin:10px 0 48px 0; background-position:0 -72px;}
+
+		.footerShare		{position:relative; height:37px; margin:15px 0 30px 0; background-position:0 -72px;}
 		.footerShare dl		{position:absolute; right:10px; top:8px;}
 		.footerShare dt		{float:left; margin:0 10px 0 0; width:auto; line-height:24px;}
 		.footerShare dd,
@@ -362,7 +371,7 @@ DESCRIPTION:  	Defines layout - Dimensions, display, floats, position, backgroun
 
 
 		
-	/* 3. Links to pages - RIGHT COLUMN */
+	/*  3. Links to pages - RIGHT COLUMN */
 		.nav3 			{margin:0 0 5px 0; position:relative;}
 		.nav3 .title	{margin:0 0 12px 0;}
 		.nav3 li		{background: url(../img/sprites/02spr_icons_8bit.png) no-repeat 0 -798px; margin:0 0 20px 5px; padding-left:13px;}
@@ -378,7 +387,21 @@ DESCRIPTION:  	Defines layout - Dimensions, display, floats, position, backgroun
 		.nav4 .title	{margin:0 0 22px; padding:0 0 8px 8px; background:url("../img/bg/bgHeading1.png") no-repeat scroll 0 bottom transparent;}
 		.nav4 li		{float:left; margin:0 0 16px 20px; padding-left:15px; width:285px; background: url(../img/sprites/02spr_icons_8bit.png) no-repeat 0 -798px;}
 
-
+	/*  5. Links to pages - RIGHT COLUMN */
+		.nav5 			{margin:0 0 20px 0; position:relative;}
+		.nav5 .title	{margin:0 0 12px 0;}
+		.nav5 li		{background-position:0 -798px; margin:0 0 12px 5px; padding-left:13px;}
+		.nav5 small		{display:block;}
+		.nav5 .btn		{float:right;}
+		.nav5 .rss		{position:absolute; top:0; right:0;}
+		.nav5 .tw		{position:absolute; top:0; right:0;}
+		
+		/* The icons */
+			.nav5 .rss		{position:absolute; top:0; right:-5px; text-indent:-9999px; overflow:hidden; width:25px; height:25px; background-position:0 -438px;}
+			
+			/* Hover + Focus */
+				.nav5 .rss:hover,
+				.nav5 .rss:focus		{background-position:-25px -438px;}
 
 	/* 6. Links to pages - LEFT COLUMN (heading, p, find out more) */
 		.nav6 li		{width:203px;}
@@ -454,7 +477,31 @@ DESCRIPTION:  	Defines layout - Dimensions, display, floats, position, backgroun
 
 /************************************************
 	3. = SINGLE PAGE CONTENT LAYOUT	 (ONE Page)
+
 ************************************************/	
+
+
+	/* Blog Post page */
+		
+		#comments			{clear:both; margin-top:40px;}
+		#comments h2		{margin:0 0 11px; padding:0 0 8px 0; background: url(../img/bg/bgHeading1.png) 0 bottom no-repeat;}
+		#comments ol,
+		#comments ol li		{margin:0; padding:0; list-style:none; background:none;}
+		#comments ol		{margin-top:25px;}
+		#comments cite a	{margin-bottom:3px; display:block;}
+		
+		.frmComment legend				{margin:0 0 11px; padding:0 0 8px 0; background: url(../img/bg/bgHeading1.png) 0 bottom no-repeat; width:100%;}
+		.frmComment dl					{margin:15px 0 0 28px; line-height:22px;}
+		.frmComment dt					{float:left; width:80px;}
+		.frmComment dd					{vertical-align:center; margin-bottom:14px;}
+		.frmComment .textfield			{background-position: 0 -109px; border:none; height:20px; padding:2px 0 0 7px ;width:343px;}
+		.frmComment .textfield:focus	{background-position: -350px -109px;}
+		.frmComment .textarea			{background-position: 0 -131px; border:none; height:72px; padding:0 0 0 7px ;width:343px;}
+		.frmComment .textarea:focus		{background-position: -350px -131px;}
+		
+		.frmComment .btn1				{float:right; margin-right:177px;}
+		
+
 
 
 		
