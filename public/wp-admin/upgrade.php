@@ -15,7 +15,7 @@
 define( 'WP_INSTALLING', true );
 
 /** Load WordPress Bootstrap */
-require( '../wp-load.php' );
+require( 'wp-load.php' );
 
 timer_start();
 require_once( ABSPATH . 'wp-admin/includes/upgrade.php' );

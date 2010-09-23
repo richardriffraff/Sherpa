@@ -3280,7 +3280,7 @@
     // ----- Check the path
     if (   ($p_path == "")
 	    || (   (substr($p_path, 0, 1) != "/")
-		    && (substr($p_path, 0, 3) != "../")
+		    && (substr($p_path, 0, 3) != "")
 			&& (substr($p_path,1,2)!=":/")))
       $p_path = "./".$p_path;
 
@@ -5441,7 +5441,7 @@
       // ----- Look for skip
       if ($v_skip > 0) {
         while ($v_skip > 0) {
-            $v_result = '../'.$v_result;
+            $v_result = ''.$v_result;
             $v_skip--;
         }
       }

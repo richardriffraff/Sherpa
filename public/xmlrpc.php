@@ -86,7 +86,7 @@ $xmlrpc_logging = 0;
 function logIO($io,$msg) {
 	global $xmlrpc_logging;
 	if ($xmlrpc_logging) {
-		$fp = fopen("../xmlrpc.log","a+");
+		$fp = fopen("xmlrpc.log","a+");
 		$date = gmdate("Y-m-d H:i:s ");
 		$iot = ($io == "I") ? " Input: " : " Output: ";
 		fwrite($fp, "\n\n".$date.$iot.$msg);

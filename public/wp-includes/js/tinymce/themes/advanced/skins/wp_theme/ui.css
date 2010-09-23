@@ -13,7 +13,7 @@ border:0; margin:0; padding:0; white-space:nowrap; text-decoration:none; font-we
 /* External */
 .wp_themeSkin .mceExternalToolbar {position:absolute; border-bottom:0; display:none}
 .wp_themeSkin .mceExternalToolbar td.mceToolbar {padding-right:13px;}
-.wp_themeSkin .mceExternalClose {position:absolute; top:3px; right:3px; width:7px; height:7px; background:url(../../img/icons.gif) -820px 0}
+.wp_themeSkin .mceExternalClose {position:absolute; top:3px; right:3px; width:7px; height:7px; background:url(img/icons.gif) -820px 0}
 
 /* Layout */
 .wp_themeSkin table.mceToolbar, .wp_themeSkin tr.mceFirst .mceToolbar tr td, .wp_themeSkin tr.mceLast .mceToolbar tr td {border:0; margin:0; padding:0}
@@ -33,7 +33,7 @@ border:0; margin:0; padding:0; white-space:nowrap; text-decoration:none; font-we
 .wp_themeSkin .mceStatusbar a.mceResize {
 	display: block;
 	float: right;
-	background: url(../../img/icons.gif) -800px 0;
+	background: url(img/icons.gif) -800px 0;
 	width: 20px;
 	height: 20px;
 	cursor: se-resize
@@ -43,7 +43,7 @@ border:0; margin:0; padding:0; white-space:nowrap; text-decoration:none; font-we
 .wp_themeSkin #content_toolbar1 {margin-top: 2px;}
 .wp_themeSkin .mceToolbar .mceToolbarEndListBox span {display:none}
 .wp_themeSkin span.mceIcon, .wp_themeSkin img.mceIcon {display:block; width:20px; height:20px}
-.wp_themeSkin .mceIcon {background:url(../../img/icons.gif) no-repeat 20px 20px}
+.wp_themeSkin .mceIcon {background:url(img/icons.gif) no-repeat 20px 20px}
 
 /* Button */
 .wp_themeSkin .mceButton {
@@ -152,7 +152,7 @@ border:0; margin:0; padding:0; white-space:nowrap; text-decoration:none; font-we
 	padding: 1px 2px;
 }
 .wp_themeSkin .mceSplitButton span.mceAction {
-	background: url(../../img/icons.gif) 20px 20px;
+	background: url(img/icons.gif) 20px 20px;
 	width:20px; 
 }
 .wp_themeSkin .mceSplitButton a.mceOpen {
@@ -235,14 +235,14 @@ border:0; margin:0; padding:0; white-space:nowrap; text-decoration:none; font-we
 }
 .wp_themeSkin .mceMenuItemTitle span.mceText {font-weight:bold; padding-left:4px}
 .wp_themeSkin .mceMenuItemDisabled .mceText {}
-.wp_themeSkin .mceMenuItemSelected .mceIcon {background:url(../default/img/menu_check.gif)}
-.wp_themeSkin .mceNoIcons .mceMenuItemSelected a {background:url(../default/img/menu_arrow.gif) no-repeat -6px center}
+.wp_themeSkin .mceMenuItemSelected .mceIcon {background:url(default/img/menu_check.gif)}
+.wp_themeSkin .mceNoIcons .mceMenuItemSelected a {background:url(default/img/menu_arrow.gif) no-repeat -6px center}
 .wp_themeSkin .mceMenu span.mceMenuLine {display:none}
-.wp_themeSkin .mceMenuItemSub a {background:url(../default/img/menu_arrow.gif) no-repeat top right;}
+.wp_themeSkin .mceMenuItemSub a {background:url(default/img/menu_arrow.gif) no-repeat top right;}
 
 /* Progress,Resize */
 .wp_themeSkin .mceBlocker {position:absolute; left:0; top:0; z-index:1000; opacity:0.5; filter:alpha(opacity=50); background:#FFF}
-.wp_themeSkin .mceProgress {position:absolute; left:0; top:0; z-index:1001; background:url(../default/img/progress.gif) no-repeat; width:32px; height:32px; margin:-16px 0 0 -16px}
+.wp_themeSkin .mceProgress {position:absolute; left:0; top:0; z-index:1001; background:url(default/img/progress.gif) no-repeat; width:32px; height:32px; margin:-16px 0 0 -16px}
 .wp_themeSkin .mcePlaceHolder {border:1px dotted gray}
 
 /* Formats */

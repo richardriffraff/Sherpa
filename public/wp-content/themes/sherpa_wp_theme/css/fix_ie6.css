@@ -1,0 +1,41 @@
+/************************************************
+
+FILE:		  	ie6.css
+DESCRIPTION:  	File Fixes IE6 Bugs
+
+************************************************/
+
+/* @group 1. Generic Fixes */
+
+	body			{float:left; height:100%;} /* For the Overlay */
+	.clearfix 		{zoom: 1; display: block;}
+	
+	/* @group Generic List Fixes */	
+		dl			{float:left; display:block;}
+		dt			{position:relative; float:left; display:block; clear: both; }
+		dd			{position:relative; float:none; display:block; clear: right; }
+	/* @end */
+	
+	
+	
+/* @end Group 1. */
+
+	#template #clm2				{clear:left; margin-right:-28px !important;} 
+
+
+/* OverHidden > Bugs */
+	#mainBar	{overflow:hidden;}
+	
+	
+	
+	
+	
+		
+/* MAIN NAV */
+	#frmSearch	{width:200px;}
+	
+	
+	
+/* Double Margin Bug */
+
+.nav4 li {margin:0 0 16px 10px;}

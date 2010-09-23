@@ -1,0 +1,29 @@
+/************************************************
+
+FILE:		  	ie7.css
+DESCRIPTION:  	File Fixes IE7 Bugs
+
+************************************************/
+
+/* @group 1. Generic Fixes */
+	.clearfix	{zoom:1;}
+
+	/* @group Generic List Fixes */
+	dl		{float:left !important;}
+	dt 		{float:left !important; clear:left !important;}				
+	dd		{float:none !important;}
+
+
+	/* @group end */
+/* @group end */
+
+
+/* MAIN NAV */
+	
+	/* Main Nav */		
+	/* Search Form */
+		#frmSearch input		{padding:4px 0 0 6px;}
+		#pageFooter ul			{zoom:1;}
+		
+		
+.section1 .s1Img	{position:absolute; right:0; top:-4px;}

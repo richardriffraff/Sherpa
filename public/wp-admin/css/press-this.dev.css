@@ -19,7 +19,7 @@ img {
 }
 
 .tagchecklist span a {
-	background: transparent url(../images/xit.gif) no-repeat 0 0;
+	background: transparent url(images/xit.gif) no-repeat 0 0;
 }
 
 #poststuff #edButtonPreview,
@@ -147,7 +147,7 @@ h3.tb {
 
 .postbox:hover .handlediv,
 .stuffbox:hover .handlediv {
-	background: transparent url(../images/menu-bits-vs.gif) no-repeat scroll left -111px;
+	background: transparent url(images/menu-bits-vs.gif) no-repeat scroll left -111px;
 }
 
 .handlediv {
@@ -490,7 +490,7 @@ ul.category-tabs li {
 }
 
 .button-primary {
-	background: #21759B url(../images/button-grad.png) repeat-x scroll left top;
+	background: #21759B url(images/button-grad.png) repeat-x scroll left top;
 	border-color: #21759B;
 	color: #fff;
 }

@@ -1,0 +1,533 @@
+/************************************************
+FILE:		  	layout.css
+DESCRIPTION:  	Defines layout - Dimensions, display, floats, position, background, borders etc
+
+	1. = PAGE LAYOUT TYPOGRAPHY 	(ALL PAGES: header footer etc)
+	2. = MUTLIPAGE TYPOGRAPHY		(SOME PAGES: based on wrapper - '#wrapper p')
+	3. = SINGLE PAGE TYPOGRAPHY		(ONE PAGE: based on page wrapper - .pageName .class)			
+
+
+	1. = PAGE LAYOUTS
+************************************************/
+
+/* BASICS */
+	html				{height:100%;}
+	body 				{min-height:100%; background: #f9fafb url(img/bg/bgPage1.png) 0 0 repeat-x;}
+	.body2				{background:#f9fafb url(img/bg/bgPage2.png) 0 0 repeat-x;}
+	
+	header,
+	footer,
+	nav,
+	article,
+	aside,
+	section				{display:block;}
+
+				
+	/* Quickfix Classes */
+		.hide			{display:none;}
+		.clearB			{clear: both;}
+		.clearL			{clear: left;}
+		.clearR			{clear: right;}
+		.floatL			{float: left;}
+		.floatR			{float: right;}
+		.clear			{clear: both; font-size:1px; height:1px; line-height:1px; margin:0px; padding:0px; width:100%;}
+		.clearfix:after	{content: "."; display: block; height: 0; clear: both; visibility: hidden;}	
+		.container		{max-width:986px; margin:0 auto;}
+
+
+
+
+
+/* SPRITES */
+
+	/* 1. Interface - 8 Bit */
+		#mainBar,
+		#nMain strong,
+		#frmSearch input,
+		#frmSearch button,
+		.footerShare,
+		.frmComment .textfield,
+		.frmComment .textfield:focus,
+		.frmComment .textarea,
+		.frmComment .textarea:focus		{background: url(img/sprites/01spr_interface_8bit.png);}
+	
+	/* 2. Icons - 8 Bit */
+		#nQuickLinks li,
+		article li,
+		.footerShare .fb,
+		.footerShare .tw,
+		.section2 li,
+		.nav2 .rss,
+		.nav2 .tw,
+		.nav2 .tw,
+		.nav3 li,
+		.nav5 li,
+		.nav5 .rss,
+		.icon1					{background: url(img/sprites/02spr_icons_8bit.png); background-repeat:no-repeat;}
+
+		
+	/* 3. Buttons - 24 Bit */
+		.btn span,
+		.btn i					{background: url(img/sprites/03spr_buttons_24bit.png); background-repeat:no-repeat;} 
+
+
+
+
+
+
+
+/* HEADER (positioned at bottom) */
+	header		{width:960px; margin:0 auto; }
+	
+	/* Skip Links */
+		#nSkip			{position:absolute; left:50%; top:5px; margin-left:-460px;}
+		#nSkip li		{float:left; padding:0 8px 0 0;}
+		#nSkip a		{position:absolute; top:-100px; left:0;}
+		#nSkip a:focus	{top:0;}	
+	
+	/* Logo */
+		#logo			{float:left; position:relative; left:8px; top:32px;}
+		#logo:focus		{outline:1px dashed #192a35;}
+		#logo img		{display:block;}
+		
+	/* Contact Details */
+		#contactInfo	{float:right; padding:28px 10px 0 0;}
+		
+		
+
+
+
+
+
+
+/* MAIN NAV */
+	#mainBar	{width:960px; height:39px; margin:22px auto 0; clear:both; position:relative; background-position:0 0;}
+	
+	/* Main Nav */
+		#nMain				{float:left; padding:4px 4px 4px 10px;}
+		#nMain li			{float:left; border-left:1px solid #1b2828; border-right:1px solid #293840;}
+		#nMain :first-child	{border-left:none;}
+		#nMain :last-child	{border-right:none;}
+		#nMain a			{float:left; padding:0 19px 0 19px; letter-spacing:-0.050em; text-shadow: 1px 1px 1px #161f26;}
+		
+		/* Active */
+			#nMain strong	{float:left; background-position:0 -39px;}
+		
+	/* Search Form */
+		#frmSearch				{padding:9px 23px; float:right; position:absolute; top:0; right:0;}
+		#frmSearch legend,
+		#frmSearch label		{display:none;}
+		#frmSearch input		{float:left; width:159px; height:20px; padding:2px 0 0 6px; border:none; background-position:-320px -39px;}
+		#frmSearch button		{float:left; width:22px; height:20px; text-indent:-999px; overflow:hidden; border:none; background-position:-481px -39px;}
+		#frmSearch button:hover	{cursor:pointer; background-position:-505px -39px;}
+	
+	
+		
+			
+		
+/* FOOTER  */
+	#fPage					{width:100%; height:289px; position:static; left:0; bottom:0; background: #172732 url(img/footer/bg.png) repeat-x;}
+	
+	/* Quick Links (Blatently NOT S-E0O) */
+		#nQuickLinks		{width:870px; padding:0 0 28px; margin:0 auto;}
+		#nQuickLinks dl		{width:154px; margin:95px 84px 0 0; float:left;}
+		#nQuickLinks .last	{margin-right:0;}
+		#nQuickLinks dt		{width:152px; overflow:hidden; margin:0 0 14px 0; padding:0 0 5px 2px; border-bottom:2px solid #23323d;}
+		#nQuickLinks li		{margin:0 0 14px 0; padding:0 0 0 12px; background-position:0 2px;}
+		
+	/* Legal Nav */
+		#nLegal 				{width:860px; margin:3px auto 0;}
+		#nLegal > span,
+		#nLegal > a				{float:right; padding:0 10px; border-right:1px solid #8b9399; border-left:1px solid #515d65;}
+		#nLegal :first-child	{border-right:none;}
+		#nLegal .last			{border-left:none;}
+		
+
+
+
+
+
+
+
+/************************************************
+	2. = MULTI PAGE LAYOUT	(SOME Pages)
+************************************************/
+
+/* COLUMN SYSTEMS */
+	#template			{width:954px; margin:0 auto;}
+	#template #clm1		{float:left;}
+	#template #clm2		{float:right; position:relative;}
+	
+	#template #clm2				{background: url(img/bg/bgClm2.png) no-repeat 0 top; min-height:560px; width:314px; margin-right:-13px;} 
+	#template#clm2 .content		{padding:27px 33px;}
+	#template #clm2 .contentv2	{padding:27px 33px 0;} 
+	#template .clm2Bottom		{background: url(img/bg/bgClm2.png) no-repeat 0 bottom; width:314px; z-index:-1; height:15px; position:absolute; bottom:-15px; left:0;}
+	
+	#clm2 .hr					{background: url(img/bg/bgClm2HR.png) repeat-x 0 0; height:3px; width:100%; padding:0 16px; margin:0 0 10px -16px;}
+	#clm2 hr					{display:none;}
+	
+	/* Three Columns */
+
+	/* 3 | 1 Columns */
+		.three1 #clm1		{width:640px; margin:112px 0 0 0;}
+		.three1 #clm2		{width:228px; margin:38px 0 0 0;}
+		
+	/* 3 | 1 v2 Columns */
+		.three1v2 #clm1		{margin:38px 0 0;}
+
+
+
+
+
+
+
+/* ARTICLES */
+	/* Headings */
+		article h1				{margin:0 0 11px; padding:0 0 8px 0; background: url(img/bg/bgHeading1.png) 0 bottom no-repeat;}
+			article h1 .date		{float:right; margin:3px 5px 0 0;}
+		.article h2				{margin:0 0 8px 0;}
+		.article2 h2				{margin:0 0 11px; padding:0 0 8px 0; background: url(img/bg/bgHeading1.png) 0 bottom no-repeat;}
+			.article2 h2 .date		{float:right; margin:3px 5px 0 0;}
+	/* Copy */
+		article p			{margin:0 0 22px 0;}
+		article ul			{margin:0; padding:12px 0 22px 52px;}
+		article li			{padding:0 0 16px 14px; background-position:0 -196px;}
+	
+	/* Footer */
+		article footer		{display:block; width:100%; margin:0; clear:both;}
+		
+	/* Specific Types */
+		
+		/* Article 1  */
+		
+		
+		
+		
+		
+	
+	
+/* ARTICLE FOOTERS */
+	
+	/* 1. Share options */	
+
+		.footerShare		{position:relative; height:37px; margin:15px 0 30px 0; background-position:0 -72px;}
+		.footerShare dl		{position:absolute; right:10px; top:8px;}
+		.footerShare dt		{float:left; margin:0 10px 0 0; width:auto; line-height:24px;}
+		.footerShare dd,
+		.footerShare ul		{float:left; margin:0; padding:0;}
+		.footerShare li		{float:left; margin:1px 7px 0 0; padding:0; background:none;}
+		.footerShare a		{float:left; width:20px; height:20px; overflow:hidden; text-indent:-9999px;}
+	
+		/* Icons */	
+			.footerShare .fb		{background-position:0 -399px;}
+			.footerShare .tw		{width:34px; height:20px; background-position:0 -419px;}
+			
+			/* Hover */
+				.footerShare .fb:hover		{background-position:-24px -399px;}
+				.footerShare .tw:hover		{background-position:-34px -419px;}
+				
+
+
+
+				
+				
+				
+/* ASIDES */
+	
+	/* Specific Types */
+		
+		/* Aside 1 */			
+			.aside1 .title		{margin:0 0 11px; padding:0 0 8px 0; background: url(img/bg/bgHeading1.png) 0 bottom no-repeat;}
+	
+
+
+
+
+
+
+/* SECTIONS (An excerpt of a document with a heading + links to it) */
+
+	/* Specific Types */
+	
+		/* Section 1 (Homepage)*/
+			.section1			{height:250px; padding:0 0 22px 20px; position:relative;}
+			.section1 .s1Img	{position:absolute; right:0; top:-16px;}
+			.section1 .title	{width:420px; margin:7px 0 5px 0;}	
+			.section1 p 		{width:380px; padding:0 0 22px 0;}	
+			
+		/* Section 2 */
+			.section2			{float:left; width:191px; margin:0 0 20px 0; padding:0 0 0 22px; }
+			.section2 .title	{margin:0 0 12px 0;}
+			.section2 ul		{margin:0 0 7px 0;}
+			.section2 li		{padding:0 0 0 23px; margin:0 0 12px 0; background-position:0 -598px;}
+			.section2 .btn		{float:right; position:relative; right:12px;}
+			
+		/* Section 3 */
+			.section3			{position:relative; height:126px;}
+			.section3 a			{position:absolute; bottom:16px; left:0;}
+			
+			
+
+
+
+
+
+
+
+
+/* BLOCK QUOTES */
+	.blockQuote			{margin:10px 0 22px 0; overflow:hidden;}
+	.blockQuote p,
+	.blockQuote cite	{display:block; width:1px; height:1px; text-indent:-999px; overflow:hidden;}
+	
+	/* Offsets */
+
+	
+	
+	/* Column Containers */
+		#clm1 .blockQuote	{width:640px;}
+		#clm2 .blockQuote	{margin:20px 0 14px 0; width:254px;}			
+	
+	/* Specific Quotes */
+		.bQuote1		{height:117px; background: url(img/content/blockQuote/bQuote1.png);}
+		.bQuote2		{height:165px; background: url(img/content/blockQuote/bQuote2.png);}
+
+
+
+
+
+		
+		
+		
+/* BOXES */
+	.box,
+	.box img			{display:block; position:relative;}
+		
+	/* Box 1 - Case Studies (Green) */
+		.b1			 	{background: url(img/bg/bgB1.png) no-repeat 0 top; padding:20px 25px 0; position:relative; width:274px; text-decoration:none;}
+		.b1:hover	 	{text-decoration:none;}
+		.b1Bottom		{background: url(img/bg/bgB1.png) no-repeat 0 bottom; height:12px; width:324px; position:absolute; bottom:-10px; left:0;} 
+		.b1 .title		{background:none; padding:0; margin-bottom:7px;}
+		.b1 p			{margin-bottom:32px;}
+		.b1 .btn1		{float:right; margin:-15px 25px 0 0;} 
+		
+	
+	/* Box 2 - Sherpa Clinic (Blue) */
+		.b2			 	{background: url(img/bg/bgB2.png) no-repeat 0 0; height:125px;  margin:15px 0; padding:20px 29px 0 29px; width:208px; text-decoration:none;}
+		.b2:hover	 	{text-decoration:none;}
+		.b2 .title		{padding:0; margin-bottom:3px;}
+		.b2 .btn2		{position:absolute; bottom:0; right:25px;} 
+			
+	
+	/* Box 3 - Sherpa Catalyst (Blue) */
+		.b3			 	{background: url(img/bg/bgB3.png) no-repeat 0 0; height:125px; margin:15px 0; padding:20px 29px 0; width:208px; text-decoration:none;}
+		.b3:hover	 	{text-decoration:none;}
+		.b3 .title		{padding:0; margin-bottom:3px;}
+		.b3 .btn2		{position:absolute; bottom:0px; right:25px;} 
+
+
+
+
+
+
+
+
+
+
+/* LISTS */
+
+	/* Offsets */
+		.nOffset1		{margin-top:-5px !important;}
+		.nOffset2		{top:8px !important; margin-bottom:0 !important;}
+		.nOffset2 .btn	{position:relative; bottom:-14px;}
+		.nOffset3		{position:relative; top:-22px;} /* Used on .nav4 in left column */
+		.nOffset4		{position:relative; top:-10px;}
+		
+		.aOffset1		{margin-left:-9px !important;} /* Blue clm2 promos */
+		.aOffset2		{margin-left:-5px !important; float:left;} /* Green Case Study box (left) */	
+		.aOffset3		{margin-right:-5px !important; float:right;} /* Green Case Study box (right) */
+		
+		.bOffset1		{margin-top:-3px !important; margin-left:-9px !important;}
+		
+
+
+	/* 1. */
+	
+	
+	/* 2. A List of Blog Posts with dates */
+		.nav2 			{margin:0 0 20px 0; position:relative;}
+		.nav2 .title	{margin:0 0 12px 0;}
+
+		.nav2 li		{margin:0 0 15px 0;}
+		.nav2 small		{display:block;}
+		.nav2 .btn		{float:right;}
+		
+		/* The icons */
+			.nav2 .rss,
+			.nav2 .tw		{position:absolute; top:0; right:-5px; text-indent:-9999px; overflow:hidden;}
+			
+			.nav2 .rss		{width:25px; height:25px; background-position:0 -438px;}
+			.nav2 .tw		{width:40px; height:25px; background-position:0 -463px;}
+			
+			/* Hover + Focus */
+				.nav2 .rss:hover,
+				.nav2 .rss:focus		{background-position:-25px -438px;}
+				.nav2 .tw:hover,
+				.nav2 .tw:focus			{background-position:-40px -463px;}
+
+
+		
+	/*  3. Links to pages - RIGHT COLUMN */
+		.nav3 			{margin:0 0 5px 0; position:relative;}
+		.nav3 .title	{margin:0 0 12px 0;}
+		.nav3 li		{background: url(img/sprites/02spr_icons_8bit.png) no-repeat 0 -798px; margin:0 0 20px 5px; padding-left:13px;}
+		.nav3 small		{display:block;}
+		.nav3 .btn		{float:right;}
+		.nav3 .rss		{position:absolute; top:0; right:0;}
+		.nav3 .tw		{position:absolute; top:0; right:0;}
+		
+		
+		
+	/*  4. Links to pages - LEFT COLUMN (heading, p)*/
+		.nav4 			{margin:0 0 5px 0; position:relative;}
+		.nav4 .title	{margin:0 0 22px; padding:0 0 8px 8px; background:url("img/bg/bgHeading1.png") no-repeat scroll 0 bottom transparent;}
+		.nav4 li		{float:left; margin:0 0 16px 20px; padding-left:15px; width:285px; background: url(img/sprites/02spr_icons_8bit.png) no-repeat 0 -798px;}
+
+	/*  5. Links to pages - RIGHT COLUMN */
+		.nav5 			{margin:0 0 20px 0; position:relative;}
+		.nav5 .title	{margin:0 0 12px 0;}
+		.nav5 li		{background-position:0 -798px; margin:0 0 12px 5px; padding-left:13px;}
+		.nav5 small		{display:block;}
+		.nav5 .btn		{float:right;}
+		.nav5 .rss		{position:absolute; top:0; right:0;}
+		.nav5 .tw		{position:absolute; top:0; right:0;}
+		
+		/* The icons */
+			.nav5 .rss		{position:absolute; top:0; right:-5px; text-indent:-9999px; overflow:hidden; width:25px; height:25px; background-position:0 -438px;}
+			
+			/* Hover + Focus */
+				.nav5 .rss:hover,
+				.nav5 .rss:focus		{background-position:-25px -438px;}
+
+
+
+	/* 6. Links to pages - LEFT COLUMN (heading, p, find out more) */
+		.nav6 li		{width:183px; float:left; margin:0 20px 10px 0;}
+		
+		
+	
+
+
+
+
+
+/* BUTTONS */
+	.btn,
+	button.btn 					{display: block;position: relative;padding: 0;margin: 0;height: 30px;background: none;border: none;outline: none;overflow: hidden;cursor: pointer;}
+	.btn span 					{float:left; width:auto; height:30px; padding:0 0 0 33px;}
+	.btn i 						{float:left; width:18px; height:30px;}
+
+	button.btn,
+	.btn,
+	button::-moz-focus-inner 	{padding: 0;border: none;margin: 0;padding: 0;outline: none;border: none;}
+	button.btn 					{display: block;position: relative;outline: none;border: none;padding: 0;background: none;}
+
+	/* Specific Styles (Default - Orange)*/
+		.btn1 span 			{background-position: left 0;}
+		.btn1 i 			{background-position: right 0;}
+		.btn1:hover span,
+		.btn1:focus span 	{background-position: left -31px;}
+		.btn1:hover i,
+		.btn1:focus i 		{background-position: right -31px;}
+		
+		/* .b1 Hover - Applies hover style to button when box is active */
+			.b1:hover .btn1 span,
+			.b1:focus .btn1 span 	{background-position: left -31px;}
+			.b1:hover .btn1 i,
+			.b1:focus .btn1 i 		{background-position: right -31px;}
+		
+	/* Specific Styles (Promo - Green)*/
+		.btn2 span 			{background-position: left -62px;}
+		.btn2 i 			{background-position: right -62px;}
+		.btn2:hover span,
+		.btn2:focus span  	{background-position: left -93px;}
+		.btn2:hover i,
+		.btn2:focus i 		{background-position: right -93px;}	
+		
+		/* .b2 Hover - Applies hover style to button when box is active */
+			.b2:hover .btn2 span,
+			.b2:focus .btn2 span 	{background-position: left -93px;}
+			.b2:hover .btn2 i,
+			.b2:focus .btn2 i 		{background-position: right -93px;}	
+			
+			.b3:hover .btn2 span,
+			.b3:focus .btn2 span 	{background-position: left -93px;}
+			.b3:hover .btn2 i,
+			.b3:focus .btn2 i 		{background-position: right -93px;}	
+
+	/* Specific Styles (Promo - Orange Large)*/
+		.btn3				{height:33px;}
+		.btn3 span 			{height:33px; background-position: left -124px;}
+		.btn3 i 			{height:33px; background-position: right -124px;}
+		.btn3:hover span,
+		.btn3:focus span 	{background-position: left -159px;}
+		.btn3:hover i,
+		.btn3:focus i 		{background-position: right -159px;}	
+
+	
+	
+	
+	
+	
+	
+
+/* Icon Links */
+
+	/* Icon 1 */
+		.icon1		{display:block; height:22px; padding-left:25px; background-position:0 -1000px;}
+
+
+
+
+		
+		
+
+/************************************************
+	3. = SINGLE PAGE CONTENT LAYOUT	 (ONE Page)
+
+************************************************/	
+	
+	/* Blog Index page */
+		.article2 .item						{clear:both; margin-bottom:50px;}
+		.article2 .item	.item:hover			{}
+		.article2 .item	.item p				{padding-bottom:0}
+		.article2 .item	.meta				{float:right; margin:10px 5px 0 0; padding:0;}
+		.article2 .item	.meta small			{color:#9eabb6;}
+		.article2 .item .meta li			{background: url(img/bg/bgDividerBlog.png) no-repeat 0 0; float:left; padding:2px 0 2px 12px;}
+		.article2 .item .meta li.first		{background:none; margin-right:10px;}
+
+	/* Blog Post page */
+		
+		#comments			{clear:both; margin-top:40px;}
+		#comments h2		{margin:0 0 11px; padding:0 0 8px 0; background: url(img/bg/bgHeading1.png) 0 bottom no-repeat;}
+		#comments ol,
+		#comments ol li		{margin:0; padding:0; list-style:none; background:none;}
+		#comments ol		{margin-top:25px;}
+		#comments cite a	{margin-bottom:3px; display:block;}
+		
+		.frmComment legend				{margin:0 0 11px; padding:0 0 8px 0; background: url(img/bg/bgHeading1.png) 0 bottom no-repeat; width:100%;}
+		.frmComment dl					{margin:15px 0 0 28px; line-height:22px;}
+		.frmComment dt					{float:left; width:80px;}
+		.frmComment dd					{vertical-align:center; margin-bottom:14px;}
+		.frmComment .textfield			{background-position: 0 -109px; border:none; height:20px; padding:2px 0 0 7px ;width:343px;}
+		.frmComment .textfield:focus	{background-position: -350px -109px;}
+		.frmComment .textarea			{background-position: 0 -131px; border:none; height:72px; padding:0 0 0 7px ;width:343px;}
+		.frmComment .textarea:focus		{background-position: -350px -131px;}
+		
+		.frmComment .btn1				{float:right; margin-right:177px;}
+		
+
+
+
+		
+	

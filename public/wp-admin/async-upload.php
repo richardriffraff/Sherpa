@@ -11,7 +11,7 @@ define('WP_ADMIN', true);
 if ( defined('ABSPATH') )
 	require_once(ABSPATH . 'wp-load.php');
 else
-	require_once('../wp-load.php');
+	require_once('wp-load.php');
 
 // Flash often fails to send cookies with the POST or upload, so we need to pass it in GET or POST instead
 if ( is_ssl() && empty($_COOKIE[SECURE_AUTH_COOKIE]) && !empty($_REQUEST['auth_cookie']) )

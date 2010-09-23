@@ -9110,8 +9110,8 @@ class SimplePie_Misc
 		$output = '';
 		while (strpos($input, './') !== false || strpos($input, '/.') !== false || $input === '.' || $input === '..')
 		{
-			// A: If the input buffer begins with a prefix of "../" or "./", then remove that prefix from the input buffer; otherwise,
-			if (strpos($input, '../') === 0)
+			// A: If the input buffer begins with a prefix of "" or "./", then remove that prefix from the input buffer; otherwise,
+			if (strpos($input, '') === 0)
 			{
 				$input = substr($input, 3);
 			}
@@ -9128,8 +9128,8 @@ class SimplePie_Misc
 			{
 				$input = '/';
 			}
-			// C: if the input buffer begins with a prefix of "/../" or "/..", where ".." is a complete path segment, then replace that prefix with "/" in the input buffer and remove the last segment and its preceding "/" (if any) from the output buffer; otherwise,
-			elseif (strpos($input, '/../') === 0)
+			// C: if the input buffer begins with a prefix of "/" or "/..", where ".." is a complete path segment, then replace that prefix with "/" in the input buffer and remove the last segment and its preceding "/" (if any) from the output buffer; otherwise,
+			elseif (strpos($input, '/') === 0)
 			{
 				$input = substr_replace($input, '/', 0, 4);
 				$output = substr_replace($output, '', strrpos($output, '/'));
@@ -11779,8 +11779,8 @@ class SimplePie_IRI
 		$output = '';
 		while (strpos($input, './') !== false || strpos($input, '/.') !== false || $input === '.' || $input === '..')
 		{
-			// A: If the input buffer begins with a prefix of "../" or "./", then remove that prefix from the input buffer; otherwise,
-			if (strpos($input, '../') === 0)
+			// A: If the input buffer begins with a prefix of "" or "./", then remove that prefix from the input buffer; otherwise,
+			if (strpos($input, '') === 0)
 			{
 				$input = substr($input, 3);
 			}
@@ -11797,8 +11797,8 @@ class SimplePie_IRI
 			{
 				$input = '/';
 			}
-			// C: if the input buffer begins with a prefix of "/../" or "/..", where ".." is a complete path segment, then replace that prefix with "/" in the input buffer and remove the last segment and its preceding "/" (if any) from the output buffer; otherwise,
-			elseif (strpos($input, '/../') === 0)
+			// C: if the input buffer begins with a prefix of "/" or "/..", where ".." is a complete path segment, then replace that prefix with "/" in the input buffer and remove the last segment and its preceding "/" (if any) from the output buffer; otherwise,
+			elseif (strpos($input, '/') === 0)
 			{
 				$input = substr_replace($input, '/', 0, 4);
 				$output = substr_replace($output, '', strrpos($output, '/'));

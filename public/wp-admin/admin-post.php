@@ -12,7 +12,7 @@ define('WP_ADMIN', true);
 if ( defined('ABSPATH') )
 	require_once(ABSPATH . 'wp-load.php');
 else
-	require_once('../wp-load.php');
+	require_once('wp-load.php');
 
 require_once(ABSPATH . 'wp-admin/includes/admin.php');
 

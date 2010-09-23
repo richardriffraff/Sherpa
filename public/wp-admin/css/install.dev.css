@@ -98,11 +98,11 @@ abbr {
 }
 
 .button, .submit input, .button-secondary {
-	background: #f2f2f2 url(../images/white-grad.png) repeat-x scroll left top;
+	background: #f2f2f2 url(images/white-grad.png) repeat-x scroll left top;
 }
 
 .button:active, .submit input:active, .button-secondary:active {
-	background: #eee url(../images/white-grad-active.png) repeat-x scroll left top;
+	background: #eee url(images/white-grad-active.png) repeat-x scroll left top;
 }
 
 textarea {

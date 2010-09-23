@@ -125,7 +125,7 @@ foreach( $load as $handle ) {
 		$content .= get_file($rtl_path) . "\n";
 	}
 
-	$out .= str_replace( '../images/', 'images/', $content );
+	$out .= str_replace( 'images/', 'images/', $content );
 }
 
 header('Content-Type: text/css');

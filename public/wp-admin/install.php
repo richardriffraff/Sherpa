@@ -141,7 +141,7 @@ function display_setup_form( $error = null ) {
 // Let's check to make sure WP isn't already installed.
 if ( is_blog_installed() ) {
 	display_header();
-	die( '<h1>' . __( 'Already Installed' ) . '</h1><p>' . __( 'You appear to have already installed WordPress. To reinstall please clear your old database tables first.' ) . '</p><p class="step"><a href="../wp-login.php" class="button">' . __('Log In') . '</a></p></body></html>' );
+	die( '<h1>' . __( 'Already Installed' ) . '</h1><p>' . __( 'You appear to have already installed WordPress. To reinstall please clear your old database tables first.' ) . '</p><p class="step"><a href="wp-login.php" class="button">' . __('Log In') . '</a></p></body></html>' );
 }
 
 $php_version    = phpversion();
@@ -167,7 +167,7 @@ switch($step) {
 	  display_header();
 ?>
 <h1><?php _e( 'Welcome' ); ?></h1>
-<p><?php printf( __( 'Welcome to the famous five minute WordPress installation process! You may want to browse the <a href="%s">ReadMe documentation</a> at your leisure. Otherwise, just fill in the information below and you&#8217;ll be on your way to using the most extendable and powerful personal publishing platform in the world.' ), '../readme.html' ); ?></p>
+<p><?php printf( __( 'Welcome to the famous five minute WordPress installation process! You may want to browse the <a href="%s">ReadMe documentation</a> at your leisure. Otherwise, just fill in the information below and you&#8217;ll be on your way to using the most extendable and powerful personal publishing platform in the world.' ), 'readme.html' ); ?></p>
 
 <h1><?php _e( 'Information needed' ); ?></h1>
 <p><?php _e( 'Please provide the following information. Don&#8217;t worry, you can always change these settings later.' ); ?></p>
@@ -235,7 +235,7 @@ switch($step) {
 	</tr>
 </table>
 
-<p class="step"><a href="../wp-login.php" class="button"><?php _e( 'Log In' ); ?></a></p>
+<p class="step"><a href="wp-login.php" class="button"><?php _e( 'Log In' ); ?></a></p>
 
 <?php
 		}
@@ -243,7 +243,7 @@ switch($step) {
 }
 ?>
 <script type="text/javascript">var t = document.getElementById('weblog_title'); if (t){ t.focus(); }</script>
-<script type="text/javascript" src="../wp-includes/js/jquery/jquery.js"></script>
+<script type="text/javascript" src="wp-includes/js/jquery/jquery.js"></script>
 <script type="text/javascript" src="js/password-strength-meter.js"></script>
 <script type="text/javascript" src="js/user-profile.js"></script>
 <script type="text/javascript" src="js/utils.js"></script>

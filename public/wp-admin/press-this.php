@@ -200,7 +200,7 @@ if ( !empty($_REQUEST['ajax']) ) {
 				// if no http in url
 				if (strpos($src, 'http') === false)
 					// if it doesn't have a relative uri
-					if ( strpos($src, '../') === false && strpos($src, './') === false && strpos($src, '/') === 0)
+					if ( strpos($src, '') === false && strpos($src, './') === false && strpos($src, '/') === 0)
 						$src = 'http://'.str_replace('//','/', $host['host'].'/'.$src);
 					else
 						$src = 'http://'.str_replace('//','/', $host['host'].'/'.dirname($host['path']).'/'.$src);
