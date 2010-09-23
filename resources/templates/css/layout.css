@@ -189,10 +189,10 @@ DESCRIPTION:  	Defines layout - Dimensions, display, floats, position, backgroun
 	/* 1. Share options */	
 		.footerShare		{position:relative; height:38px; margin:10px 0 48px 0; background-position:0 -72px;}
 		.footerShare dl		{position:absolute; right:10px; top:8px;}
-		.footerShare dt		{float:left; margin:0 10px 0 0; width:auto; line-height:22px;}
+		.footerShare dt		{float:left; margin:0 10px 0 0; width:auto; line-height:24px;}
 		.footerShare dd,
 		.footerShare ul		{float:left; margin:0; padding:0;}
-		.footerShare li		{float:left; margin:0 7px 0 0; padding:0; background:none;}
+		.footerShare li		{float:left; margin:1px 7px 0 0; padding:0; background:none;}
 		.footerShare a		{float:left; width:20px; height:20px; overflow:hidden; text-indent:-9999px;}
 	
 		/* Icons */	
@@ -263,7 +263,7 @@ DESCRIPTION:  	Defines layout - Dimensions, display, floats, position, backgroun
 	.box img			{display:block; position:relative;}
 		
 	/* Box 1 - Case Studies (Green) */
-		.b1			 	{background: url(../img/bg/bgB1.png) no-repeat 0 top; float:left; margin-left:-5px; padding:20px 25px 0; position:relative; width:274px; text-decoration:none;}
+		.b1			 	{background: url(../img/bg/bgB1.png) no-repeat 0 top; padding:20px 25px 0; position:relative; width:274px; text-decoration:none;}
 		.b1:hover	 	{text-decoration:none;}
 		.b1Bottom		{background: url(../img/bg/bgB1.png) no-repeat 0 bottom; height:12px; width:324px; position:absolute; bottom:-10px; left:0;} 
 		.b1 .title		{background:none; padding:0; margin-bottom:7px;}
@@ -272,17 +272,17 @@ DESCRIPTION:  	Defines layout - Dimensions, display, floats, position, backgroun
 		
 	
 	/* Box 2 - Sherpa Clinic (Blue) */
-		.b2			 	{background: url(../img/bg/bgB2.png) no-repeat 0 0; height:145px; margin-left:-9px; padding:20px 29px 0 29px; width:208px; text-decoration:none;}
+		.b2			 	{background: url(../img/bg/bgB2.png) no-repeat 0 0; height:125px;  margin:15px 0; padding:20px 29px 0 29px; width:208px; text-decoration:none;}
 		.b2:hover	 	{text-decoration:none;}
 		.b2 .title		{padding:0; margin-bottom:3px;}
-		.b2 .btn2		{position:absolute; bottom:18px; right:29px;} 
+		.b2 .btn2		{position:absolute; bottom:0; right:25px;} 
 			
 	
 	/* Box 3 - Sherpa Catalyst (Blue) */
-		.b3			 	{background: url(../img/bg/bgB3.png) no-repeat 0 0; height:145px; margin-left:-9px; padding:20px 29px 0; width:208px; text-decoration:none;}
+		.b3			 	{background: url(../img/bg/bgB3.png) no-repeat 0 0; height:125px; margin:15px 0; padding:20px 29px 0; width:208px; text-decoration:none;}
 		.b3:hover	 	{text-decoration:none;}
 		.b3 .title		{padding:0; margin-bottom:3px;}
-
+		.b3 .btn2		{position:absolute; bottom:0px; right:25px;} 
 
 
 /* LISTS */
@@ -291,7 +291,10 @@ DESCRIPTION:  	Defines layout - Dimensions, display, floats, position, backgroun
 		.nOffset1		{margin-top:-5px !important;}
 		.nOffset2		{top:8px !important; margin-bottom:0 !important;}
 		.nOffset2 .btn	{position:relative; bottom:-14px;}
-
+		
+		.aOffset1		{margin-left:-9px !important;} /* Blue clm2 promos */
+		.aOffset2		{margin-left:-5px !important; float:left;} /* Green Case Study box (left) */	
+		.aOffset3		{margin-right:-5px !important; float:right;} /* Green Case Study box (right) */
 
 
 	/* 1. */
@@ -321,9 +324,9 @@ DESCRIPTION:  	Defines layout - Dimensions, display, floats, position, backgroun
 
 		
 	/* 3. A List of services (Links to other pages) */
-		.nav3 			{margin:0 0 20px 0; position:relative;}
+		.nav3 			{margin:0 0 5px 0; position:relative;}
 		.nav3 .title	{margin:0 0 12px 0;}
-		.nav3 li		{background: url(../img/sprites/02spr_icons_8bit.png) no-repeat 0 3px; margin:0 0 20px 5px; padding-left:13px;}
+		.nav3 li		{background: url(../img/sprites/02spr_icons_8bit.png) no-repeat 0 -798px; margin:0 0 20px 5px; padding-left:13px;}
 		.nav3 small		{display:block;}
 		.nav3 .btn		{float:right;}
 		.nav3 .rss		{position:absolute; top:0; right:0;}
@@ -351,15 +354,32 @@ DESCRIPTION:  	Defines layout - Dimensions, display, floats, position, backgroun
 		.btn1:hover i,
 		.btn1:focus i 		{background-position: right -31px;}
 		
+		/* .b1 Hover - Applies hover style to button when box is active */
+			.b1:hover .btn1 span,
+			.b1:focus .btn1 span 	{background-position: left -31px;}
+			.b1:hover .btn1 i,
+			.b1:focus .btn1 i 		{background-position: right -31px;}
+		
 	/* Specific Styles (Promo - Green)*/
 		.btn2 span 			{background-position: left -62px;}
 		.btn2 i 			{background-position: right -62px;}
 		.btn2:hover span,
 		.btn2:focus span  	{background-position: left -93px;}
 		.btn2:hover i,
-		.btn2:focus i 		{background-position: right -93px;}		
+		.btn2:focus i 		{background-position: right -93px;}	
+		
+		/* .b2 Hover - Applies hover style to button when box is active */
+			.b2:hover .btn2 span,
+			.b2:focus .btn2 span 	{background-position: left -93px;}
+			.b2:hover .btn2 i,
+			.b2:focus .btn2 i 		{background-position: right -93px;}	
+			
+			.b3:hover .btn2 span,
+			.b3:focus .btn2 span 	{background-position: left -93px;}
+			.b3:hover .btn2 i,
+			.b3:focus .btn2 i 		{background-position: right -93px;}	
 
-	/* Specific Styles (Promo - Green)*/
+	/* Specific Styles (Promo - Orange Large)*/
 		.btn3				{height:33px;}
 		.btn3 span 			{height:33px; background-position: left -124px;}
 		.btn3 i 			{height:33px; background-position: right -124px;}
