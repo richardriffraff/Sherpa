@@ -55,7 +55,8 @@ DESCRIPTION:  	Defines layout - Dimensions, display, floats, position, backgroun
 		.footerShare .tw,
 		.section2 li,
 		.nav2 .rss,
-		.nav2 .tw			{background: url(../img/sprites/02spr_icons_8bit.png); background-repeat:no-repeat;}
+		.nav2 .tw,
+		.nav3 li				{background: url(../img/sprites/02spr_icons_8bit.png); background-repeat:no-repeat;}
 		
 	/* 3. Buttons - 24 Bit */
 		.btn span,
@@ -140,8 +141,8 @@ DESCRIPTION:  	Defines layout - Dimensions, display, floats, position, backgroun
 	#template #clm1		{float:left;}
 	#template #clm2		{float:right; position:relative;}
 	
-	#template #clm2				{background: url(../img/bg/bgClm2.png) no-repeat 0 top; min-height:560px; width:314px; margin-right:-13px;} 
-	#template#clm2 .content		{padding:27px 33px;}
+	#template #clm2				{background: url(../img/bg/bgClm2.png) no-repeat 0 top; min-height:560px; width:314px; margin-right:-13px !important;} 
+	#template #clm2 .content	{padding:27px 33px;}
 	#template #clm2 .contentv2	{padding:27px 33px 0;} 
 	#template .clm2Bottom		{background: url(../img/bg/bgClm2.png) no-repeat 0 bottom; width:314px; z-index:-1; height:15px; position:absolute; bottom:-15px; left:0;}
 	
@@ -164,6 +165,7 @@ DESCRIPTION:  	Defines layout - Dimensions, display, floats, position, backgroun
 /* ARTICLES */
 	/* Headings */
 		article h1			{margin:0 0 11px; padding:0 0 8px 0; background: url(../img/bg/bgHeading1.png) 0 bottom no-repeat;}
+			article h1 .date		{float:right; margin-top:5px;}
 		article h2			{margin:0 0 8px 0;}
 
 	/* Copy */
@@ -189,10 +191,10 @@ DESCRIPTION:  	Defines layout - Dimensions, display, floats, position, backgroun
 	/* 1. Share options */	
 		.footerShare		{position:relative; height:38px; margin:10px 0 48px 0; background-position:0 -72px;}
 		.footerShare dl		{position:absolute; right:10px; top:8px;}
-		.footerShare dt		{float:left; margin:0 10px 0 0; width:auto; line-height:24px;}
+		.footerShare dt		{float:left; margin:0 10px 0 0; width:auto; line-height:22px;}
 		.footerShare dd,
 		.footerShare ul		{float:left; margin:0; padding:0;}
-		.footerShare li		{float:left; margin:1px 7px 0 0; padding:0; background:none;}
+		.footerShare li		{float:left; margin:0 7px 0 0; padding:0; background:none;}
 		.footerShare a		{float:left; width:20px; height:20px; overflow:hidden; text-indent:-9999px;}
 	
 		/* Icons */	
@@ -243,7 +245,7 @@ DESCRIPTION:  	Defines layout - Dimensions, display, floats, position, backgroun
 
 
 /* BLOCK QUOTES */
-	.blockQuote			{margin:10px 0 22px 0; overflow:hidden;}
+	.blockQuote			{margin:10px 0 35px 0; overflow:hidden;}
 	.blockQuote p,
 	.blockQuote cite	{display:block; width:1px; height:1px; text-indent:-999px; overflow:hidden;}
 	
@@ -265,7 +267,7 @@ DESCRIPTION:  	Defines layout - Dimensions, display, floats, position, backgroun
 	/* Box 1 - Case Studies (Green) */
 		.b1			 	{background: url(../img/bg/bgB1.png) no-repeat 0 top; padding:20px 25px 0; position:relative; width:274px; text-decoration:none;}
 		.b1:hover	 	{text-decoration:none;}
-		.b1Bottom		{background: url(../img/bg/bgB1.png) no-repeat 0 bottom; height:12px; width:324px; position:absolute; bottom:-10px; left:0;} 
+		.b1Bottom		{background: url(../img/bg/bgB1.png) no-repeat 0 bottom; height:12px; width:324px; position:absolute; bottom:-12px; left:0;} 
 		.b1 .title		{background:none; padding:0; margin-bottom:7px;}
 		.b1 p			{margin-bottom:10px;}
 		.b1 .btn1		{float:right; margin:-15px 25px 0 0;} 
@@ -326,7 +328,7 @@ DESCRIPTION:  	Defines layout - Dimensions, display, floats, position, backgroun
 	/* 3. A List of services (Links to other pages) */
 		.nav3 			{margin:0 0 5px 0; position:relative;}
 		.nav3 .title	{margin:0 0 12px 0;}
-		.nav3 li		{background: url(../img/sprites/02spr_icons_8bit.png) no-repeat 0 -798px; margin:0 0 20px 5px; padding-left:13px;}
+		.nav3 li		{background-position:0 -798px; margin:0 0 20px 5px; padding-left:13px;}
 		.nav3 small		{display:block;}
 		.nav3 .btn		{float:right;}
 		.nav3 .rss		{position:absolute; top:0; right:0;}
@@ -406,7 +408,12 @@ DESCRIPTION:  	Defines layout - Dimensions, display, floats, position, backgroun
 
 /************************************************
 	3. = SINGLE PAGE CONTENT LAYOUT	 (ONE Page)
-************************************************/	
+************************************************/
+
+	/* Blog Post page */
+		#post			{}
+		#comments		{clear:both; margin-top:30px;}
+		#comments h2	{margin:0 0 11px; padding:0 0 8px 0; background: url(../img/bg/bgHeading1.png) 0 bottom no-repeat;}
 
 
 		

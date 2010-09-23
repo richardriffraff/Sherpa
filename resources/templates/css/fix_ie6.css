@@ -16,7 +16,11 @@ DESCRIPTION:  	File Fixes IE6 Bugs
 		dd			{position:relative; float:none; display:block; clear: right; }
 	/* @end */
 	
+	
+	
 /* @end Group 1. */
+
+	#template #clm2				{clear:left; margin-right:-28px !important;} 
 
 
 /* OverHidden > Bugs */

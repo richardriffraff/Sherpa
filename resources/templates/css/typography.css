@@ -93,10 +93,11 @@ body		{font: 12px 'Helvetica Neue', Helvetica, sans-serif; text-align:center; co
 /* ARTICLES */
 
 	/* Headings */
-		article h1			{font-size:24px; color:#192a36; font-weight:bold; line-height:24px;}
-		article h2			{font-size:20px; color:#192a36; font-weight:bold; line-height:20px;}
+		article h1				{font-size:24px; color:#192a36; font-weight:bold; line-height:24px;}
+			article h1 .date		{color:#99a6b2; font-size:12px;}
+		article h2				{font-size:20px; color:#192a36; font-weight:bold; line-height:20px;}
 		article h3,
-		article h4			{color:#33383c;}
+		article h4				{color:#33383c;}
 		
 
 		
@@ -257,4 +258,9 @@ body		{font: 12px 'Helvetica Neue', Helvetica, sans-serif; text-align:center; co
 /************************************************
 	3. = SINGLE PAGE TYPOGRAPHY		(ONE Page)
 ************************************************/
+
+	/* Blog Post page */
+		#post		{color:#354754; font-style:italic;}
+		
+		#comments h2	{}
 
