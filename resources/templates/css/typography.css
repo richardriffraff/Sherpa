@@ -151,6 +151,9 @@ body		{font: 12px 'Helvetica Neue', Helvetica, sans-serif; text-align:center; co
 		/* Section 2 */
 			.section2			{float:left; width:191px; margin:0 0 20px 0; padding:0 0 0 22px; }
 			.section2 .title	{font-size:22px; line-height:24px; color:#192a36;}
+			
+		/* Section 3 */
+			.section3 .title	{font-size:20px; color:#192a36; line-height:24px;}
 
 
 
@@ -208,6 +211,18 @@ body		{font: 12px 'Helvetica Neue', Helvetica, sans-serif; text-align:center; co
 		.nav4 a:hover,
 		.nav4 a:focus,
 		.nav4 a:active				{color:#192a36;}
+		
+		
+
+
+
+
+
+
+
+	/* 6. Links to pages - LEFT COLUMN (heading, p, find out more) */
+
+
 
 
 
