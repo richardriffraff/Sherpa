@@ -184,6 +184,7 @@ DESCRIPTION:  	Defines layout - Dimensions, display, floats, position, backgroun
 /* ARTICLES */
 	/* Headings */
 		article h1			{margin:0 0 11px; padding:0 0 8px 0; background: url(../img/bg/bgHeading1.png) 0 bottom no-repeat;}
+			article h1 .date		{float:right; margin:5px 5px 0 0;}
 		article h2			{margin:0 0 8px 0;}
 
 	/* Copy */
