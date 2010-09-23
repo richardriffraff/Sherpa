@@ -323,10 +323,12 @@ DESCRIPTION:  	Defines layout - Dimensions, display, floats, position, backgroun
 		.nOffset1		{margin-top:-5px !important;}
 		.nOffset2		{top:8px !important; margin-bottom:0 !important;}
 		.nOffset2 .btn	{position:relative; bottom:-14px;}
+		.nOffset3		{position:relative; top:-22px;} /* Used on .nav4 in left column */
 		
 		.aOffset1		{margin-left:-9px !important;} /* Blue clm2 promos */
 		.aOffset2		{margin-left:-5px !important; float:left;} /* Green Case Study box (left) */	
 		.aOffset3		{margin-right:-5px !important; float:right;} /* Green Case Study box (right) */
+		
 
 
 	/* 1. */
@@ -368,12 +370,8 @@ DESCRIPTION:  	Defines layout - Dimensions, display, floats, position, backgroun
 		
 	/*  4. Links to pages - LEFT COLUMN */
 		.nav4 			{margin:0 0 5px 0; position:relative;}
-		.nav4 .title	{margin:0 0 12px 0;}
-		.nav4 li		{background: url(../img/sprites/02spr_icons_8bit.png) no-repeat 0 -798px; margin:0 0 20px 5px; padding-left:13px;}
-		.nav4 small		{display:block;}
-		.nav4 .btn		{float:right;}
-		.nav4 .rss		{position:absolute; top:0; right:0;}
-		.nav4 .tw		{position:absolute; top:0; right:0;}	
+		.nav4 .title	{margin:0 0 22px; padding:0 0 8px 8px; background:url("../img/bg/bgHeading1.png") no-repeat scroll 0 bottom transparent;}
+		.nav4 li		{float:left; margin:0 0 16px 20px; padding-left:15px; width:285px; background: url(../img/sprites/02spr_icons_8bit.png) no-repeat 0 -798px;}
 
 
 
