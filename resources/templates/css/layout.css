@@ -503,11 +503,11 @@ DESCRIPTION:  	Defines layout - Dimensions, display, floats, position, backgroun
 		
 		.frmComment legend				{margin:0 0 11px; padding:0 0 8px 0; background: url(../img/bg/bgHeading1.png) 0 bottom no-repeat; width:100%;}
 		.frmComment dl					{margin:0 0 0 28px; line-height:22px; padding-top:30px;}
-		.frmComment dt					{float:left; width:80px;}
+		.frmComment dt					{float:left; width:80px; display:inline;}
 		.frmComment dd					{margin:0 0 14px 0; padding:0; }
-		.frmComment .textfield			{background-position: 0 -109px; border:none; height:18px; padding:4px 0 1px 7px ;width:343px; margin:0; line-height: 22px;}
+		.frmComment .textfield			{background-position: 0 -109px; border:none; height:18px; padding:4px 0 1px 7px ;width:343px; margin:0; line-height: 18px; resize:none;}
 		.frmComment .textfield:focus	{background-position: -350px -109px;}
-		.frmComment .textarea			{background-position: 0 -132px; border:none; height:66px; margin:0; padding:6px 0 0 7px; width:343px;}
+		.frmComment .textarea			{background-position: 0 -132px; border:none; height:66px; margin:0; padding:6px 0 0 7px; width:343px; resize:none;}
 		.frmComment .textarea:focus		{background-position: -350px -132px;}
 		
 		.frmComment .btn1				{float:right; margin-right:180px;}
