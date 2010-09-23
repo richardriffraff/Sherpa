@@ -355,7 +355,7 @@ DESCRIPTION:  	Defines layout - Dimensions, display, floats, position, backgroun
 
 
 		
-	/* 3. A List of services (Links to other pages) */
+	/* 3. Links to pages - RIGHT COLUMN */
 		.nav3 			{margin:0 0 5px 0; position:relative;}
 		.nav3 .title	{margin:0 0 12px 0;}
 		.nav3 li		{background: url(../img/sprites/02spr_icons_8bit.png) no-repeat 0 -798px; margin:0 0 20px 5px; padding-left:13px;}
@@ -363,7 +363,17 @@ DESCRIPTION:  	Defines layout - Dimensions, display, floats, position, backgroun
 		.nav3 .btn		{float:right;}
 		.nav3 .rss		{position:absolute; top:0; right:0;}
 		.nav3 .tw		{position:absolute; top:0; right:0;}
-	
+		
+		
+		
+	/*  4. Links to pages - LEFT COLUMN */
+		.nav4 			{margin:0 0 5px 0; position:relative;}
+		.nav4 .title	{margin:0 0 12px 0;}
+		.nav4 li		{background: url(../img/sprites/02spr_icons_8bit.png) no-repeat 0 -798px; margin:0 0 20px 5px; padding-left:13px;}
+		.nav4 small		{display:block;}
+		.nav4 .btn		{float:right;}
+		.nav4 .rss		{position:absolute; top:0; right:0;}
+		.nav4 .tw		{position:absolute; top:0; right:0;}	
 
 
 
