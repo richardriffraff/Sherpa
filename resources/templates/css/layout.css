@@ -266,7 +266,7 @@ DESCRIPTION:  	Defines layout - Dimensions, display, floats, position, backgroun
 		.b1Bottom		{background: url(../img/bg/bgB1.png) no-repeat 0 bottom; height:12px; width:324px; position:absolute; bottom:-10px; left:0;} 
 		.b1 .title		{background:none; padding:0; margin-bottom:7px;}
 		.b1 p			{margin-bottom:10px;}
-		.b1 .btn1		float:right; margin:-15px 25px 0 0;} 
+		.b1 .btn1		{float:right; margin:-15px 25px 0 0;} 
 		
 	
 	/* Box 2 - Sherpa Clinic (Blue) */
@@ -298,11 +298,21 @@ DESCRIPTION:  	Defines layout - Dimensions, display, floats, position, backgroun
 	/* 2. A List of Blog Posts with dates */
 		.nav2 			{margin:0 0 20px 0; position:relative;}
 		.nav2 .title	{margin:0 0 12px 0;}
-		.nav2 li		{margin:0 0 20px 0;}
+		.nav2 li		{margin:0 0 20px 0; }
 		.nav2 small		{display:block;}
 		.nav2 .btn		{float:right;}
 		.nav2 .rss		{position:absolute; top:0; right:0;}
 		.nav2 .tw		{position:absolute; top:0; right:0;}
+		
+		
+	/* 3. A List of services (Links to other pages) */
+		.nav3 			{margin:0 0 20px 0; position:relative;}
+		.nav3 .title	{margin:0 0 12px 0;}
+		.nav3 li		{background: url(../img/sprites/02spr_icons_8bit.png) no-repeat 0 3px; margin:0 0 20px 5px; padding-left:13px;}
+		.nav3 small		{display:block;}
+		.nav3 .btn		{float:right;}
+		.nav3 .rss		{position:absolute; top:0; right:0;}
+		.nav3 .tw		{position:absolute; top:0; right:0;}
 	
 
 
