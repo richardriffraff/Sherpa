@@ -291,7 +291,7 @@ body		{font: 12px 'Helvetica Neue', Helvetica, sans-serif; text-align:center; co
 ************************************************/
 
 	/* Blog Post page */
-		#post		{color:#354754; font-style:italic;}
+		#post		{color:#354754; font-style:italic; line-height:20px;}
 		
 		#comments cite a		{color:#c0d146; font-size:14px; font-weight:bold; font-style:normal;}
 		#comments blockquote p	{color:#757f88; line-height:20px;}
