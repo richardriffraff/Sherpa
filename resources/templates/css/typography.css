@@ -153,8 +153,9 @@ body		{font: 12px 'Helvetica Neue', Helvetica, sans-serif; text-align:center; co
 			.section2			{float:left; width:191px; margin:0 0 20px 0; padding:0 0 0 22px; }
 			.section2 .title	{font-size:22px; line-height:24px; color:#192a36;}
 			
-		/* Section 3 */
-			.section3 .title	{font-size:20px; color:#192a36; line-height:24px;}
+			/* Section 3 */
+				.section3 .title	{font-size:20px; color:#192a36; line-height:24px;}
+				.section3 p			{font-size:13px; line-height:20px;}
 
 
 
@@ -240,7 +241,7 @@ body		{font: 12px 'Helvetica Neue', Helvetica, sans-serif; text-align:center; co
 /* BOXES */
 
 	/* Box 1 - Case Studies (Green) */
-		.b1 .title					{font-size:20px;}
+		.b1 .title					{font-size:20px; color:#33383C;;}
 		.b1 p						{color:#464a29; line-height:16px;}
 		.b1:hover p 				{color:#292C2F;}		
 	
@@ -282,15 +283,13 @@ body		{font: 12px 'Helvetica Neue', Helvetica, sans-serif; text-align:center; co
 
 
 	
-/* ICONS */	
-	/* Red Arrow, right side */
-		.icon1		{line-height:18px;}
-	/* Red Arrow, left side */
-		.icon2		{line-height:18px;}	
-	/* Dark Red Arrow, right side */
-		.icon3		{color:#fff; font-size:10px; line-height:18px; font-weight:bold; text-transform:uppercase;}	
-	/* Large Red Arrow, right side */
-		.icon4		{line-height:20px; text-transform:uppercase; font-size:13px; font-weight:bold;}
+/* Icon Links */
+
+	/* Icon 1 */
+		.icon1			{line-height:18px; color:#f06c21; font-size:12px; font-weight:bold; text-decoration:none;}
+		.icon1:hover,
+		.icon1:focus,
+		.icon1:active	{text-decoration:underline; color:#f38c51;}
 	
 	
 /************************************************
