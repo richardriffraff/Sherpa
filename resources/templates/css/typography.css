@@ -94,7 +94,8 @@ body		{font: 12px 'Helvetica Neue', Helvetica, sans-serif; text-align:center; co
 
 	/* Headings */
 		article h1				{font-size:24px; color:#192a36; font-weight:bold; line-height:24px;}
-			article h1 .date		{color:#99a6b2; font-size:12px;}
+			article h1 .date,		
+			.article2 h2 .date		{color:#99a6b2; font-size:12px;}
 		article h2				{font-size:20px; color:#192a36; font-weight:bold; line-height:20px;}
 		article h3,
 		article h4				{color:#33383c;}

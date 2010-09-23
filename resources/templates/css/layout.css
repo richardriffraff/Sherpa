@@ -182,10 +182,11 @@ DESCRIPTION:  	Defines layout - Dimensions, display, floats, position, backgroun
 
 /* ARTICLES */
 	/* Headings */
-		article h1			{margin:0 0 11px; padding:0 0 8px 0; background: url(../img/bg/bgHeading1.png) 0 bottom no-repeat;}
-			article h1 .date		{float:right; margin:5px 5px 0 0;}
-		article h2			{margin:0 0 8px 0;}
-
+		article h1				{margin:0 0 11px; padding:0 0 8px 0; background: url(../img/bg/bgHeading1.png) 0 bottom no-repeat;}
+			article h1 .date		{float:right; margin:3px 5px 0 0;}
+		.article h2				{margin:0 0 8px 0;}
+		.article2 h2				{margin:0 0 11px; padding:0 0 8px 0; background: url(../img/bg/bgHeading1.png) 0 bottom no-repeat;}
+			.article2 h2 .date		{float:right; margin:3px 5px 0 0;}
 	/* Copy */
 		article p			{padding:0 0 22px 0;}
 		article ul			{margin:0; padding:12px 0 22px 52px;}
@@ -480,7 +481,15 @@ DESCRIPTION:  	Defines layout - Dimensions, display, floats, position, backgroun
 	3. = SINGLE PAGE CONTENT LAYOUT	 (ONE Page)
 
 ************************************************/	
-
+	
+	/* Blog Index page */
+		.article2 .item						{clear:both; margin-bottom:50px;}
+		.article2 .item	.item:hover			{}
+		.article2 .item	.item p				{padding-bottom:0}
+		.article2 .item	.meta				{float:right; margin:10px 5px 0 0; padding:0;}
+		.article2 .item	.meta small			{color:#9eabb6;}
+		.article2 .item .meta li			{background: url(../img/bg/bgDividerBlog.png) no-repeat 0 0; float:left; padding:2px 0 2px 12px;}
+		.article2 .item .meta li.first		{background:none; margin-right:10px;}
 
 	/* Blog Post page */
 		
