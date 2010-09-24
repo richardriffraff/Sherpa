@@ -62,7 +62,8 @@ DESCRIPTION:  	Defines layout - Dimensions, display, floats, position, backgroun
 		.nav2 .tw,
 		.nav3 li,
 		.nav5 li,
-		.nav5 .rss				{background: url(../img/sprites/02spr_icons_8bit.png); background-repeat:no-repeat;}
+		.nav5 .rss,
+		.icon1					{background: url(../img/sprites/02spr_icons_8bit.png); background-repeat:no-repeat;}
 
 		
 	/* 3. Buttons - 24 Bit */
@@ -263,7 +264,8 @@ DESCRIPTION:  	Defines layout - Dimensions, display, floats, position, backgroun
 			.section2 .btn		{float:right; position:relative; right:12px;}
 			
 		/* Section 3 */
-			
+			.section3      		{position:relative; height:126px;}
+			.section3 a      	{position:absolute; bottom:16px; left:0;}
 			
 
 
@@ -306,7 +308,7 @@ DESCRIPTION:  	Defines layout - Dimensions, display, floats, position, backgroun
 		.b1:hover	 	{text-decoration:none;}
 		.b1Bottom		{background: url(../img/bg/bgB1.png) no-repeat 0 bottom; height:12px; width:324px; position:absolute; bottom:-10px; left:0;} 
 		.b1 .title		{background:none; padding:0; margin-bottom:7px;}
-		.b1 p			{margin-bottom:10px;}
+		.b1 p      		{margin-bottom:32px;}
 		.b1 .btn1		{float:right; margin:-15px 25px 0 0;} 
 		
 	
@@ -339,6 +341,7 @@ DESCRIPTION:  	Defines layout - Dimensions, display, floats, position, backgroun
 		.nOffset2		{top:8px !important; margin-bottom:0 !important;}
 		.nOffset2 .btn	{position:relative; bottom:-14px;}
 		.nOffset3		{position:relative; top:-22px;} /* Used on .nav4 in left column */
+		.nOffset4    	{position:relative; top:-10px;}
 		
 		.aOffset1		{margin-left:-9px !important;} /* Blue clm2 promos */
 		.aOffset2		{margin-left:-5px !important; float:left;} /* Green Case Study box (left) */	
@@ -407,7 +410,8 @@ DESCRIPTION:  	Defines layout - Dimensions, display, floats, position, backgroun
 				.nav5 .rss:focus		{background-position:-25px -438px;}
 
 	/* 6. Links to pages - LEFT COLUMN (heading, p, find out more) */
-		.nav6 li		{width:203px;}
+		.nav6 li   	 	{width:203px;}
+		.nav6 li    	{width:183px; float:left; margin:0 20px 10px 0;}
 	
 
 
@@ -475,6 +479,8 @@ DESCRIPTION:  	Defines layout - Dimensions, display, floats, position, backgroun
 	
 
 /* Icon Links */
+ 	/* Icon 1 */
+		.icon1    {display:block; height:22px; padding-left:25px; background-position:0 -1000px;}
 		
 		
 

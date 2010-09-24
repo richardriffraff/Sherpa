@@ -1,6 +1,13 @@
+<?php
+/*
+Template Name: Blog List Page
+*/
+?>
 <?php get_header(); ?>
+<?php get_sidebar('head'); ?>	
 
 <!-- START LAYOUT (ID: Template) [All Content always sits inside the template] -->
+<!-- START WP, blog-list.php -->
 		
 	<div id="template" class="three1 clearfix">
 		<div id="clm1">
@@ -45,7 +52,7 @@
 		<div id="clm2">	
 			<div class="contentv2">
 
-				<?php get_sidebar(); ?>			
+				<?php get_sidebar('blog'); ?>			
 
 			</div>
 			<div class="clm2Bottom"></div>

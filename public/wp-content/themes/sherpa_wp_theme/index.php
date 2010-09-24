@@ -1,5 +1,6 @@
 <?php get_header(); ?>
 
+<!-- START, WP: index.php -->
 <!-- START LAYOUT (ID: Template) [All Content always sits inside the template] -->
 		
 	<div id="template" class="three1 clearfix">
@@ -49,7 +50,7 @@
 		<div id="clm2">	
 			<div class="contentv2">
 				
-				<?php get_sidebar(); ?>			
+				<?php get_sidebar('blog'); ?>			
 			
 			</div>
 			<div class="clm2Bottom"></div>

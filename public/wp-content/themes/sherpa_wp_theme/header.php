@@ -30,47 +30,4 @@
 	<?php wp_head() ?>
 
 </head>
-<body>
-	
-	<header class="clearfix">
-		
-		<nav id="nSkip">
-			<ul>
-				<li><a href="#nMain" title="Skip To: Main Navigation">Main Navigation</a></li>
-				<li><a href="#template" title="Skip To: Content">Content</a></li>
-				<li><a href="#nQuickLinks" title="Skip To: Quick Links">Quick Link Navigation</a></li>
-				<li><a href="#nLegal" title="Skip To: Legal Navigation">Legal Navigation</a></li>
-			</ul>
-		</nav>
-		
-		<a href="/" title="View: SHERPA Homepage" id="logo">
-			<img src="<?php bloginfo('template_url'); ?>/img/header/logo.png" width="177" height="48" alt="Sherpa Logo" />
-		</a>
-		
-		<address id="contactInfo">
-			<span class="phoneUs">Call us now</span> <span class="phone">0191 211 1920</span><br />
-			<span class="emailUs">or email</span> <a href="mailto:info@sherpabusinessconsultancy.com" class="email" title="Email <?php bloginfo('name')?>">info@sherpabusinessconsultancy.com</a>
-		</address>
-		
-	<!-- END: Contact Details -->		
-
-	</header>
-	
-<!-- END LAYOUT (Header) [] -->
-
-	<div id="mainBar" class="clearfix">
-
-		<nav id="nMain">
-			<ul class="variable_black clearfix">
-				<li>
-					<a href="<?php get_option('home'); ?>" title="View: <?php bloginfo('name'); ?> Homepage">Home</a>
-				</li>
-				<?php wp_list_pages('title_li='); ?>
-			</ul>
-		</nav>
-
-	</div>
-	<div class="clear"></div>
-	
-<!-- END: LAYOUT (Main Nav + Search Form) -->	
 <!-- END: WP, header.php -->
