@@ -112,6 +112,9 @@ DESCRIPTION:  	Defines layout - Dimensions, display, floats, position, backgroun
 		
 		/* Active */
 			#nMain strong	{float:left; background-position:0 -39px;}
+					
+		/* Children */
+			#nMain .children	{display:none;}
 		
 	/* Search Form */
 		#frmSearch				{padding:9px 23px; float:right; position:absolute; top:0; right:0;}
