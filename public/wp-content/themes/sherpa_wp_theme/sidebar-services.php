@@ -1,34 +1,34 @@
 <nav class="nav3 nOffset1 clearfix">
-	<h3 class="title creighton">Services <span>For Early Stage Business</span></h3>
+	<h3 class="title creighton">Services</h3>
 	<ul>
-		<li><a href="#" title="View: Link Title">Define Sales, Operations &amp; Financial Process</a></li>
-		<li><a href="#" title="View: Link Title">Management Team Development through Coaching &amp; Mentorship</a></li>
-		<li><a href="#" title="View: Link Title">Managing Growth through processes, delegation &amp; Leadership</a></li>
-		<li><a href="#" title="View: Link Title">Non-exec board-level support</a></li>
-		<li><a href="#" title="View: Link Title">Planning and Reporting</a></li>
+<?php
+	$services = get_pages('child_of=60');
+	$i = 0;
+	foreach($services as $service) {
+		if ($i > 4) break;
+?>	
+		<li><a href="<?= $service->guid  ?>" title="View: <?= $service->post_title ?>"><?= $service->post_title ?></a></li>
+<?php 
+	$i++;
+} ?>
 	</ul>
 </nav>
 
-<div class="hr"><hr /></div>
+<?php
+	$promos	= get_pages('include=252, 256');
+	foreach($promos as $promo) {
+?>
 
-<a href="#" class="box b2 aOffset1" title="View: About The SHERPA Clinic">
-	<h4 class="title creighton">Sherpa Clinic</h4>
-	<p>Lorem ipsum dolor sit amet, adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore...</p>
+<div class="hr"><hr /></div>
+<a href="<?php bloginfo('url'); ?>/<?= $promo->post_name ?>" class="box b2 aOffset1" title="View: <?= $promo->post_title ?>">
+	<h4 class="title creighton"><?= $promo->post_title ?></h4>
+	<p><?= (get_post_meta($promo->ID, 'excerpt', true)) ?></p>
 	<span class="btn btn2">
 		<span>Find Out More</span>
 		<i></i>
 	</span>
 </a>
 
-<div class="hr"><hr /></div>
-
-<a href="#" class="box b3 aOffset1" title="View: About The SHERPA Catalyst">
-	<h4 class="title creighton">The Sherpa Catalyst</h4>
-	<p>Lorem ipsum dolor sit amet, adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore...</p>
-	<span class="btn btn2">
-		<span>Find Out More</span>
-		<i></i>
-	</span>
-</a>
+<?php } ?>
 
 <!-- END WP, sidebar-services.php -->

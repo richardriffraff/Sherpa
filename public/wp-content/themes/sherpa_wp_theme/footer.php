@@ -66,6 +66,7 @@
 	</script>
 	<!--[if lte IE 7]><script>ie7 = true;</script><![endif]-->
 	<!--[if lt IE 7]><script> ie7 = false; ie6 	= true;</script><![endif]-->	
+	<script src="<?php bloginfo('template_url'); ?>/js/application.js"></script>
 	
 </body>
 </html>

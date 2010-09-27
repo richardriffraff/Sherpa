@@ -20,107 +20,38 @@ Template Name: Landing Page Type 1
 				<?php
 					$content	= get_post()->post_content;
 					$meta  	= get_post_custom(get_post()->ID);
-					$title 	= $meta['Title'][0];				
+					$title 	= get_post()->post_title;
+					$image	= $meta['image'][0];	
 				?>
 				
 				
-				<img src="<?php bloginfo('template_url'); ?>/img/content/section/section1Man2.png" alt="Business Consultancy with SHERPA" class="s1Img">
+				<img src="<?php bloginfo('template_url'); ?>/img/content/section/<?= $image ?>" alt="<?= $title ?> image" class="s1Img">
 				<h1 class="title creighton"><?= $title ?></h1>
 				<p><?= $content ?></p>
-				<a href="#" class="btn btn3" title="View: How SHERPA helps busines' grow"><span>View Case Studies</span><i></i></a>
 			</section>
 			
 		<!-- END: Promo -->
 		
 			<nav class="nav4 nOffset3">
-				<h2 class="title creighton">Our Services</h2>
+				
+				<h2 class="title creighton"><?= (get_post_meta(get_post()->ID, 'Title', true)) ?></h2>
 				<ul>
+					<?php
+							$this_page_id			= get_post()->ID;
+							$this_child_pages 	= get_pages('child_of='.$this_page_id.'&parent='.$this_page_id);									
+							foreach($this_child_pages as $child_page) {
+					?>
 					<li>
-						<a href="#" title="View: SHERPA's [SERVICE] Service">
-							<h3 class="subTitle">Getting Started</h3>
-							<p>Feasibility, concept development and shaping your offering</p>
+						<a href="<?= $child_page->guid ?>" title="View: <?= $child_page->post_title ?>">
+							<h3 class="subTitle"><?= $child_page->post_title ?></h3>
+							<p><?= get_post_meta($child_page->ID, 'excerpt', true) ?></p>
 						</a>
 					</li>
-				<!-- END: Item -->								
-					<li>
-						<a href="#" title="View: SHERPA's [SERVICE] Service">
-							<h3 class="subTitle">Getting Started</h3>
-							<p>Feasibility, concept development and shaping your offering</p>
-						</a>
-					</li>
-				<!-- END: Item -->
-					<li>
-						<a href="#" title="View: SHERPA's [SERVICE] Service">
-							<h3 class="subTitle">Getting Started</h3>
-							<p>Feasibility, concept development and shaping your offering</p>
-						</a>
-					</li>
-				<!-- END: Item -->
-					<li>
-						<a href="#" title="View: SHERPA's [SERVICE] Service">
-							<h3 class="subTitle">Getting Started</h3>
-							<p>Feasibility, concept development and shaping your offering</p>
-						</a>
-					</li>
-				<!-- END: Item -->
-					<li>
-						<a href="#" title="View: SHERPA's [SERVICE] Service">
-							<h3 class="subTitle">Getting Started</h3>
-							<p>Feasibility, concept development and shaping your offering</p>
-						</a>
-					</li>
-				<!-- END: Item -->
-					<li>
-						<a href="#" title="View: SHERPA's [SERVICE] Service">
-							<h3 class="subTitle">Getting Started</h3>
-							<p>Feasibility, concept development and shaping your offering</p>
-						</a>
-					</li>
-				<!-- END: Item -->
-					<li>
-						<a href="#" title="View: SHERPA's [SERVICE] Service">
-							<h3 class="subTitle">Getting Started</h3>
-							<p>Feasibility, concept development and shaping your offering</p>
-						</a>
-					</li>
-				<!-- END: Item -->								
-					<li>
-						<a href="#" title="View: SHERPA's [SERVICE] Service">
-							<h3 class="subTitle">Getting Started</h3>
-							<p>Feasibility, concept development and shaping your offering</p>
-						</a>
-					</li>
-				<!-- END: Item -->
-					<li>
-						<a href="#" title="View: SHERPA's [SERVICE] Service">
-							<h3 class="subTitle">Getting Started</h3>
-							<p>Feasibility, concept development and shaping your offering</p>
-						</a>
-					</li>
-				<!-- END: Item -->
-					<li>
-						<a href="#" title="View: SHERPA's [SERVICE] Service">
-							<h3 class="subTitle">Getting Started</h3>
-							<p>Feasibility, concept development and shaping your offering</p>
-						</a>
-					</li>
-				<!-- END: Item -->
-					<li>
-						<a href="#" title="View: SHERPA's [SERVICE] Service">
-							<h3 class="subTitle">Getting Started</h3>
-							<p>Feasibility, concept development and shaping your offering</p>
-						</a>
-					</li>
-				<!-- END: Item -->
-					<li>
-						<a href="#" title="View: SHERPA's [SERVICE] Service">
-							<h3 class="subTitle">Getting Started</h3>
-							<p>Feasibility, concept development and shaping your offering</p>
-						</a>
-					</li>
-				<!-- END: Item -->																	
+				<?php } ?>																						
 				</ul>
 			</nav>
+			
+			<div class="clear"></div>
 			
 		<!-- END The NAV -->
 			
