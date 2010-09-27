@@ -120,9 +120,9 @@ DESCRIPTION:  	Defines layout - Dimensions, display, floats, position, backgroun
 			#linkMain strong	{background-position: -528px -40px;}
 			
 			/* Drop Down Navigation */
-				#nMain .nSub					{background: url(../img/bg/bgDropdown.png) no-repeat 0 bottom; position:absolute; top:32px; left:-6px; width:182px; padding: 0 0 11px 0; margin:0;}
+				#nMain .nSub					{background: url(../img/bg/bgDropdown.png) no-repeat 0 bottom; position:absolute; top:32px; left:-6px; width:212px; padding: 0 0 11px 0; margin:0;}
 				#nMain .nSub li 				{margin:0; padding:0; border:none;}
-				#nMain .nSub a					{margin:0; padding:0; border:none; margin-left:7px; width:151px; padding-left:17px; text-align:left; padding-top:1px; padding-bottom:1px;}
+				#nMain .nSub a					{margin:0; padding:0; border:none; margin-left:7px; width:181px; padding-left:17px; text-align:left; padding-top:1px; padding-bottom:1px;}
 				#nMain .nSub a:hover			{border-top:1px solid #111f26; border-bottom:1px solid #111f26; background:#182831; padding-top:0; padding-bottom:0;}
 				#nMain .nSub a.first:hover		{border-top:none; padding-top:1px;}
 				#nMain .nSub a.last:hover		{border-bottom:none; padding-bottom:1px;}
