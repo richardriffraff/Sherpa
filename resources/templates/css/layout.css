@@ -119,7 +119,8 @@ DESCRIPTION:  	Defines layout - Dimensions, display, floats, position, backgroun
 		/* Active */
 			#nMain strong,
 			#nMain .active		{background-position:0 -39px;}
-			#linkMain strong	{background-position: -528px -40px;}
+			#linkMain strong,
+			#linkMain .active	{background-position: -528px -40px;}
 			
 			/* Drop Down Navigation */
 				#nMain .nSub					{background: url(../img/bg/bgDropdown.png) no-repeat 0 bottom; position:absolute; top:32px; left:-6px; width:212px; padding: 0 0 11px 0; margin:0;}
@@ -209,7 +210,7 @@ DESCRIPTION:  	Defines layout - Dimensions, display, floats, position, backgroun
 
 /* ARTICLES */
 	/* Headings */
-		article h1				{margin:0 0 11px; padding:0 0 8px 0; background: url(../img/bg/bgHeading1.png) 0 bottom no-repeat; float:left; width:100%;}
+		article h1				{margin:0 0 11px 0; padding:0 0 8px 0; background: url(../img/bg/bgHeading1.png) 0 bottom no-repeat; float:left; width:100%;}
 			article h1 .date		{clear:both;margin:4px 5px 0 0; float:right;}
 		.article h2					{margin:0 0 8px 0;}
 		.article2 h2				{margin:0 0 11px; padding:0 0 8px 0; background: url(../img/bg/bgHeading1.png) 0 bottom no-repeat;  width:100%; float:left;}
@@ -224,8 +225,8 @@ DESCRIPTION:  	Defines layout - Dimensions, display, floats, position, backgroun
 		
 	/* Specific Types */
 		
-		/* Article 1  */
-		
+		/* Article 2  */
+			.article2 .intro		{padding:0 0 44px 0;}
 		
 		
 		
@@ -547,4 +548,3 @@ DESCRIPTION:  	Defines layout - Dimensions, display, floats, position, backgroun
 
 
 		
-	

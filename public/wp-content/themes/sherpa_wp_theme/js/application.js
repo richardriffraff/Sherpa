@@ -77,8 +77,23 @@ function sub_nav() {
 	
 }
 
+
+$.fn.clearAndRestoreDefaultValue = function() {
+	return this.focus(function() {
+		if( this.value == this.defaultValue ) {
+			this.value = "";
+		}
+	}).blur(function() {
+		if( !this.value.length ) {
+			this.value = this.defaultValue;
+		}
+	});
+};
+
+
 $(document).ready( function() {
 	share_on_facebook($('#fb_share'));
 	share_on_twitter($('#tw_share'));
 	sub_nav();
+	$("#search, #frmName, #frmEMail").clearAndRestoreDefaultValue();
 });

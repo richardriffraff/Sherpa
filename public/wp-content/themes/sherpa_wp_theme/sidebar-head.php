@@ -60,12 +60,13 @@
 					</ul>
 <?php 		} ?>	
 				</li>
-									
 				
 <?php	$i++;	}	?>
 		
 			</ul>
 		</nav>
+		
+		<?php get_search_form(); ?>
 
 	</div>
 	<div class="clear"></div>
