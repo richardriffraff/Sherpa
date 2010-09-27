@@ -49,7 +49,8 @@ DESCRIPTION:  	Defines layout - Dimensions, display, floats, position, backgroun
 		.frmComment .textfield,
 		.frmComment .textfield:focus,
 		.frmComment .textarea,
-		.frmComment .textarea:focus		{background: url(../img/sprites/01spr_interface_8bit.png);}
+		.frmComment .textarea:focus,
+		#nMain a:hover		{background: url(../img/sprites/01spr_interface_8bit.png);}
 	
 	/* 2. Icons - 8 Bit */
 		#nQuickLinks li,
@@ -104,17 +105,33 @@ DESCRIPTION:  	Defines layout - Dimensions, display, floats, position, backgroun
 	#mainBar	{width:960px; height:39px; margin:22px auto 0; clear:both; position:relative; background-position:0 0;}
 	
 	/* Main Nav */
-		#nMain				{float:left; padding:4px 4px 4px 10px;}
-		#nMain li			{float:left; border-left:1px solid #1b2828; border-right:1px solid #293840;}
+		#nMain				{float:left; padding:4px 4px 4px 3px;}
+		#nMain li			{float:left; border-left:1px solid #1b2828; border-right:1px solid #293840; position:relative; z-index:10;x}
 		#nMain :first-child	{border-left:none;}
 		#nMain :last-child	{border-right:none;}
-		#nMain a			{float:left; padding:0 19px 0 19px; letter-spacing:-0.050em; text-shadow: 1px 1px 1px #161f26;}
+		#nMain a			{float:left; padding:0 19px 0 19px; letter-spacing:-0.050em; text-shadow: 1px 1px 1px #161f26; margin:0;}
+		#nMain a:hover		{background-position:-701px -73px;}
+		
+		#linkMain a:hover	{background-position:-701px -106px;}
 		
 		/* Active */
 			#nMain strong	{float:left; background-position:0 -39px;}
-					
-		/* Children */
-			#nMain .children	{display:none;}
+			#linkMain strong	{background-position: -528px -40px;}
+			
+			/* Drop Down Navigation */
+				#nMain .nSub					{background: url(../img/bg/bgDropdown.png) no-repeat 0 bottom; position:absolute; top:32px; left:-6px; width:182px; z-index:10; padding-bottom:11px; }
+				#nMain .nSub li 				{margin:0; padding:0; border:none;}
+				#nMain .nSub a					{margin:0; padding:0; border:none; margin-left:7px; width:151px; padding-left:17px; text-align:left; padding-top:1px; padding-bottom:1px;}
+				#nMain .nSub a:hover			{border-top:1px solid #111f26; border-bottom:1px solid #111f26; background:#182831; padding-top:0; padding-bottom:0;}
+				#nMain .nSub a.first:hover		{border-top:none; padding-top:1px;}
+				#nMain .nSub a.last:hover		{border-bottom:none; padding-bottom:1px;}
+				
+				/* Interactions */
+					#nMain .nSub				{display:none;}
+					#nMain a:focus+.nSub,
+					#nMain a:hover+.nSub		{display:block;}
+					#nMain .nSub:hover			{display:block !important;}
+				
 		
 	/* Search Form */
 		#frmSearch				{padding:9px 23px; float:right; position:absolute; top:0; right:0;}
@@ -494,7 +511,7 @@ DESCRIPTION:  	Defines layout - Dimensions, display, floats, position, backgroun
 	
 	/* Blog Index page */
 		.item				{clear:left; margin-bottom:55px;}
-		.item:hover			{text-decoration:none; border:none;}
+		.item a:hover			{text-decoration:none; border:none;}
 		.item p				{padding-bottom:0}
 		.meta				{float:right; margin:10px 5px 0 0; padding:0;}
 		.meta small			{color:#9eabb6;}

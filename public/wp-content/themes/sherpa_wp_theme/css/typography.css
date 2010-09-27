@@ -44,6 +44,11 @@ body		{font: 12px 'Helvetica Neue', Helvetica, sans-serif; text-align:center; co
 		#nMain a:hover		{color:#a8b4ba;}
 		#nMain a:focus		{color:#a8b4ba;}
 		#nMain strong a		{color:#a8b4ba; cursor:default;}
+		
+			
+			/* Drop Down Navigation */	
+				#nMain .nSub a				{font-size:11px; color:#a8b4ba;}
+				#nMain .nSub a:hover		{color:#fff;}
 
 		
 	/* Search Form */
