@@ -21,10 +21,11 @@ Template Name: Landing Page Type 1
 					$content	= get_post()->post_content;
 					$meta  	= get_post_custom(get_post()->ID);
 					$title 	= get_post()->post_title;
+					$image	= $meta['image'][0];	
 				?>
 				
 				
-				<img src="<?php bloginfo('template_url'); ?>/img/content/section/section1Man2.png" alt="Business Consultancy with SHERPA" class="s1Img">
+				<img src="<?php bloginfo('template_url'); ?>/img/content/section/<?= $image ?>" alt="<?= $title ?> image" class="s1Img">
 				<h1 class="title creighton"><?= $title ?></h1>
 				<p><?= $content ?></p>
 			</section>
@@ -37,7 +38,7 @@ Template Name: Landing Page Type 1
 				<ul>
 					<?php
 							$this_page_id			= get_post()->ID;
-							$this_child_pages 	= get_pages('child_of='.$this_page_id.'&parent='.$this_page_id);										
+							$this_child_pages 	= get_pages('child_of='.$this_page_id.'&parent='.$this_page_id);									
 							foreach($this_child_pages as $child_page) {
 					?>
 					<li>

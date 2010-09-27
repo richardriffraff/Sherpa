@@ -20,11 +20,12 @@ Template Name: Landing Page Type 2
 				<?php
 					$content	= get_post()->post_content;
 					$meta  	= get_post_custom(get_post()->ID);
-					$title 	= get_post()->post_title;				
+					$title 	= get_post()->post_title;	
+					$image	= $meta['image'][0];			
 				?>
 				
 				
-				<img src="<?php bloginfo('template_url'); ?>/img/content/section/section1Man2.png" alt="Business Consultancy Services with SHERPA" class="s1Img">
+				<img src="<?php bloginfo('template_url'); ?>/img/content/section/<?= $image ?>" alt="<?= $title ?> Image" class="s1Img">
 				<h1 class="title creighton"><?= $title ?></h1>
 				<p><?= $content ?></p>
 			</section>

@@ -21,17 +21,7 @@
 				
 				<?php the_content('') ?>
 				
-				<footer class="footerShare clearfix">
-					<dl>
-						<dt>Share this:</dt>
-						<dd>
-							<ul>
-								<li><a href="#" title="Share This On Facebook" class="fb">Facebook</a></li>
-								<li><a href="#" title="Tweet This on Twitter" class="tw">Twitter</a></li>
-							</ul>
-						</dd>
-					</dl>
-				</footer>
+				<?php get_sidebar('share') ?>
 				
 				<?php get_sidebar('casestudies') ?>
 				
