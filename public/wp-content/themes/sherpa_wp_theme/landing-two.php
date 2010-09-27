@@ -49,6 +49,11 @@ Template Name: Landing Page Type 2
 				</ul>
 			</nav>
 			
+		<!-- END: The Nav -->
+		
+			<?php get_sidebar('casestudies') ?>
+			
+			
 		</div>
 		
 	<!-- END: Clm1 -->
@@ -83,7 +88,10 @@ Template Name: Landing Page Type 2
 					} 
 				?>
 				
-				<?php get_sidebar('products') ?>
+				<blockquote class="blockQuote bQuote2 bQOffset1">
+					<p>Something nice someone said about your service, particularly with regard to benefits and transparent, risk-free nature of the service</p>
+					<cite>Mr George Stephenson, The Rocket</cite>
+				</blockquote>
 
 			</div>
 			<div class="clm2Bottom"></div>

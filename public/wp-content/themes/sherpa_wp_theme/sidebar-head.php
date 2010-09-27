@@ -43,7 +43,7 @@
 				if (get_post()->ID == $item->ID) {
 					// Item is active (currently being viewed)
 ?>
-					<strong><a href="<?= $item->guid; ?>" title="View: <?= $item->post_title ?>" id="<?= $item->post_name ?>"><?= $item->post_title ?></a></strong>
+					<a href="<?= $item->guid; ?>" title="View: <?= $item->post_title ?>" id="<?= $item->post_name ?>" class="active"><?= $item->post_title ?></a>
 <?php 		} else { 
 					// Item is not active (not being viewed)
 ?>

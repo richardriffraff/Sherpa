@@ -58,6 +58,62 @@
 <!-- END LAYOUT (Header) [] -->
 
 	<div id="mainBar">
+		
+		<script>
+			$(document).ready( function() {
+				
+				function sub_nav() {
+					var is_hovering_navSub = true;			
+					function show_nav_sub($anchor) {
+						var $dropDown = $anchor.siblings('ul')
+						if(!($dropDown.length)) {
+						} else {
+							$(this).attr('onclick', 'return false;')
+							$dropDown.show();					
+
+						}
+					}
+
+					// EVENTS
+					$('#nMain > ul > li > a').hover( function() {
+						console.log('hai');
+						show_nav_sub($(this));
+
+					}, function() {
+						console.log(is_hovering_navSub);
+						if (is_hovering_navSub == false) {
+							console.log('inside statement');
+							$('.nSub').hide();
+
+						}					
+					})
+
+					$('#nMain li').mousedown( function() {
+						show_nav_sub($(this));
+
+					})
+
+					$('#nMain li').focus( function() {
+						show_nav_sub($(this));
+
+					})
+
+					$('.nSub').hover( function() {
+						is_hovering_navSub = true;
+						$('.nSub').show();
+					}, function() {
+						is_hovering_navSub = false;
+						$('.nSub').hide();
+
+					})
+					
+				}
+				
+				sub_nav();
+				
+
+			})
+		</script>
 	
 		<nav id="nMain">
 			<ul class="variable_black">

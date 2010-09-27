@@ -43,6 +43,7 @@ DESCRIPTION:  	Defines layout - Dimensions, display, floats, position, backgroun
 	/* 1. Interface - 8 Bit */
 		#mainBar,
 		#nMain strong,
+		#nMain .active,
 		#frmSearch input,
 		#frmSearch button,
 		.footerShare,
@@ -116,7 +117,8 @@ DESCRIPTION:  	Defines layout - Dimensions, display, floats, position, backgroun
 		#linkMain a:hover	{background-position:-701px -106px;}
 		
 		/* Active */
-			#nMain strong		{background-position:0 -39px;}
+			#nMain strong,
+			#nMain .active		{background-position:0 -39px;}
 			#linkMain strong	{background-position: -528px -40px;}
 			
 			/* Drop Down Navigation */
@@ -129,9 +131,11 @@ DESCRIPTION:  	Defines layout - Dimensions, display, floats, position, backgroun
 				
 				/* Interactions */
 					#nMain .nSub				{display:none;}
-					#nMain a:focus+.nSub,
-					#nMain a:hover+.nSub		{display:block;}
+				/* Sorry, WebKit no likey
+					#nMain a:focus + .nSub,
+					#nMain a:hover + .nSub		{display:block !important;}
 					#nMain .nSub:hover			{display:block !important;}
+				*/
 				
 		
 	/* Search Form */
@@ -543,4 +547,3 @@ DESCRIPTION:  	Defines layout - Dimensions, display, floats, position, backgroun
 
 
 		
-	
