@@ -47,9 +47,9 @@
 <?php 		}
 				if ($solutions_name == $item->post_name) {
 					// Item is solutions
-					$items_children = get_pages('child_of='.get_post()->ID.'&parent='.get_post()->ID);
+					$items_children = get_pages('child_of='.$item->ID.'&parent='.$item->ID);
 ?>
-					<ul id="navSub" class="hide">
+					<ul class="nSub">
 <?php 			foreach ($items_children as $child_item) { ?>
 						<li><a href="<?= $child_item->guid; ?>" title="View: <?= $child_item->post_title ?>"><?= $child_item->post_title ?></a></li>
 <?php 			} ?>
