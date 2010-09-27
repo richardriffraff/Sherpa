@@ -47,8 +47,8 @@ body		{font: 12px 'Helvetica Neue', Helvetica, sans-serif; text-align:center; co
 		
 			
 			/* Drop Down Navigation */	
-				#nSolutions li a				{font-size:11px; color:#a8b4ba;}
-				#nSolutions li a:hover			{color:#fff;}
+				#nMain .nSub a				{font-size:11px; color:#a8b4ba;}
+				#nMain .nSub a:hover		{color:#fff;}
 
 		
 	/* Search Form */

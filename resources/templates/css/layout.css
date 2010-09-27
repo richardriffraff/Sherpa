@@ -110,8 +110,7 @@ DESCRIPTION:  	Defines layout - Dimensions, display, floats, position, backgroun
 		#nMain :first-child	{border-left:none;}
 		#nMain :last-child	{border-right:none;}
 		#nMain a			{float:left; padding:0 19px 0 19px; letter-spacing:-0.050em; text-shadow: 1px 1px 1px #161f26; margin:0;}
-		#nMain a:hover,
-		#dropDown:active	{background-position:-701px -73px;}
+		#nMain a:hover		{background-position:-701px -73px;}
 		
 		#linkMain a:hover	{background-position:-701px -106px;}
 		
@@ -120,15 +119,19 @@ DESCRIPTION:  	Defines layout - Dimensions, display, floats, position, backgroun
 			#linkMain strong	{background-position: -528px -40px;}
 			
 			/* Drop Down Navigation */
-				#nMain #nSolutions			{}
-				#nMain a:hover+#nSolutions	{display:block;}
+				#nMain .nSub					{background: url(../img/bg/bgDropdown.png) no-repeat 0 bottom; position:absolute; top:32px; left:-6px; width:182px; z-index:10; padding-bottom:11px; }
+				#nMain .nSub li 				{margin:0; padding:0; border:none;}
+				#nMain .nSub a					{margin:0; padding:0; border:none; margin-left:7px; width:151px; padding-left:17px; text-align:left; padding-top:1px; padding-bottom:1px;}
+				#nMain .nSub a:hover			{border-top:1px solid #111f26; border-bottom:1px solid #111f26; background:#182831; padding-top:0; padding-bottom:0;}
+				#nMain .nSub a.first:hover		{border-top:none; padding-top:1px;}
+				#nMain .nSub a.last:hover		{border-bottom:none; padding-bottom:1px;}
 				
-				#nSolutions					{background: url(../img/bg/bgDropdown.png) no-repeat 0 bottom; position:absolute; top:32px; left:-6px; width:182px; z-index:10; padding-bottom:11px; }
-				#nSolutions li 				{margin:0; padding:0; border:none;}
-				#nSolutions li a			{margin:0; padding:0; border:none; margin-left:7px; width:151px; padding-left:17px; text-align:left; padding-top:1px; padding-bottom:1px;}
-				#nSolutions li a:hover			{border-top:1px solid #111f26; border-bottom:1px solid #111f26; background:#182831; padding-top:0; padding-bottom:0;}
-				#nSolutions li a.first:hover	{border-top:none; padding-top:1px;}
-				#nSolutions li a.last:hover		{border-bottom:none; padding-bottom:1px;}
+				/* Interactions */
+					#nMain .nSub				{display:none;}
+					#nMain a:focus+.nSub,
+					#nMain a:hover+.nSub		{display:block;}
+					#nMain .nSub:hover			{display:block !important;}
+				
 		
 	/* Search Form */
 		#frmSearch				{padding:9px 23px; float:right; position:absolute; top:0; right:0;}
