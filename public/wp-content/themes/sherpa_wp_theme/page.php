@@ -33,31 +33,7 @@
 					</dl>
 				</footer>
 				
-				<aside class="aside1">
-					<h3 class="title creighton">Featured Case Studies</h3>
-					
-					<a href="#" class="box b1 aOffset2" title="View: The SHERPA Case Study">
-						<h4 class="title creighton">Case Study One</h4>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore...</p>
-						<span class="b1Bottom">
-							<span class="btn btn1">
-								<span>View Case Study</span>
-								<i></i>
-							</span>
-						</span>
-					</a>
-					
-					<a href="#" class="box b1 aOffset3" title="View: The SHERPA Case Study">
-						<h4 class="title creighton">Case Study One</h4>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore...</p>
-						<span class="b1Bottom">
-							<span class="btn btn1">
-								<span>View Case Study</span>
-								<i></i>
-							</span>
-						</span>
-					</a>
-				</aside>
+				<?php get_sidebar('casestudies') ?>
 				
 			</article>
 			

@@ -31,8 +31,7 @@
 		
 		<?php 
 			$solutions_name	= 'solutions'; // The name for the Solutions menu item
-			$main_menu_items 	= get_pages('parent=0&sort_column=menu_order'); // All the main menu items	
-		//	print_r($main_menu_items);  
+			$main_menu_items 	= get_pages('parent=0&sort_column=menu_order&exclude=252,256'); // All the main menu items
 			
 			foreach ($main_menu_items as $item) { ?>
 				

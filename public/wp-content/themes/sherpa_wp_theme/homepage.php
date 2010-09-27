@@ -20,12 +20,11 @@ Template Name: Sherpa Homepage
 				<?php
 					$content	= get_post()->post_content;
 					$meta  	= get_post_custom(get_post()->ID);
-					$title 	= $meta['Title'][0];				
+					$title 	= $meta['Title'][0];
+					$image	= $meta['image'][0];			
 				?>
 				
-				
-				
-				<img src="<?php bloginfo('template_url'); ?>/img/content/section/section1Man.png" alt="Business Consultancy with SHERPA" class="s1Img">
+				<img src="<?php bloginfo('template_url'); ?>/img/content/section/<?= $image ?>" alt="Business Consultancy with SHERPA" class="s1Img">
 				<h1 class="title creighton"><?= $title ?></h1>
 				<p><?= $content ?></p>
 				<a href="<?php bloginfo('url') ?>/case-studies" class="btn btn3" title="View: How SHERPA helps busines' grow"><span>View Case Studies</span><i></i></a>

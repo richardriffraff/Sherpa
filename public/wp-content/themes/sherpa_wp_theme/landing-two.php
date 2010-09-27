@@ -20,7 +20,7 @@ Template Name: Landing Page Type 2
 				<?php
 					$content	= get_post()->post_content;
 					$meta  	= get_post_custom(get_post()->ID);
-					$title 	= $meta['Title'][0];				
+					$title 	= get_post()->post_title;				
 				?>
 				
 				
@@ -32,54 +32,19 @@ Template Name: Landing Page Type 2
 			
 			<nav class="nav6 nOffset4">
 				<ul class="clearfix">
+				<?php
+						$this_page_id			= get_post()->ID;
+						$this_child_pages 	= get_pages('child_of='.$this_page_id.'&parent='.$this_page_id);										
+						foreach($this_child_pages as $child_page) {
+				?>
 					<li>
 						<section class="section3">
-							<h2 class="title creighton">Objective Assessment</h2>
-							<p>The best way to avoid a problem is to see it coming...</p>
-							<a href="#" class="icon1" title="Find Out About Objective Assesment">Find Out More</a>
+							<h2 class="title creighton"><?= $child_page->post_title ?></h2>
+							<p><?= (get_post_meta($child_page->ID, 'excerpt', true)) ?></p>
+							<a href="<?= $child_page->guid ?>" class="icon1" title="View: <?= $child_page->post_title ?>">Find Out More</a>
 						</section>
-					</li>
-				<!-- END ITEM -->
-					<li>
-						<section class="section3">
-							<h2 class="title creighton">Objective Assessment</h2>
-							<p>The best way to avoid a problem is to see it coming...</p>
-							<a href="#" class="icon1" title="Find Out About Objective Assesment">Find Out More</a>
-						</section>
-					</li>
-				<!-- END ITEM -->					
-					<li>
-						<section class="section3">
-							<h2 class="title creighton">Objective Assessment</h2>
-							<p>The best way to avoid a problem is to see it coming...</p>
-							<a href="#" class="icon1" title="Find Out About Objective Assesment">Find Out More</a>
-						</section>
-					</li>
-				<!-- END ITEM -->
-					<li>
-						<section class="section3">
-							<h2 class="title creighton">Objective Assessment</h2>
-							<p>The best way to avoid a problem is to see it coming...</p>
-							<a href="#" class="icon1" title="Find Out About Objective Assesment">Find Out More</a>
-						</section>
-					</li>
-				<!-- END ITEM -->
-					<li>
-						<section class="section3">
-							<h2 class="title creighton">Objective Assessment</h2>
-							<p>The best way to avoid a problem is to see it coming...</p>
-							<a href="#" class="icon1" title="Find Out About Objective Assesment">Find Out More</a>
-						</section>
-					</li>
-				<!-- END ITEM -->
-					<li>
-						<section class="section3">
-							<h2 class="title creighton">Objective Assessment</h2>
-							<p>The best way to avoid a problem is to see it coming...</p>
-							<a href="#" class="icon1" title="Find Out About Objective Assesment">Find Out More</a>
-						</section>
-					</li>
-				<!-- END ITEM -->																	
+					</li>	
+				<?php } ?>																			
 				</ul>
 			</nav>
 			
