@@ -37,7 +37,8 @@
 		<div id="clm2">	
 			<div class="contentv2">
 
-				<?php get_sidebar('services'); ?>
+				<?php $offsetClass = 'bob'; get_sidebar('services'); ?>
+				<?php get_sidebar('products') ?>
 
 			</div>
 			<div class="clm2Bottom"></div>

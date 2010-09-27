@@ -27,16 +27,20 @@
 	<div id="mainBar" class="clearfix">
 		
 		<nav id="nMain">
-			<ul class="variable_black clearfix" id="linkMain">
+			<ul class="variable_black clearfix">
 		
 		<?php 
 			$solutions_name	= 'solutions'; // The name for the Solutions menu item
 			$main_menu_items 	= get_pages('parent=0&sort_column=menu_order&exclude=252,256'); // All the main menu items
+			$i = 0;
 			
-			foreach ($main_menu_items as $item) { ?>
-				
+			foreach ($main_menu_items as $item) { 
+				if ($i==0) { ?>
+				<li id="linkMain">
+<?php 		} else { ?>			
 				<li>
-<?php 		if (get_post()->ID == $item->ID) {
+<?php 		}
+				if (get_post()->ID == $item->ID) {
 					// Item is active (currently being viewed)
 ?>
 					<strong><a href="<?= $item->guid; ?>" title="View: <?= $item->post_title ?>" id="<?= $item->post_name ?>"><?= $item->post_title ?></a></strong>
@@ -58,7 +62,7 @@
 				</li>
 									
 				
-<?php		}	?>
+<?php	$i++;	}	?>
 		
 			</ul>
 		</nav>
