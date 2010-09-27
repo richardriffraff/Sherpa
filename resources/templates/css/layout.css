@@ -105,7 +105,7 @@ DESCRIPTION:  	Defines layout - Dimensions, display, floats, position, backgroun
 	#mainBar	{width:960px; height:39px; margin:22px auto 0; clear:both; position:relative; background-position:0 0;}
 	
 	/* Main Nav */
-		#nMain				{float:left; padding:4px 4px 4px 3px; z-index:100;}
+		#nMain				{clear:both; float:left; padding:4px 4px 4px 3px; z-index:100;}
 		#nMain li			{float:left; border-left:1px solid #1b2828; border-right:1px solid #293840; position:relative; z-index:10; display:inline;}
 		#nMain :first-child	{border-left:none;}
 		#nMain :last-child	{border-right:none;}
@@ -128,9 +128,9 @@ DESCRIPTION:  	Defines layout - Dimensions, display, floats, position, backgroun
 				#nMain .nSub a.last:hover		{border-bottom:none; padding-bottom:1px;}
 				
 				/* Interactions */
-					
+					#nMain .nSub				{display:none;}
 					#nMain a:focus+.nSub,
-					#nMain a:hover+.nSub		{display:none;}
+					#nMain a:hover+.nSub		{display:block;}
 					#nMain .nSub:hover			{display:block !important;}
 				
 		
