@@ -303,14 +303,20 @@ body		{font: 12px 'Helvetica Neue', Helvetica, sans-serif; text-align:center; co
 		#comments cite a		{color:#c0d146; font-size:14px; font-weight:bold; font-style:normal;}
 		#comments blockquote p	{color:#757f88; line-height:20px;}
 		
-		.frmComment legend	{font-size:18px; color:#192a36;}
-		.frmComment dt		{color:#7b858f; font-weight:bold;}
+		/* The Wordpress version */
+			#comments .says		{color:#C0D146;	font-size:14px;	font-style:normal; font-weight:bold;}
+
 		
-		.frmComment input				{color:#9fabb3; font:11px 'Helvetica neue', sans-serif;}
-		.frmComment input:hover,
-		.frmComment input:focus			{color:#0f181f;}
-		.frmComment .textarea			{color:#9fabb3; font:11px 'Helvetica neue', sans-serif;}
-		.frmComment .textarea:hover,
-		.frmComment .textarea:focus		{color:#0f181f;}
+		
+		/* Comment Form */		
+			.frmComment legend	{font-size:18px; color:#192a36;}
+			.frmComment dt		{color:#7b858f; font-weight:bold;}
+		
+			.frmComment input				{color:#9fabb3; font:11px 'Helvetica neue', sans-serif;}
+			.frmComment input:hover,
+			.frmComment input:focus			{color:#0f181f;}
+			.frmComment .textarea			{color:#9fabb3; font:11px 'Helvetica neue', sans-serif;}
+			.frmComment .textarea:hover,
+			.frmComment .textarea:focus		{color:#0f181f;}
 		
 

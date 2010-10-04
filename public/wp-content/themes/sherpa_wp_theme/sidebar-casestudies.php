@@ -15,7 +15,7 @@
 			$matched_case_studies_no++;						// Increment so we only add a maximumn of 2.
 ?>
 	
-	<a href="<?= $case_study->guid ?>" class="box b1 aOffset2" title="View: <?= $case_study->post_title ?>">
+	<a href="<?php bloginfo('url'); ?>/?page_id=<?= $case_study->ID ?>" class="box b1 aOffset2" title="View: <?= $case_study->post_title ?>">
 		<h3 class="title creighton"><?= $case_study->post_title ?></h3>
 		<p><?= (get_post_meta($case_study->ID, 'excerpt', true)) ?></p>
 		<span class="b1Bottom">
@@ -31,7 +31,7 @@
 		foreach($case_studies as $case_study) {			// Loop Through All the case studies.			
 			if ($matched_case_studies_no < 2) {				// Increment so we only add a maximumn of 2.
 ?>			
-	<a href="<?= $case_study->guid ?>" class="box b1 aOffset2" title="View: <?= $case_study->post_title ?>">
+	<a href="<?php bloginfo('url'); ?>/?page_id=<?= $case_study->ID ?>" class="box b1 aOffset2" title="View: <?= $case_study->post_title ?>">
 		<h3 class="title creighton"><?= $case_study->post_title ?></h3>
 		<p><?= (get_post_meta($case_study->ID, 'excerpt', true)) ?></p>
 		<span class="b1Bottom">

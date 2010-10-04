@@ -514,6 +514,9 @@ DESCRIPTION:  	Defines layout - Dimensions, display, floats, position, backgroun
 	3. = SINGLE PAGE CONTENT LAYOUT	 (ONE Page)
 
 ************************************************/	
+
+
+
 	
 	/* Blog Index page */
 		.item				{clear:left; margin-bottom:55px;}
@@ -524,25 +527,36 @@ DESCRIPTION:  	Defines layout - Dimensions, display, floats, position, backgroun
 		.meta li			{background: url(../img/bg/bgDividerBlog.png) no-repeat 0 0; float:left; padding:2px 0 2px 12px;}
 		.meta li.first		{background:none; margin-right:10px;}
 
-	/* Blog Post page */
+	/* Blog Post page */	
+	
+		/* Comments List */	
+			#comments			{clear:both; margin-top:40px;}
+			#comments h2		{margin:0 0 11px; padding:0 0 8px 0; background: url(../img/bg/bgHeading1.png) 0 bottom no-repeat;}
+			#comments ol,
+			#comments ol li		{margin:0; padding:0; list-style:none; background:none;}
+			#comments ol		{margin-top:25px;}
+			#comments cite a	{margin-bottom:3px; display:block;}	
+			
+			/* Styling the Wordpress version */
+				#comments .avatar,
+				#comments .comment-meta,
+				#comments .reply			{display:none;}
+				#comments .fn				{float:left;}
+				#comments .says				{float:left; padding:0 0 0 3px;}
+				#comments em,
+				#comments p					{display:block; clear:both;}
+				
 		
-		#comments			{clear:both; margin-top:40px;}
-		#comments h2		{margin:0 0 11px; padding:0 0 8px 0; background: url(../img/bg/bgHeading1.png) 0 bottom no-repeat;}
-		#comments ol,
-		#comments ol li		{margin:0; padding:0; list-style:none; background:none;}
-		#comments ol		{margin-top:25px;}
-		#comments cite a	{margin-bottom:3px; display:block;}
-		
-		.frmComment legend				{margin:0 0 11px; padding:0 0 8px 0; background: url(../img/bg/bgHeading1.png) 0 bottom no-repeat; width:100%;}
-		.frmComment dl					{margin:0 0 0 28px; line-height:22px; padding-top:30px;}
-		.frmComment dt					{float:left; width:80px; display:inline;}
-		.frmComment dd					{margin:0 0 14px 0; padding:0; }
-		.frmComment .textfield			{background-position: 0 -109px; border:none; height:18px; padding:4px 0 1px 7px ;width:343px; margin:0; line-height: 18px; resize:none;}
-		.frmComment .textfield:focus	{background-position: -350px -109px;}
-		.frmComment .textarea			{background-position: 0 -132px; border:none; height:66px; margin:0; padding:6px 0 0 7px; width:343px; resize:none;}
-		.frmComment .textarea:focus		{background-position: -350px -132px;}
-		
-		.frmComment .btn1				{float:right; margin-right:180px;}
+		/* Comment Form */
+			.frmComment legend				{margin:0 0 11px; padding:0 0 8px 0; background: url(../img/bg/bgHeading1.png) 0 bottom no-repeat; width:100%;}
+			.frmComment dl					{margin:0 0 0 28px; line-height:22px; padding-top:30px;}
+			.frmComment dt					{float:left; width:80px; display:inline;}
+			.frmComment dd					{margin:0 0 14px 0; padding:0; }
+			.frmComment .textfield			{background-position: 0 -109px; border:none; height:18px; padding:4px 0 1px 7px ;width:343px; margin:0; line-height: 18px; resize:none;}
+			.frmComment .textfield:focus	{background-position: -350px -109px;}
+			.frmComment .textarea			{background-position: 0 -132px; border:none; height:66px; margin:0; padding:6px 0 0 7px; width:343px; resize:none;}
+			.frmComment .textarea:focus		{background-position: -350px -132px;}		
+			.frmComment .btn1				{float:right; margin-right:180px;}
 		
 
 

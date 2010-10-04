@@ -5,7 +5,7 @@ Template Name: Landing Page Type 1
 ?>
 <?php get_header(); ?>
 
-<!-- WP, START TEMPLATE: homepage.php -->
+<!-- WP, START TEMPLATE: landing-one.php -->
 <body class="body2">
 	
 	<?php get_sidebar('head'); ?>
@@ -42,7 +42,7 @@ Template Name: Landing Page Type 1
 							foreach($this_child_pages as $child_page) {
 					?>
 					<li>
-						<a href="<?= $child_page->guid ?>" title="View: <?= $child_page->post_title ?>">
+						<a href="<?= bloginfo('url') ?>/?page_id=<?= $child_page->ID ?>" title="View: <?= $child_page->post_title ?>">
 							<h3 class="subTitle"><?= $child_page->post_title ?></h3>
 							<p><?= get_post_meta($child_page->ID, 'excerpt', true) ?></p>
 						</a>

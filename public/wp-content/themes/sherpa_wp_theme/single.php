@@ -38,7 +38,7 @@ Template Name: Blog List Page
 				
 				<small id="post">This entry was posted on <?php the_time('l, F jS, Y') ?> and is filled under <?php the_category(', ') ?>.  You can follow any response to this entry through the <a href="<?php bloginfo('rss_url'); ?>" title="Subscribe: <?php bloginfo('name'); ?> RSS Feed">RSS 2.0 feed</a>.  You can leave a response or trackback from your own site</small>
 				
-				<?php  comments_template(); ?>
+				<?php comments_template(); ?>
 				
 			</article>
 			

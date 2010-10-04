@@ -5,7 +5,7 @@ Template Name: Landing Page Type 2
 ?>
 <?php get_header(); ?>
 
-<!-- WP, START TEMPLATE: homepage.php -->
+<!-- WP, START TEMPLATE: landing-two.php -->
 <body class="body2">
 	
 	<?php get_sidebar('head'); ?>
@@ -35,14 +35,15 @@ Template Name: Landing Page Type 2
 				<ul class="clearfix">
 				<?php
 						$this_page_id			= get_post()->ID;
-						$this_child_pages 	= get_pages('child_of='.$this_page_id.'&parent='.$this_page_id);										
+						$this_child_pages 	= get_pages('child_of='.$this_page_id.'&parent='.$this_page_id.'&sort_column=menu_order');	
+						print_r($this_child_pages);									
 						foreach($this_child_pages as $child_page) {
 				?>
 					<li>
 						<section class="section3">
 							<h2 class="title creighton"><?= $child_page->post_title ?></h2>
 							<p><?= (get_post_meta($child_page->ID, 'excerpt', true)) ?></p>
-							<a href="<?= $child_page->guid ?>" class="icon1" title="View: <?= $child_page->post_title ?>">Find Out More</a>
+							<a href="<?= bloginfo('url') ?>/?page_id=<?= $child_page->ID ?>" class="icon1" title="View: <?= $child_page->post_title ?>">Find Out More</a>
 						</section>
 					</li>	
 				<?php } ?>																			
@@ -72,9 +73,7 @@ Template Name: Landing Page Type 2
 					} 
 				?>
 
-				<?= $offsetClass;  ?>
-
-				<a href="<?php bloginfo('url'); ?>/<?= $promo->post_name ?>" class="box b2 bOffset1" title="View: <?= $promo->post_title ?>">
+				<a href="<?php bloginfo('url'); ?>/<?= $promo->post_name; ?>" class="box bOffset1 <? if ($i == 0) {?> b2<?php } else { ?> b3<? } ?>" title="View: <?= $promo->post_title ?>">
 					<h4 class="title creighton"><?= $promo->post_title ?></h4>
 					<p><?= (get_post_meta($promo->ID, 'excerpt', true)) ?></p>
 					<span class="btn btn2">
