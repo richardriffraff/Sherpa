@@ -35,8 +35,7 @@ Template Name: Landing Page Type 2
 				<ul class="clearfix">
 				<?php
 						$this_page_id			= get_post()->ID;
-						$this_child_pages 	= get_pages('child_of='.$this_page_id.'&parent='.$this_page_id.'&sort_column=menu_order');	
-						print_r($this_child_pages);									
+						$this_child_pages 	= get_pages('child_of='.$this_page_id.'&parent='.$this_page_id.'&sort_column=menu_order');									
 						foreach($this_child_pages as $child_page) {
 				?>
 					<li>
