@@ -18,7 +18,9 @@
 			<span class="emailUs">or email</span> <a href="mailto:info@sherpabusinessconsultancy.com" class="email" title="Email <?php bloginfo('name')?>">info@sherpabusinessconsultancy.com</a>
 		</address>
 		
-	<!-- END: Contact Details -->		
+	<!-- END: Contact Details -->	
+	
+		<?php dimox_breadcrumbs(); ?>
 
 	</header>
 	
@@ -39,17 +41,11 @@
 				<li id="linkMain">
 <?php 		} else { ?>			
 				<li>
-<?php 		}
-				if (get_post()->ID == $item->ID) {
-					// Item is active (currently being viewed)
-?>
-					<a href="<?= $item->guid; ?>" title="View: <?= $item->post_title ?>" id="<?= $item->post_name ?>" class="active"><?= $item->post_title ?></a>
-<?php 		} else { 
-					// Item is not active (not being viewed)
-?>
-					<a href="<?= $item->guid; ?>" title="View: Solutions <?= $item->post_title ?>" id="<?= $item->post_name ?>"><?= $item->post_title ?></a>
-<?php 		}
-				if ($solutions_name == $item->post_name) {
+<?php 		} ?>
+
+					<a href="<?= $item->guid; ?>" title="View: Solutions <?= $item->post_title ?>" id="mainMenuItem-<?= $item->post_name ?>"><?= $item->post_title ?></a>
+
+<?php 			if ($solutions_name == $item->post_name) {
 					// Item is solutions
 					$items_children = get_pages('child_of='.$item->ID.'&parent='.$item->ID);
 ?>

@@ -26,7 +26,9 @@
 		</span>
 	</a>
 <?php 
+		}
 	}
+	
 	if ($matched_case_studies_no == 0) {					// Admin didnt specify any case studies.  Add the first 2 we can find.
 		foreach($case_studies as $case_study) {			// Loop Through All the case studies.			
 			if ($matched_case_studies_no < 2) {				// Increment so we only add a maximumn of 2.
@@ -42,10 +44,10 @@
 		</span>
 	</a>
 <?php	
-			$matched_case_studies_no++;
-			}
+		$matched_case_studies_no++;
 		}
 	}
-} ?>
+}
+?>
 
 </aside>

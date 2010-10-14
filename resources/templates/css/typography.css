@@ -34,6 +34,10 @@ body		{font: 12px 'Helvetica Neue', Helvetica, sans-serif; text-align:center; co
 		#contactInfo .emailUs,
 		#contactInfo .email		{font: 12px Tahoma, Helvetica, sans-serif;}
 		
+	/* Nav Trail */
+		#nTrail strong			{color:#484F13; font-weight:normal;}
+		
+		
 
 /* MAIN NAV */
 	#mainBar	{width:960px; height:39px; margin:22px auto 0; clear:both; background-position:0 0;}
@@ -305,7 +309,6 @@ body		{font: 12px 'Helvetica Neue', Helvetica, sans-serif; text-align:center; co
 		
 		/* The Wordpress version */
 			#comments .says		{color:#C0D146;	font-size:14px;	font-style:normal; font-weight:bold;}
-
 		
 		
 		/* Comment Form */		

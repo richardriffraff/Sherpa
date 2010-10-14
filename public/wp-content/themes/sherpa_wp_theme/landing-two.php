@@ -99,6 +99,7 @@ Template Name: Landing Page Type 2
 	
 	</div>
 	
+	
 <!-- END LAYOUT (ID: Template) [All Content Must have ended by here] -->
 <!-- START LAYOUT (ID: Footer) [Copyright + Global Nav] -->
 
