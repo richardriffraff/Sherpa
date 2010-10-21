@@ -63,7 +63,7 @@
 		// SHOULD STAY HERE
 		// Add Active to the main menu item
 		var section_name  = (window.location.pathname).replace('/wordpress/', '').split('/')[0].replace('-', ' ');	
-		var menu_id	 = 'mainMenuItem-'+section_name;		
+		var menu_id	 	= 'mainMenuItem-'+section_name;	
 		$('#'+menu_id).addClass('active');
 		
 		Cufon.now(); 

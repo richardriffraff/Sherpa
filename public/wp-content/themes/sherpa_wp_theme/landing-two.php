@@ -18,9 +18,9 @@ Template Name: Landing Page Type 2
 			
 			<section class="section1">
 				<?php
-					$content	= get_post()->post_content;
-					$meta  	= get_post_custom(get_post()->ID);
-					$title 	= get_post()->post_title;	
+					$content	= get_post(the_ID())->post_content;
+					$meta  	= get_post_custom(get_post(the_ID())->ID);
+					$title 	= get_post(the_ID())->post_title;	
 					$image	= $meta['image'][0];			
 				?>
 				
@@ -34,7 +34,7 @@ Template Name: Landing Page Type 2
 			<nav class="nav6 nOffset4">
 				<ul class="clearfix">
 				<?php
-						$this_page_id			= get_post()->ID;
+						$this_page_id			= get_post(the_ID())->ID;
 						$this_child_pages 	= get_pages('child_of='.$this_page_id.'&parent='.$this_page_id.'&sort_column=menu_order');									
 						foreach($this_child_pages as $child_page) {
 				?>

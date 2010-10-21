@@ -1,7 +1,7 @@
 <aside class="aside1">
 	<h2 class="title creighton">Featured Case Studies</h2>
 	
-<?php
+<?php	
 	$case_studies 	= get_pages('child_of=58');			// All The Case Study Pages.
 	$meta  			= get_post_custom(get_post()->ID);	// The META information for the page we are looking at.
 	$case_study_1	= $meta['Case Study 1'][0];   		// The page name for the first selected case study (if selected at all).

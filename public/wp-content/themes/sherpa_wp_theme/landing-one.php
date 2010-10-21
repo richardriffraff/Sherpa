@@ -18,9 +18,9 @@ Template Name: Landing Page Type 1
 			
 			<section class="section1">
 				<?php
-					$content	= get_post()->post_content;
-					$meta  	= get_post_custom(get_post()->ID);
-					$title 	= get_post()->post_title;
+					$content	= get_post(the_ID())->post_content;
+					$meta  	= get_post_custom(get_post(the_ID())->ID);
+					$title 	= get_post(the_ID())->post_title;
 					$image	= $meta['image'][0];	
 				?>
 				
@@ -34,10 +34,10 @@ Template Name: Landing Page Type 1
 		
 			<nav class="nav4 nOffset3">
 				
-				<h2 class="title creighton"><?= (get_post_meta(get_post()->ID, 'Title', true)) ?></h2>
+				<h2 class="title creighton"><?= (get_post_meta(get_post(the_ID())->ID, 'Title', true)) ?></h2>
 				<ul>
 					<?php
-							$this_page_id			= get_post()->ID;
+							$this_page_id			= get_post(the_ID())->ID;
 							$this_child_pages 	= get_pages('child_of='.$this_page_id.'&parent='.$this_page_id);									
 							foreach($this_child_pages as $child_page) {
 					?>

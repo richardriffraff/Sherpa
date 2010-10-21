@@ -19,7 +19,7 @@ Template Name: Page List Page
 				<h1 class="hide"></h1>
 			
 			<?php 
-					$this_page_id		= get_post()->ID;
+					$this_page_id		= get_post(the_id())->ID;
 					$this_child_pages = get_pages('child_of='.$this_page_id.'&parent='.$this_page_id);									
 					foreach($this_child_pages as $child_page) {
 			?>				

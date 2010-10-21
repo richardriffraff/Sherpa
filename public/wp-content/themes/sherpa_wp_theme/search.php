@@ -21,7 +21,7 @@
 				<section class="item">
 					<a href="<?php the_permalink() ?>" title="View: <?php the_title() ?>">
 						<h2>
-							<small class="date">Posted <?php the_time('l, F jS, Y') ?></small>
+							<small class="date">Posted <?= date('j M Y', strtotime($mypost->post_date)) ?></small>
 							<span class="creighton title"><?php the_title() ?></span> 
 						</h2>
 						

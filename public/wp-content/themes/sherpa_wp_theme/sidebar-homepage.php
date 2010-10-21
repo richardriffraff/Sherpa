@@ -4,11 +4,11 @@
 		<h2 class="title creighton">Latest Blog Posts</h2>
 		<ul>
 		
-	<?php $myposts	= get_posts('numberposts=3');  /* print_r($myposts); */    ?>
+	<?php $myposts	= get_posts('numberposts=3&order=DESC&orderby=date'); ?>
 	<?php foreach ($myposts as $mypost) { ?>			
 			<li>
-				<a href="<?= $mypost->guid ?>" title="View: <?= $mypost->post_excerpt ?>">
-					<small><?= $mypost->post_date ?></small>
+				<a href="<?= $mypost->guid ?>" title="View: <?= $mypost->post_title ?>">
+					<small><?= date('j M Y', strtotime($mypost->post_date)) ?></small>
 					<?= $mypost->post_excerpt ?>					
 				</a>
 			</li>
@@ -40,13 +40,9 @@
 
 
 	<?php /* 
-	
-	
-	
 	<nav class="nav2 nOffset2 clearfix">
 		<h2 class="title creighton">Latest Tweets</h2>
 		<ul>
-		
 			<li>
 				<a href="#" title="View: [TITLE]" rel="nofollow">
 					<small>posted by Sherpa 3 minutes ago...</small>

@@ -18,10 +18,11 @@ Template Name: Sherpa Homepage
 
 			<section class="section1">
 				<?php
-					$content	= get_post()->post_content;
-					$meta  	= get_post_custom(get_post()->ID);
+					$content	= get_post(the_ID())->post_content;
+					$meta  	= get_post_custom(get_post(the_ID())->ID);
 					$title 	= $meta['Title'][0];
-					$image	= $meta['image'][0];			
+					$image	= $meta['image'][0];
+								
 				?>
 				
 				<img src="<?php bloginfo('template_url'); ?>/img/content/section/<?= $image ?>" alt="Business Consultancy with SHERPA" class="s1Img">
@@ -46,14 +47,14 @@ Template Name: Sherpa Homepage
 		<!-- END: Service -->
 
 			<section class="section2">
-				<h2 class="title creighton">Early Stage Business</h2>
+				<h2 class="title creighton">For Growing Businesses</h2>
 				<ul class="clearfix">
 					<li>Business Assesment</li>
 					<li>Raising Finance</li>
 					<li>Grow Your Business</li>
 					<li>Improve Sales &amp; Profit</li>
 				</ul>
-				<a href="<?php bloginfo('url') ?>/solutions/for-early-stage-businesses" class="btn btn1" title="View: Consultancy for Early Stage Businesses"><span>Find Out More</span><i></i></a>				
+				<a href="<?php bloginfo('url') ?>/solutions/for-growing-businesses" class="btn btn1" title="View: Consultancy for Early Stage Businesses"><span>Find Out More</span><i></i></a>				
 			</section>
 
 		<!-- END: Service -->

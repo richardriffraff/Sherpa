@@ -79,7 +79,7 @@ DESCRIPTION:  	Defines layout - Dimensions, display, floats, position, backgroun
 
 
 /* HEADER (positioned at bottom) */
-	header		{width:960px; margin:0 auto; position:relative;}
+	header		{width:960px; height:77px; overflow:hidden; margin:0 auto; position:relative;}
 	
 	/* Skip Links */
 		#nSkip			{position:absolute; left:50%; top:5px; margin-left:-460px;}
@@ -283,7 +283,7 @@ DESCRIPTION:  	Defines layout - Dimensions, display, floats, position, backgroun
 	/* Specific Types */
 	
 		/* Section 1 (Homepage)*/
-			.section1			{height:250px; padding:0 0 22px 20px; position:relative;}
+			.section1			{height:250px; margin:0 0 22px 20px; position:relative;}
 			.section1 .s1Img	{position:absolute; right:0; top:-16px;}
 			.section1 .title	{width:420px; margin:7px 0 5px 0;}	
 			.section1 p 		{width:380px; padding:0 0 22px 0;}	
@@ -338,7 +338,7 @@ DESCRIPTION:  	Defines layout - Dimensions, display, floats, position, backgroun
 	/* Box 1 - Case Studies (Green) */
 		.b1			 	{background: url(../img/bg/bgB1.png) no-repeat 0 top; padding:20px 25px 0; position:relative; width:274px; text-decoration:none;}
 		.b1:hover	 	{text-decoration:none;}
-		.b1Bottom		{background: url(../img/bg/bgB1.png) no-repeat 0 bottom; height:12px; width:324px; position:absolute; bottom:-10px; left:0;} 
+		.b1Bottom		{background: url(../img/bg/bgB1.png) no-repeat 0 bottom; height:12px; width:324px; position:absolute; bottom:-12px; left:0;} 
 		.b1 .title		{background:none; padding:0; margin-bottom:7px;}
 		.b1 p      		{margin-bottom:32px;}
 		.b1 .btn1		{float:right; margin:-15px 25px 0 0;} 
@@ -423,7 +423,7 @@ DESCRIPTION:  	Defines layout - Dimensions, display, floats, position, backgroun
 	/*  4. Links to pages - LEFT COLUMN (heading, p)*/
 		.nav4 			{margin:0 0 5px 0; position:relative;}
 		.nav4 .title	{margin:0 0 22px; padding:0 0 8px 8px; background:url("../img/bg/bgHeading1.png") no-repeat scroll 0 bottom transparent;}
-		.nav4 li		{float:left; margin:0 0 16px 20px; padding-left:15px; width:285px; background: url(../img/sprites/02spr_icons_8bit.png) no-repeat 0 -798px;}
+		.nav4 li		{float:left; margin:0 0 16px 20px; padding-left:15px; width:285px; min-height:44px; background: url(../img/sprites/02spr_icons_8bit.png) no-repeat 0 -798px;}
 
 	/*  5. Links to pages - RIGHT COLUMN */
 		.nav5 			{margin:0 0 10px 0; position:relative;}
