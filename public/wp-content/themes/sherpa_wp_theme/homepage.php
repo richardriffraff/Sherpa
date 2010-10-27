@@ -99,4 +99,8 @@ Template Name: Sherpa Homepage
 <!-- END LAYOUT (ID: Template) [All Content Must have ended by here] -->
 <!-- END WP, Index.php -->	
 
+<script>
+	var section_name = "catalysing-business-growth";
+</script>
+
 <?php get_footer(); ?>

@@ -10,7 +10,7 @@ Template Name: Page List Page
 	
 	<?php get_sidebar('head'); ?>	
 <!-- START LAYOUT (ID: Template) [All Content always sits inside the template] -->
-<!-- START WP, blog-list.php -->
+<!-- START WP, page-list.php -->
 		
 	<div id="template" class="three1 clearfix">
 		<div id="clm1">
@@ -24,7 +24,7 @@ Template Name: Page List Page
 					foreach($this_child_pages as $child_page) {
 			?>				
 				<section class="item">
-					<a href="<?= $child_page->guid ?>" title="View: <?= $child_page->post_title ?>">
+					<a href="<?= bloginfo('url') ?>/?page_id=<?= $child_page->ID ?>" title="View: <?= $child_page->post_title ?>">
 						<h2>
 							<span class="creighton title"><?= $child_page->post_title ?></span> 
 						</h2>

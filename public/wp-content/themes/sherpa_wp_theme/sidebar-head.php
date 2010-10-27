@@ -20,7 +20,7 @@
 		
 	<!-- END: Contact Details -->	
 	
-		<?php dimox_breadcrumbs(); ?>
+		<?php /* dimox_breadcrumbs(); */ ?>
 
 	</header>
 	
@@ -66,6 +66,10 @@
 
 	</div>
 	<div class="clear"></div>
+	
+	<script>
+		var section_name = "undefined";	
+	</script>
 	
 <!-- END: LAYOUT (Main Nav + Search Form) -->
 <!-- END: WP, sidebar-head.php -->

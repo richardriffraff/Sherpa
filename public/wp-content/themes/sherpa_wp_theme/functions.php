@@ -1,5 +1,26 @@
 <?php 
 
+	function hide_case_studies() {
+		$the_page_id = the_id();
+		$ids_to_hide = array(182);
+		$should_hide = false;
+		
+		foreach ($ids_to_hide as $id) {
+			if ($the_page_id == id ) {
+				$should_hide == true;
+			}
+			
+		}
+		
+		return $should_hide;
+	}
+
+
+
+
+
+
+/*
 function dimox_breadcrumbs() {
  
   $delimiter = '<span class="divider">&raquo;</span>';
@@ -100,6 +121,7 @@ function dimox_breadcrumbs() {
  
   }
 }
+*/
 
 
 ?>

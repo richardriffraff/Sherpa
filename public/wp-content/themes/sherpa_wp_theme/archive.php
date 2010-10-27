@@ -5,7 +5,7 @@
 	
 	<?php get_sidebar('head'); ?>	
 <!-- START LAYOUT (ID: Template) [All Content always sits inside the template] -->
-<!-- START WP, blog-list.php -->
+<!-- START WP, archive.php -->
 		
 	<div id="template" class="three1 clearfix">
 		<div id="clm1">

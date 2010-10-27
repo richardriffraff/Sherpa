@@ -62,7 +62,12 @@
 	<script> 
 		// SHOULD STAY HERE
 		// Add Active to the main menu item
-		var section_name  = (window.location.pathname).replace('/wordpress/', '').split('/')[0].replace('-', ' ');	
+		
+		
+		if (section_name === "undefined")
+			// The Template Didn't set it, lets set it ourself
+			section_name  = (window.location.pathname).replace('/wordpress/', '').split('/')[0].replace(' ', '-');	
+
 		var menu_id	 	= 'mainMenuItem-'+section_name;	
 		$('#'+menu_id).addClass('active');
 		

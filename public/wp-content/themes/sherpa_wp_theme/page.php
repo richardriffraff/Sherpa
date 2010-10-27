@@ -19,11 +19,16 @@
 					<span class="creighton title"><?php the_title() ?></span> 
 				</h1>
 				
-				<?php the_content('') ?>
-				
-				<?php get_sidebar('share') ?>
-				
-				<?php get_sidebar('casestudies') ?>
+				<?php the_content(''); ?>
+
+				<?php
+					if (get_post()->ID != 182) {
+						get_sidebar('share');
+						get_sidebar('casestudies'); 
+					}
+					
+				?>
+
 				
 			</article>
 			

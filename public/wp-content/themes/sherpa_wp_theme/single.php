@@ -7,7 +7,7 @@ Template Name: Blog List Page
 <?php get_sidebar('head'); ?>	
 
 <!-- START LAYOUT (ID: Template) [All Content always sits inside the template] -->
-<!-- START WP, blog-list.php -->
+<!-- START WP, single.php -->
 		
 	<div id="template" class="three1 clearfix">
 		<div id="clm1">
@@ -64,6 +64,10 @@ Template Name: Blog List Page
 
 <!-- END LAYOUT (ID: Template) [All Content Must have ended by here] -->
 <!-- END WP, Index.php -->	
+
+<script>
+	var section_name = 'blog';	
+</script>
 
 <?php get_footer(); ?>
 				

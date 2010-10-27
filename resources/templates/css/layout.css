@@ -65,7 +65,8 @@ DESCRIPTION:  	Defines layout - Dimensions, display, floats, position, backgroun
 		.nav3 li,
 		.nav5 li,
 		.nav5 .rss,
-		.icon1					{background: url(../img/sprites/02spr_icons_8bit.png); background-repeat:no-repeat;}
+		.icon1,
+		.article1 #back			{background: url(../img/sprites/02spr_icons_8bit.png); background-repeat:no-repeat;}
 
 		
 	/* 3. Buttons - 24 Bit */
@@ -231,6 +232,12 @@ DESCRIPTION:  	Defines layout - Dimensions, display, floats, position, backgroun
 		
 	/* Specific Types */
 		
+		/* Article 1 */
+			.article1 #back			{float:left; width:auto; height:12px; margin:-10px 0 30px 0; padding:0 0 0 10px; background-position:0 -1242px;}
+			.article1 h1,
+			.article1 p				{clear:both;}
+	
+		
 		/* Article 2  */
 			.article2 .intro		{padding:0 0 44px 0;}
 		
@@ -249,7 +256,7 @@ DESCRIPTION:  	Defines layout - Dimensions, display, floats, position, backgroun
 		.footerShare dd,
 		.footerShare ul		{float:left; margin:0; padding:0;}
 		.footerShare li		{float:left; margin:1px 7px 0 0; padding:0; background:none;}
-		.footerShare a		{float:left; width:20px; height:20px; overflow:hidden; text-indent:-9999px;}
+		.footerShare dl a	{float:left; width:20px; height:20px; overflow:hidden; text-indent:-9999px;}
 	
 		/* Icons */	
 			.footerShare .fb		{background-position:0 -399px;}
@@ -340,7 +347,7 @@ DESCRIPTION:  	Defines layout - Dimensions, display, floats, position, backgroun
 		.b1:hover	 	{text-decoration:none;}
 		.b1Bottom		{background: url(../img/bg/bgB1.png) no-repeat 0 bottom; height:12px; width:324px; position:absolute; bottom:-12px; left:0;} 
 		.b1 .title		{background:none; padding:0; margin-bottom:7px;}
-		.b1 p      		{margin-bottom:32px;}
+		.b1 p      		{margin-bottom:32px; height:48px; overflow:hidden; padding:0;}
 		.b1 .btn1		{float:right; margin:-15px 25px 0 0;} 
 		
 	

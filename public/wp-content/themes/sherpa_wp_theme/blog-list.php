@@ -18,11 +18,11 @@ Template Name: Blog List Page
 			<article class="article2">
 				<h1 class="hide"><?php bloginfo('name')?> Posts</h1>
 			
-			<?php $myposts	= get_posts('numberposts=10&order=DESC&orderby=date');   ?>
+			<?php $myposts	= get_posts('order=DESC&orderby=date'); ?>
 			<?php foreach ($myposts as $mypost) { ?>
 				
 				<section class="item">
-					<a href="<?= $mypost->guid ?>" title="View: <?= $mypost->post_title ?>">
+					<a href="<?= bloginfo('url') ?>/?page_id=<?= $mypost->ID ?>" title="View: <?= $mypost->post_title ?>">
 						<h2>
 							<small class="date">Posted <?= date('j M Y', strtotime($mypost->post_date)) ?></small>
 							<span class="creighton title"><?= $mypost->post_title ?></span> 
