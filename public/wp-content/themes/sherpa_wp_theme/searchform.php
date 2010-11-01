@@ -1,3 +1,5 @@
+<!-- START WP, searchform.php -->
+
 <form role="search" method="get" action="<?php bloginfo('url'); ?>" id="frmSearch">
 	<fieldset>
 		<legend>Search <?php bloginfo('name')?></legend>

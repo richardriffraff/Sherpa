@@ -61,6 +61,5 @@
 	</div>
 		
 <!-- END LAYOUT (ID: Template) [All Content Must have ended by here] -->
-<!-- END WP, Index.php -->	
 
 <?php get_footer(); ?>

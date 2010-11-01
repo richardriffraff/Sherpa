@@ -5,7 +5,7 @@ Template Name: Page List Page
 ?>
 <?php get_header(); ?>
 
-<!-- WP, START TEMPLATE: blog-list.php -->
+<!-- WP, START TEMPLATE: page-list.php -->
 <body>
 	
 	<?php get_sidebar('head'); ?>	

@@ -38,7 +38,7 @@ Template Name: Landing Page Type 1
 				<ul>
 					<?php
 							$this_page_id			= get_post(the_ID())->ID;
-							$this_child_pages 	= get_pages('child_of='.$this_page_id.'&parent='.$this_page_id);									
+							$this_child_pages 	= get_pages('child_of='.$this_page_id.'&parent='.$this_page_id.'&sort_column=menu_order');									
 							foreach($this_child_pages as $child_page) {
 					?>
 					<li>

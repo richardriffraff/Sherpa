@@ -1,3 +1,5 @@
+<!-- START WP, sidebar-blog.php -->
+
 	<nav class="nav5">
 		<h2 class="title creighton">Archives</h2>
 		<ul>

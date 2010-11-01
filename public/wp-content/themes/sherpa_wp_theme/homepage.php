@@ -49,7 +49,7 @@ Template Name: Sherpa Homepage
 			<section class="section2">
 				<h2 class="title creighton">For Growing Businesses</h2>
 				<ul class="clearfix">
-					<li>Business Assesment</li>
+					<li>Business Assessment</li>
 					<li>Raising Finance</li>
 					<li>Grow Your Business</li>
 					<li>Improve Sales &amp; Profit</li>
@@ -60,10 +60,10 @@ Template Name: Sherpa Homepage
 		<!-- END: Service -->
 
 			<section class="section2">
-				<h2 class="title creighton">Established SME's</h2>
+				<h2 class="title creighton">Established SMEs</h2>
 				<ul class="clearfix">
-					<li>Financial Modeling</li>
-					<li>Organization Structure</li>
+					<li>Financial Support</li>
+					<li>Organisation Structure</li>
 					<li>Making Tough Decisions</li>
 					<li>Take Control</li>
 				</ul>

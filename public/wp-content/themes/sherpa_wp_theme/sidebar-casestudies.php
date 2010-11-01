@@ -17,7 +17,7 @@
 	
 	<a href="<?php bloginfo('url'); ?>/?page_id=<?= $case_study->ID ?>" class="box b1 aOffset2" title="View: <?= $case_study->post_title ?>">
 		<h3 class="title creighton"><?= $case_study->post_title ?></h3>
-		<p><?= (get_post_meta($case_study->ID, 'excerpt', true)) ?></p>
+		<p><?= (get_post_meta($case_study->ID, 'promo description', true)) ?></p>
 		<span class="b1Bottom">
 			<span class="btn btn1">
 				<span>View Case Study</span>
@@ -35,7 +35,7 @@
 ?>			
 	<a href="<?php bloginfo('url'); ?>/?page_id=<?= $case_study->ID ?>" class="box b1 aOffset2" title="View: <?= $case_study->post_title ?>">
 		<h3 class="title creighton"><?= $case_study->post_title ?></h3>
-		<p><?= (get_post_meta($case_study->ID, 'excerpt', true)) ?></p>
+		<p><?= (get_post_meta($case_study->ID, 'promo description', true)) ?></p>
 		<span class="b1Bottom">
 			<span class="btn btn1">
 				<span>View Case Study</span>

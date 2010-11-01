@@ -328,8 +328,8 @@ DESCRIPTION:  	Defines layout - Dimensions, display, floats, position, backgroun
 		#clm2 .blockQuote	{margin:20px 0 14px 0; width:254px;}			
 	
 	/* Specific Quotes */
-		.bQuote1		{height:117px; background: url(../img/content/blockQuote/bQuote1.png);}
-		.bQuote2		{height:165px; background: url(../img/content/blockQuote/bQuote2.png);}
+		.bQuote1		{height:117px; background: url(../img/content/blockQuote/bQuote1.png) no-repeat;}
+		.bQuote2		{height:165px; background: url(../img/content/blockQuote/bQuote2.png) no-repeat;}
 
 
 
