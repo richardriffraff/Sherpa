@@ -377,8 +377,7 @@ DESCRIPTION:  	Defines layout - Dimensions, display, floats, position, backgroun
 
 	/* Offsets */
 		.nOffset1		{margin-top:-5px !important;}
-		.nOffset2		{top:8px !important; margin-bottom:0 !important;}
-		.nOffset2 .btn	{position:relative; bottom:-14px;}
+		.nOffset2		{margin-bottom:20px !important;}
 		.nOffset3		{position:relative; top:-22px;} /* Used on .nav4 in left column */
 		.nOffset4    	{position:relative; top:-10px;}
 		

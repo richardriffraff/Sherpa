@@ -50,9 +50,9 @@
 		</nav>
 		
 		<nav id="nLegal">
-			<span>&copy; copyright <a href="/" title="View: SHERPA Homepage">SHERPA 2010</a>. All Rights Reserved</span>
-			<a href="#" title="View: SHERPA Business Consultancy Privacy Policy"  rel="nofollow">Privacy Policy</a>
-			<a class="last" href="#" title="View: SHERPA Business Consultancy Terms of Use" rel="nofollow">Terms of Use</a>
+			<span>&copy; copyright <a href="<?php bloginfo('url'); ?>" title="View: SHERPA Homepage">SHERPA 2010</a>. All Rights Reserved</span>
+			<a href="<?php bloginfo('url'); ?>/?page_id=1006" title="View: SHERPA Business Consultancy Privacy Policy"  rel="nofollow">Privacy Policy</a>
+			<a class="last" href="<?php bloginfo('url'); ?>/?page_id=1011" title="View: SHERPA Business Consultancy Terms of Use" rel="nofollow">Terms of Use</a>
 		</nav>
 
 	</footer>

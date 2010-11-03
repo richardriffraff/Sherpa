@@ -33,7 +33,7 @@
 		
 		<?php 
 			$solutions_name	= 'solutions'; // The name for the Solutions menu item
-			$main_menu_items 	= get_pages('parent=0&sort_column=menu_order&exclude=252,256'); // All the main menu items
+			$main_menu_items 	= get_pages('parent=0&sort_column=menu_order&exclude=252,256,1011,1006'); // All the main menu items
 			$i = 0;
 			
 			foreach ($main_menu_items as $item) { 
@@ -43,7 +43,7 @@
 				<li>
 <?php 		} ?>
 
-					<a href="<?= $item->guid; ?>" title="View: Solutions <?= $item->post_title ?>" id="mainMenuItem-<?= $item->post_name ?>"><?= $item->post_title ?></a>
+					<a href="<?= bloginfo('url') ?>/?page_id=<?= $item->ID ?>" title="View: Solutions <?= $item->post_title ?>" id="mainMenuItem-<?= $item->post_name ?>"><?= $item->post_title ?></a>
 
 <?php 			if ($solutions_name == $item->post_name) {
 					// Item is solutions
@@ -51,7 +51,7 @@
 ?>
 					<ul class="nSub">
 <?php 			foreach ($items_children as $child_item) { ?>
-						<li><a href="<?= $child_item->guid; ?>" title="View: <?= $child_item->post_title ?>"><?= $child_item->post_title ?></a></li>
+						<li><a href="<?= bloginfo('url') ?>/?page_id=<?= $child_item->ID ?>" title="View: <?= $child_item->post_title ?>"><?= $child_item->post_title ?></a></li>
 <?php 			} ?>
 					</ul>
 <?php 		} ?>	
