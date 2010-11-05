@@ -77,7 +77,7 @@ Template Name: Landing Page Type 1
 
 				<?= $offsetClass;  ?>
 
-				<a href="<?php bloginfo('url'); ?>/<?= $promo->post_name ?>" class="box b2 bOffset1" title="View: <?= $promo->post_title ?>">
+				<a href="<?php bloginfo('url'); ?>/?page_id=<?= $promo->ID ?>" class="box bOffset1 <? if ($i == 0) {?> b2<?php } else { ?> b3<? } ?>" title="View: <?= $promo->post_title ?>">
 					<h4 class="title creighton"><?= $promo->post_title ?></h4>
 					<p><?= (get_post_meta($promo->ID, 'excerpt', true)) ?></p>
 					<span class="btn btn2">
@@ -89,13 +89,14 @@ Template Name: Landing Page Type 1
 				<?php 
 						$i++;
 					} 
+
 				?>
 				
 				<?php get_sidebar('landing1') ?>	
 				
 				<blockquote class="blockQuote bQuote2 bQOffset1">
-					<p>Something nice someone said about your service, particularly with regard to benefits and transparent, risk-free nature of the service</p>
-					<cite>Mr George Stephenson, The Rocket</cite>
+					<p>I'd Strongly reccomend Sherpa's Services to start-ups and SME's looking to achieve quick wins and more importantly  long term success</p>
+					<cite>Kevin Owens, YourFilm</cite>
 				</blockquote>
 						
 			

@@ -72,7 +72,7 @@ Template Name: Landing Page Type 2
 					} 
 				?>
 
-				<a href="<?php bloginfo('url'); ?>/<?= $promo->post_name; ?>" class="box bOffset1 <? if ($i == 0) {?> b2<?php } else { ?> b3<? } ?>" title="View: <?= $promo->post_title ?>">
+				<a href="<?php bloginfo('url'); ?>/?page_id=<?= $promo->ID ?>" class="box bOffset1 <? if ($i == 0) {?> b2<?php } else { ?> b3<? } ?>" title="View: <?= $promo->post_title ?>">
 					<h4 class="title creighton"><?= $promo->post_title ?></h4>
 					<p><?= (get_post_meta($promo->ID, 'excerpt', true)) ?></p>
 					<span class="btn btn2">
