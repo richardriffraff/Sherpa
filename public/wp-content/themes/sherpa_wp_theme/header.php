@@ -28,6 +28,7 @@
 	<title><?php bloginfo('name')?> <?php wp_title('&laquo', true, 'right'); ?></title>
 	
 	<?php wp_head() ?>
-
+	
+	<script type="text/javascript" src="http://dnn506yrbagrg.cloudfront.net/pages/scripts/0011/1361.js"></script>
 </head>
 <!-- END: WP, header.php -->
