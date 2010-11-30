@@ -12,8 +12,8 @@ DESCRIPTION:  	Defines layout - Dimensions, display, floats, position, backgroun
 
 /* BASICS */
 	html				{height:100%;}
-	body 				{min-height:100%; background: #f9fafb url(../img/bg/bgPage1.png) 0 0 repeat-x;}
-	.body2				{background:#f9fafb url(../img/bg/bgPage2.png) 0 0 repeat-x;}
+	body 				{min-height:100%; background: #f9fafb url(../img/bg/bgPage1.png) 0 0 repeat-x; position:relative;}
+	.body2				{background:#f9fafb url(../img/bg/bgPage2.png) 0 0 repeat-x; position:relative; min-height:100%;}
 	
 	header,
 	footer,
@@ -36,8 +36,6 @@ DESCRIPTION:  	Defines layout - Dimensions, display, floats, position, backgroun
 
 
 
-
-
 /* SPRITES */
 
 	/* 1. Interface - 8 Bit */
@@ -51,6 +49,8 @@ DESCRIPTION:  	Defines layout - Dimensions, display, floats, position, backgroun
 		.frmComment .textfield:focus,
 		.frmComment .textarea,
 		.frmComment .textarea:focus,
+		.frmClientLogin .textfield,
+		.frmClientLogin .textfield:focus,
 		#nMain a:hover		{background: url(../img/sprites/01spr_interface_8bit.png);}
 	
 	/* 2. Icons - 8 Bit */
@@ -102,11 +102,8 @@ DESCRIPTION:  	Defines layout - Dimensions, display, floats, position, backgroun
 		#nTrail strong			{float:left; margin:0 5px 0 0;}
 		#nTrail span.divider 	{text-indent:-999px; float:left;margin:5px 5px 0 0; width:3px; height:5px; background: url(../img/bg/bgNTrailDivider.png) 0 0;}
 		
-		
-
-
-
-
+	/* Client Login Links */
+		header .clientArea				{position:absolute; right:11px; top:10px;}
 
 
 /* MAIN NAV */
@@ -159,7 +156,7 @@ DESCRIPTION:  	Defines layout - Dimensions, display, floats, position, backgroun
 			
 		
 /* FOOTER  */
-	#fPage					{width:100%; height:289px; position:static; left:0; bottom:0; background: #172732 url(../img/footer/bg.png) repeat-x;}
+	#fPage					{width:100%; height:289px; left:0; bottom:0; background: #172732 url(../img/footer/bg.png) repeat-x;}
 	
 	/* Quick Links (Blatently NOT S-E0O) */
 		#nQuickLinks		{width:870px; padding:0 0 28px; margin:0 auto; visibility:hidden;}
@@ -570,7 +567,18 @@ DESCRIPTION:  	Defines layout - Dimensions, display, floats, position, backgroun
 			.frmComment .textarea:focus		{background-position: -350px -132px;}		
 			.frmComment .btn1				{float:right; margin-right:180px;}
 		
-
+		/* Login Form */
+			.frmClientLogin legend				{display:none;}
+			.frmClientLogin dl					{margin:0 0 0 28px; line-height:22px; padding-top:30px;}
+			.frmClientLogin dt					{float:left; width:80px; display:inline;}
+			.frmClientLogin dd					{margin:0 0 14px 0; padding:0; }
+			.frmClientLogin .textfield			{background-position: 0 -109px; border:none; height:18px; padding:4px 0 1px 7px ;width:343px; margin:0; line-height: 18px; resize:none;}
+			.frmClientLogin .textfield:focus	{background-position: -350px -109px;}
+			.frmClientLogin .textarea			{background-position: 0 -132px; border:none; height:66px; margin:0; padding:6px 0 0 7px; width:343px; resize:none;}
+			.frmClientLogin .textarea:focus		{background-position: -350px -132px;}		
+			.frmClientLogin .btn1				{float:right; margin-right:180px;}
+			
+			.forgotten							{float:right; margin-right:183px; margin-bottom:10px;}
 
 
 		

@@ -37,6 +37,12 @@ body		{font: 12px 'Helvetica Neue', Helvetica, sans-serif; text-align:center; co
 	/* Nav Trail */
 		#nTrail strong			{color:#484F13; font-weight:normal;}
 		
+	/* Client Area Links */
+		header .clientArea:link,
+		header .clientArea:visited			{color:#f8ffc7; font-weight:bold;}
+		header .clientArea:hover,
+		header .clientArea:focus,
+		header .clientArea:active			{text-decoration:underline; color:#fff;}
 		
 
 /* MAIN NAV */
@@ -325,5 +331,16 @@ body		{font: 12px 'Helvetica Neue', Helvetica, sans-serif; text-align:center; co
 			.frmComment .textarea			{color:#9fabb3; font:11px 'Helvetica neue', sans-serif;}
 			.frmComment .textarea:hover,
 			.frmComment .textarea:focus		{color:#0f181f;}
+			
+		/* Client Login Form */		
+			.frmClientLogin legend				{font-size:18px; color:#192a36;}
+			.frmClientLogin dt					{color:#7b858f; font-weight:bold;}
+		
+			.frmClientLogin input				{color:#9fabb3; font:11px 'Helvetica neue', sans-serif;}
+			.frmClientLogin input:hover,
+			.frmClientLogin input:focus			{color:#0f181f;}
+			.frmClientLogin .textarea			{color:#9fabb3; font:11px 'Helvetica neue', sans-serif;}
+			.frmClientLogin .textarea:hover,
+			.frmClientLogin .textarea:focus		{color:#0f181f;}
 		
 
