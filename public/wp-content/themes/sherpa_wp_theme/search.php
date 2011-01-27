@@ -15,22 +15,23 @@
 				<p class="intro">You searched for <?php the_search_query() ?>, here's what we found...</p>
 				
 			
-		<?php if (have_posts()) : ?>		
+		<?php if (have_posts()) : ?>	
+			
+				
 			<?php while (have_posts()) : the_post(); ?>
+				
+				<?php echo(the_post()); ?>
 			
 				<section class="item">
 					<a href="<?php the_permalink() ?>" title="View: <?php the_title() ?>">
 						<h2>
-							<small class="date">Posted <?= date('j M Y', strtotime($mypost->post_date)) ?></small>
+							<small class="date">Posted <?php the_date('j M Y') ?></small>
 							<span class="creighton title"><?php the_title() ?></span> 
 						</h2>
 						
 						<p><?= the_excerpt(); ?></p>
 						
 					</a>
-					<ul class="meta">
-						<li><?php comments_number('No Comments', '1 Comment', '% Comments'); ?></li>
-					</ul>
 				</section>
 				
 			<!-- END: Item -->

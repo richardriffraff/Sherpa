@@ -17,7 +17,8 @@
 			<?php wp_list_categories("&title_li="); ?>
 		</ul>
 	</nav>
-
+	
+<?php /* 
 	<div class="hr"><hr /></div>
 
 	<nav class="nav5">
@@ -27,3 +28,6 @@
 			<li><?php wp_loginout(); ?></li>
 		</ul>
 	</nav>
+*/ ?>	
+
+	
