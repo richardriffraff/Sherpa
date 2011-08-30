@@ -14,7 +14,7 @@
 		</a>
 		
 		<address id="contactInfo">
-			<span class="phoneUs">Call us now</span> <span class="phone">0191 211 1995</span><br />
+			<span class="phoneUs">Call us now</span> <span class="phone">0191 232 4320</span><br />
 			<span class="emailUs">or email</span> <a href="mailto:info@sherpabusinessconsultancy.com" class="email" title="Email <?php bloginfo('name')?>">info@sherpabusinessconsultancy.com</a>
 		</address>
 		
